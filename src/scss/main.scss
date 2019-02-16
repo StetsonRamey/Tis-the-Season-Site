@@ -1,0 +1,18 @@
+body {
+  background-color: yellow;
+}
+
+@mixin absolute($t, $r, $b, $l) {
+  top: $t;
+  right: $r;
+  bottom: $b;
+  left: $l;
+}
+
+.foo {
+  @include absolute(0, 0, auto, auto);
+}
+
+.Tour {
+  display: flex;
+}
