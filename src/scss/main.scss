@@ -1,18 +1,104 @@
-body {
-  background-color: yellow;
+@import 'vendors/normalize.scss';
+
+// this is some shit so that we can see where things are at
+img {
+  max-width: 100%;
+}
+.SiteHeader-content {
+  background-color: aqua;
+}
+#appMain {
+  background-color: slategray;
+}
+.SiteFooter {
+  background-color: goldenrod;
 }
 
-@mixin absolute($t, $r, $b, $l) {
-  top: $t;
-  right: $r;
-  bottom: $b;
-  left: $l;
+//these are some globals
+.App-main {
+  min-height: 100vh;
 }
-
-.foo {
-  @include absolute(0, 0, auto, auto);
+.App-content {
+  padding: 0 1rem;
+  margin: 0 auto;
 }
-
-.Tour {
+.Block--text {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Block-content > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+// here's where we start actually laying out the grid
+// we're doing mobile first
+.wrapper {
+  display: grid;
+}
+
+//HEADER
+.SiteHeader {
+  width: 100%;
+}
+.App-Header {
+  padding: 2.5rem 1rem;
+}
+.SiteHeader-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+.SiteHeader-logo {
+  grid-column: 2 / span 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.SiteHeader-nav {
+  grid-column: 1 / span 1;
+  grid-row: 1 / -1;
+}
+.SiteHeader-contact {
+  grid-column: 3 / span 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//  HERO
+.Hero-container {
+  display: grid;
+  justify-content: center;
+}
+
+// PROMO SECTION
+.Block--promo-grid {
+  display: grid;
+  grid-row-gap: 2rem;
+  justify-content: center;
+  width: 100%;
+}
+.Promo--itemMen {
+  // min-height: 578px;
+  min-width: 250px;
+  height: auto;
+  background: white url("https://via.placeholder.com/700?text=Explore+Men's");
+  background-size: cover;
+  background-position: bottom right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Promo--itemWomen {
+  // min-height: 578px;
+  background: white url("https://via.placeholder.com/700?text=Explore+Women's");
+  background-size: cover;
+  background-position: bottom right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
