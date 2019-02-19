@@ -1,0 +1,9 @@
+// this mixin is to float the promo text over the images on the home page
+
+@mixin promoText {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

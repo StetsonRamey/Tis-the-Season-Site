@@ -1,4 +1,5 @@
-@import 'vendors/normalize.scss';
+@import 'vendors/normalize';
+@import 'abstracts/mixins';
 
 // this is some shit so that we can see where things are at
 img {
@@ -26,12 +27,28 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 2rem;
 }
-.Block-content > * {
+.Block-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.Block-sm-title--small {
+  font-size: 1.2rem;
+}
+.Block-title {
+  flex-direction: row;
+  flex: 0 1 auto;
+  margin-bottom: 3rem;
+  letter-spacing: 0.3rem;
+  line-height: 2.7;
+  text-align: center;
+  text-transform: uppercase;
+  h2 {
+    flex: auto;
+  }
 }
 
 // here's where we start actually laying out the grid
@@ -74,31 +91,55 @@ img {
   display: grid;
   justify-content: center;
 }
-
+// TITLE SECTION
+#content.Block {
+  margin-top: 5rem;
+}
+// SCOTT SPEEDMAN SECTION
+.u-marginTm {
+  margin-top: 1rem;
+}
+.u-marginTl {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+.Type {
+  p {
+    font-size: 1.4rem;
+    line-height: 2.7;
+  }
+}
 // PROMO SECTION
 .Block--promo-grid {
+  margin-top: 5rem;
   display: grid;
+  grid-template-columns: 1fr;
   grid-row-gap: 2rem;
   justify-content: center;
-  width: 100%;
 }
 .Promo--itemMen {
-  // min-height: 578px;
-  min-width: 250px;
-  height: auto;
   background: white url("https://via.placeholder.com/700?text=Explore+Men's");
+  grid-column: 1 / -1;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom right;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  .Promo-text {
+    @include promoText;
+  }
 }
 .Promo--itemWomen {
-  // min-height: 578px;
   background: white url("https://via.placeholder.com/700?text=Explore+Women's");
+  grid-column: 1 / -1;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom right;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  .Promo-text {
+    @include promoText;
+  }
 }
+// HOW WE WEAR IT FEATURES SECTION
