@@ -1,0 +1,28 @@
+//NAV
+.SiteHeader {
+  width: 100%;
+}
+.App-Header {
+  padding: 2.5rem 1rem;
+}
+.SiteHeader-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+.SiteHeader-logo {
+  grid-column: 2 / span 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.SiteHeader-nav {
+  grid-column: 1 / span 1;
+  grid-row: 1 / -1;
+}
+.SiteHeader-contact {
+  grid-column: 3 / span 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

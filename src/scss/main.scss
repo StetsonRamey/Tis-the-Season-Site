@@ -1,171 +1,23 @@
-@import 'vendors/normalize';
+@import 'abstracts/variables';
+@import 'abstracts/functions';
 @import 'abstracts/mixins';
+@import 'abstracts/placeholders';
 
-// this is some shit so that we can see where things are at
-img {
-  max-width: 100%;
-}
-.SiteHeader-content {
-  background-color: aqua;
-}
-#appMain {
-  background-color: slategray;
-}
-.SiteFooter {
-  background-color: goldenrod;
-}
+@import 'vendors/normalize';
 
-//these are some globals
-.App-main {
-  min-height: 100vh;
-  padding-bottom: 5rem;
-}
-.App-content {
-  padding: 0 1rem;
-  margin: 0 auto;
-}
-.Block--text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 2rem;
-}
-.Block-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.Block-sm-title--small {
-  font-size: 1.2rem;
-}
-.Block-title {
-  flex-direction: row;
-  flex: 0 1 auto;
-  margin-bottom: 3rem;
-  letter-spacing: 0.3rem;
-  line-height: 2.7;
-  text-align: center;
-  text-transform: uppercase;
-  h2 {
-    flex: auto;
-  }
-}
+@import 'base/reset';
+@import 'base/typography';
 
-// here's where we start actually laying out the grid
-// we're doing mobile first
-.wrapper {
-  display: grid;
-}
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/forms';
 
-//HEADER
-.SiteHeader {
-  width: 100%;
-}
-.App-Header {
-  padding: 2.5rem 1rem;
-}
-.SiteHeader-content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-}
-.SiteHeader-logo {
-  grid-column: 2 / span 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.SiteHeader-nav {
-  grid-column: 1 / span 1;
-  grid-row: 1 / -1;
-}
-.SiteHeader-contact {
-  grid-column: 3 / span 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+// @import 'components/buttons';
+// @import 'components/carousel';
+// @import 'components/cover';
+// @import 'components/dropdown';
 
-//  HERO
-.Hero-container {
-  display: grid;
-  justify-content: center;
-}
-// TITLE SECTION
-#content.Block {
-  margin-top: 5rem;
-}
-// SCOTT SPEEDMAN SECTION
-.u-marginTm {
-  margin-top: 1rem;
-}
-.u-marginTl {
-  text-align: center;
-  margin-top: 1.5rem;
-  margin-bottom: 0;
-}
-.Type {
-  p {
-    font-size: 1.4rem;
-    line-height: 2.7;
-  }
-}
-// PROMO SECTION
-.Block--promo-grid {
-  margin-top: 5rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-row-gap: 2rem;
-  justify-content: center;
-}
-.Promo--itemMen {
-  background: white url("https://via.placeholder.com/700?text=Explore+Men's");
-  grid-column: 1 / -1;
-  height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  .Promo-text {
-    @include promoText;
-  }
-}
-.Promo--itemWomen {
-  background: white url("https://via.placeholder.com/700?text=Explore+Women's");
-  grid-column: 1 / -1;
-  height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  .Promo-text {
-    @include promoText;
-  }
-}
-// HOW WE WEAR IT FEATURES SECTION
-.Grid-cell {
-  img {
-    display: block;
-    width: 100%;
-    z-index: -1;
-  }
-  a {
-    display: block;
-    position: relative;
-  }
-  .Promo-text {
-    @include promoText;
-  }
-}
-
-// FOOTER
-.SiteFooter {
-  padding: 5rem 0;
-}
-.SiteFooter-Content {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-row-gap: 1.5rem;
-  justify-items: center;
-}
+// @import 'pages/home';
+// @import 'pages/contact';
