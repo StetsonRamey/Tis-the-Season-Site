@@ -24,6 +24,7 @@ img {
   align-items: center;
   justify-content: center;
   padding: 0 2rem;
+  max-width: 800px;
 }
 .Block-content {
   display: flex;
@@ -93,6 +94,9 @@ img {
 }
 .u-marginTm {
   margin-top: 1rem;
+  @include respond-to('small') {
+    margin-top: 4rem;
+  }
 }
 .u-marginTl {
   text-align: center;
