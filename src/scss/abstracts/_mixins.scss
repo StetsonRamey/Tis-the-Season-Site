@@ -29,7 +29,7 @@
   transform: translate(-50%, -50%);
 }
 
-// since we have 2 promo items, keep code dry and write one mixin to style them both
+// since we have several promo items, keep code dry and write one mixin to style them both
 @mixin promoItem {
   background-position: center;
   background-repeat: no-repeat;
@@ -46,4 +46,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+// this mixin sets the spacing for all our promo items, which we use in the 2x2 & the page bottom grid
+@mixin promoSpace {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 2rem;
+  justify-content: center;
 }

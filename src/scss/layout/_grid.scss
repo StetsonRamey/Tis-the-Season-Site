@@ -69,11 +69,7 @@ img {
 
 // PROMO SECTION
 .Block--promo-grid {
-  margin-top: 5rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-row-gap: 2rem;
-  justify-content: center;
+  @include promoSpace;
   @include respond-to('small') {
     grid-template-columns: 1fr 1fr;
     margin-top: 10rem;
@@ -111,6 +107,33 @@ img {
 }
 
 // HOW WE WEAR IT FEATURES SECTION
+.Block--how-wear-grid {
+  @include promoSpace;
+  @include respond-to('small') {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      'weWear weWear'
+      'sunglasses stores'
+      'japan japan';
+    .weWear {
+      grid-area: weWear;
+      padding: 0 1.5rem;
+    }
+    .sunglasses {
+      grid-area: sunglasses;
+      padding: 0 1.5rem;
+    }
+    .stores {
+      grid-area: stores;
+      padding: 0 1.5rem;
+    }
+    .japan {
+      grid-area: japan;
+      padding: 0 1.5rem;
+    }
+  }
+}
 .Grid-cell {
   img {
     display: block;

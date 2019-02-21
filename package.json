@@ -5,7 +5,7 @@
   "scripts": {
     "scss": "node-sass --output-style compressed -o dist/css src/scss",
     "reload": "browser-sync reload",
-    "serve": "browser-sync start --server --files \"dist/css/*.css, **/*.html, !node_modules/**/*.html\"",
+    "serve": "browser-sync start --server --files \"dist/css/*.css, **/*.html, !node_modules/**/*.html\" --browser \"firefox developer edition\"",
     "build": "run-s scss",
     "watch:html": "onchange *.html -- run-s reload",
     "watch:css": "onchange \"src/scss\" -- run-s build reload",
