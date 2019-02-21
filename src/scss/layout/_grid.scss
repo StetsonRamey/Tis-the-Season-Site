@@ -1,9 +1,9 @@
-// this is some shit so that we can see where things are at
+// FORCE IMAGES INTO CONTAINERS
 img {
   max-width: 100%;
 }
 
-//these are some globals
+//GLOBALS THAT APPLY TO ALL
 .App-main {
   min-height: 100vh;
   padding-bottom: 5rem;
@@ -47,8 +47,8 @@ img {
   }
 }
 
-// here's where we start actually laying out the grid
-// we're doing mobile first
+// GRID LAYOUT SECTION
+// USING A MOBILE FIRST APPROACH, THEN MEDIA QUERY UP FROM THERE
 .wrapper {
   display: grid;
 }
@@ -138,7 +138,6 @@ img {
   img {
     display: block;
     width: 100%;
-    // z-index: -1;
   }
   a {
     display: block;
