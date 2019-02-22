@@ -1,6 +1,7 @@
 // MOBILE MENU OVERLAY EFFECT
 .SiteHeader-nav {
   position: fixed;
+  z-index: 2;
   top: 0;
   width: 100%;
   opacity: 0.9;
@@ -37,7 +38,7 @@
 
   // handle the branding
   .menu-branding {
-    background: $mobile-menu-bg;
+    background: black;
     @include easeOut;
     transform: translate3d(0, 100%, 0);
     &.show {
@@ -45,14 +46,49 @@
     }
 
     .menu-logo {
-      width: 250px;
-      height: 250px;
+      width: 150px;
+      height: 150px;
       background: url('../../src/images/tts-logo-simple.png');
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center center;
       border-radius: 50%;
-      border: solid 3px purple;
+      border: solid 2px purple;
     }
+  }
+
+  .menu-item {
+    transform: translate3d(600px, 0, 0);
+    @include easeOut;
+    &.show {
+      // Slide in from right
+      transform: translate3d(0, 0, 0);
+    }
+    &.active > a {
+      color: deeppink;
+    }
+  }
+
+  .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    @include easeOut;
+
+    &:hover {
+      color: deeppink;
+    }
+  }
+}
+
+// Delay each nav item slide by 0.1s
+@for $x from 1 through 4 {
+  .menu-item:nth-child(#{$x}) {
+    transition-delay: $x * 0.1s;
   }
 }
