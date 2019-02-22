@@ -10,6 +10,11 @@
   <body>
     <div class="wrapper">
       <header id="appHeader">
+        <div class="menu-btn">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+        </div>
         <div class="SiteHeader App-Header">
           <div class="SiteHeader-content">
             <div class="SiteHeader-logo SiteHeader--left">
@@ -19,11 +24,26 @@
                 >Tis the Season Holiday Lighting</a
               >
             </div>
+
             <nav class="SiteHeader-nav SiteHeader--center">
-              <ul>
-                <li><a href="" class="SiteHeader--navItem">Nav Item 1</a></li>
-                <li><a href="" class="SiteHeader--navItem">Nav Item 2</a></li>
-                <li><a href="" class="SiteHeader--navItem">Nav Item 3</a></li>
+              <div class="menu-branding">
+                <div class="menu-logo"></div>
+              </div>
+              <ul class="menu-nav">
+                <li class="menu-item">
+                  <a href="" class="SiteHeader--navItem nav-link">Home</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class="SiteHeader--navItem nav-link"
+                    >LED or Incandescent</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a href="" class="SiteHeader--navItem nav-link">About Us</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class="SiteHeader--navItem nav-link">Contact</a>
+                </li>
               </ul>
             </nav>
             <div class="SiteHeader-contact SightHeader--right">
@@ -31,7 +51,6 @@
             </div>
           </div>
         </div>
-        <nav class="SiteHeader-nav"></nav>
       </header>
       <main id="appMain" class="App-main">
         <div class="App-content">
@@ -193,5 +212,6 @@
         </div>
       </footer>
     </div>
+    <script src="dist/js/menu.js"></script>
   </body>
 </html>
