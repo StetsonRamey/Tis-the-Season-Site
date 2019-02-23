@@ -4,7 +4,7 @@
   z-index: 2;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.95;
   visibility: hidden;
 
   &.show {
@@ -17,18 +17,15 @@
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    float: left;
-    width: 50%;
-    height: 100vh;
     overflow: hidden;
   }
 
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: darken($mobile-menu-bg, 5);
+    background: darken($mobile-menu-bg, 10);
     list-style: none;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(-100%, 0, 0);
     @include easeOut;
 
     &.show {
@@ -38,9 +35,9 @@
 
   // handle the branding
   .menu-branding {
-    background: black;
+    background: #1a1a1a;
     @include easeOut;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(100%, 0, 0);
     &.show {
       transform: translate3d(0, 0, 0);
     }
@@ -53,7 +50,6 @@
       background-repeat: no-repeat;
       background-position: center center;
       border-radius: 50%;
-      border: solid 2px purple;
     }
   }
 
@@ -65,7 +61,7 @@
       transform: translate3d(0, 0, 0);
     }
     &.active > a {
-      color: deeppink;
+      color: $logo-purple;
     }
   }
 
@@ -81,14 +77,14 @@
     @include easeOut;
 
     &:hover {
-      color: deeppink;
+      color: $logo-purple;
     }
   }
 }
 
 // Delay each nav item slide by 0.1s
-@for $x from 1 through 4 {
-  .menu-item:nth-child(#{$x}) {
-    transition-delay: $x * 0.1s;
+@for $i from 1 through 4 {
+  .menu-item:nth-child(#{$i}) {
+    transition-delay: $i * 0.1s;
   }
 }

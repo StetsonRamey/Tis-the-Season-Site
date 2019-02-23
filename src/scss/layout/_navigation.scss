@@ -15,14 +15,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  .nav-logo {
+    width: 5rem;
+    height: auto;
+  }
 }
 .SiteHeader-nav {
-  grid-column: 1 / span 1;
-  grid-row: 1 / -1;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  height: 100vh;
 }
 .SiteHeader-contact {
   grid-column: 3 / span 1;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
+  margin-right: 1rem;
 }

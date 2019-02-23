@@ -2,7 +2,7 @@
 .menu-btn {
   position: absolute;
   left: 2rem;
-  top: 2rem;
+  top: 3rem;
   z-index: 3;
   cursor: pointer;
   @include easeOut;
@@ -11,7 +11,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: deeppink;
+    background: black;
     @include easeOut;
   }
 
@@ -19,6 +19,7 @@
   &.close {
     transform: rotate(180deg);
     .btn-line {
+      background: $logo-purple;
       // Line 1 - Rotate
       &:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
@@ -32,5 +33,23 @@
         transform: rotate(-45deg) translate(7px, -6px);
       }
     }
+  }
+}
+
+//CONTACT BUTTON IN NAV
+.Button {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid $secondary-color;
+  border-radius: 4px;
+  vertical-align: text-bottom;
+  cursor: pointer;
+  &:hover {
+    border-color: $logo-teal;
+    color: $logo-teal;
   }
 }
