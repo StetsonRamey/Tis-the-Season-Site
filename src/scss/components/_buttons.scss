@@ -40,13 +40,13 @@
 .Button {
   text-decoration: none;
   color: black;
-  font-size: 1rem;
-  padding: 1rem 1.5rem;
-  text-align: center;
   text-transform: uppercase;
   border: 2px solid $secondary-color;
+  font-size: 1.5rem;
   border-radius: 4px;
-  vertical-align: text-bottom;
+  height: 37px;
+  line-height: 37px;
+  padding: 0 16px;
   cursor: pointer;
   &:hover {
     border-color: $logo-teal;
