@@ -118,23 +118,19 @@ img {
     grid-template-rows: auto;
     grid-template-areas:
       'weWear weWear'
-      'sunglasses stores'
+      'about contact'
       'japan japan';
     .weWear {
       grid-area: weWear;
-      padding: 0 1.5rem;
     }
-    .sunglasses {
-      grid-area: sunglasses;
-      padding: 0 1.5rem;
+    .about {
+      grid-area: about;
     }
-    .stores {
-      grid-area: stores;
-      padding: 0 1.5rem;
+    .contact {
+      grid-area: contact;
     }
     .japan {
       grid-area: japan;
-      padding: 0 1.5rem;
     }
   }
 }

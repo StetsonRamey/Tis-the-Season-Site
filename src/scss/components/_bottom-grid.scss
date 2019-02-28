@@ -1,0 +1,11 @@
+.about,
+.contact {
+  @include darkenImage;
+  &:hover {
+    @include easeOut;
+    .Promo-text {
+      color: #000000;
+    }
+    background-color: #fff;
+  }
+}
