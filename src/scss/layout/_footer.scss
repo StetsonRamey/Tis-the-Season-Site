@@ -1,6 +1,7 @@
 // FOOTER
 .SiteFooter {
-  padding-top: 5rem;
+  padding: 2.5rem 0;
+  background: #eee;
 }
 .SiteFooter-Content {
   display: grid;
@@ -22,6 +23,67 @@
     .Footer--linksCol {
       grid-column: 3 / 4;
       grid-row: 2 / 3;
+    }
+  }
+}
+
+.Footer--logoRow {
+  img {
+    width: 200px;
+    height: auto;
+  }
+}
+.Footer--contact {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include footerList;
+  .Button {
+    text-align: center;
+    width: 24rem;
+  }
+  li {
+    display: inline;
+  }
+  li:first-child {
+    padding-right: 2rem;
+  }
+  i {
+    color: $logo-teal;
+    &:hover {
+      color: $logo-purple;
+    }
+  }
+}
+
+.Footer--serviceArea {
+  @include footerList;
+  h3 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  li {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+}
+.Footer--linksCol {
+  text-align: center;
+  h3 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  p,
+  a {
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  a {
+    color: $logo-teal;
+    &:hover {
+      color: $logo-purple;
     }
   }
 }
