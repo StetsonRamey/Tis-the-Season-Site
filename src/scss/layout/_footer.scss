@@ -1,16 +1,17 @@
 // FOOTER
 .SiteFooter {
+  margin-top: 2rem;
   padding: 2.5rem 0;
-  background: #eee;
+  background: $footer-background;
 }
 .SiteFooter-Content {
   display: grid;
   grid-template-columns: 1fr;
-  grid-row-gap: 1.5rem;
+  grid-row-gap: 1rem;
   justify-items: center;
   @include respond-to('small') {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
 
     .Footer--serviceArea {
       grid-column: 1 / 2;
@@ -43,6 +44,7 @@
   .Button {
     text-align: center;
     width: 24rem;
+    color: #eee;
   }
   li {
     display: inline;
@@ -59,7 +61,11 @@
 }
 
 .Footer--serviceArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   @include footerList;
+  color: $secondary-color;
   h3 {
     margin: 0;
     font-size: 2rem;
@@ -70,17 +76,21 @@
   }
 }
 .Footer--linksCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   h3 {
+    color: $secondary-color;
     margin: 0;
     font-size: 2rem;
   }
-  p,
+  p {
+    color: $secondary-color;
+  }
   a {
     font-size: 1.5rem;
     text-decoration: none;
-  }
-  a {
     color: $logo-teal;
     &:hover {
       color: $logo-purple;
