@@ -54,7 +54,7 @@
   grid-column: 3 / span 1;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   margin-right: 1rem;
   @include respond-to('medium') {
     margin-right: 2rem;

@@ -6,6 +6,9 @@
   z-index: 3;
   cursor: pointer;
   @include easeOut;
+  &.close {
+    position: fixed;
+  }
 
   .btn-line {
     width: 28px;
