@@ -1,0 +1,26 @@
+.lighting-hero {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  .eyebrow {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  .title {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+  .estimate-button {
+    display: flex;
+    justify-content: center;
+  }
+  .Button {
+    border: none;
+    color: #fff;
+    background-color: $logo-teal;
+    &:hover {
+      background-color: darken($color: $logo-teal, $amount: 20);
+    }
+  }
+}
