@@ -77,3 +77,13 @@
     padding: 0;
   }
 }
+// HANDLE FULL WIDTH STYLING OF BACKGROUND SECTIONS
+@mixin backgroundColor($color, $depth) {
+  background-color: lighten($color, $depth);
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}

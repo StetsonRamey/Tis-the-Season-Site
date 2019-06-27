@@ -1,0 +1,47 @@
+// THESE ARE GLOBAL FOR THE WHOLE PAGE
+.content {
+  margin: 0 auto;
+  max-width: 576px;
+  padding: 0 4rem;
+}
+
+// THIS SECTION IS JUST FOR THE TOP WRAPPER
+.top-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.intro-head {
+  @include backgroundColor($logo-teal, 0);
+  padding: 3rem 0;
+  h1,
+  h5 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 200;
+    color: #444;
+  }
+  h5 {
+    font-size: 2rem;
+    color: #fff;
+  }
+  .content {
+    margin: 0 auto;
+    max-width: 576px;
+    padding: 0 2rem;
+  }
+}
+
+.intro-copy {
+  @include backgroundColor($secondary-color, 30%);
+  padding: 3rem 0;
+  p {
+    font-size: 1.5rem;
+    color: #444;
+    text-align: center;
+    line-height: 2.5rem;
+  }
+}
