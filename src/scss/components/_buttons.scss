@@ -57,3 +57,22 @@
     color: $logo-teal;
   }
 }
+
+// ESTIMATE BUTTON
+.estimate-component {
+  .get-estimate {
+    text-align: center;
+  }
+  .estimate-button {
+    display: flex;
+    justify-content: center;
+  }
+  .Button {
+    border: none;
+    color: #fff;
+    background-color: $logo-teal;
+    &:hover {
+      background-color: darken($color: $logo-teal, $amount: 20);
+    }
+  }
+}

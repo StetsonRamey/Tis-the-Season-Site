@@ -3,29 +3,176 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 2rem 1.5rem;
-  .content h2 {
+  padding: 4rem 1.5rem 1.5rem 1.5rem;
+
+  .led-intro {
+    margin: 0 auto;
+  }
+
+  .led-intro h2 {
     font-size: 3rem;
+    text-align: center;
   }
-  .content h3 {
-    font-size: 2rem;
-  }
-  .content p {
+
+  .led-intro p {
     font-size: 1.8rem;
+    line-height: 1.6;
+    text-align: center;
   }
+
+  .screenshot {
+    padding-bottom: 8rem;
+  }
+  .one-column,
+  .two-column,
+  .led-intro {
+    padding: 80px 0;
+  }
+
+  .one-column,
+  .two-column,
+  h2 {
+    font-size: 3rem;
+    text-align: left;
+    padding: 0 6rem;
+  }
+
+  .one-column,
+  .two-column,
+  h3 {
+    font-size: 2rem;
+    text-align: left;
+    padding: 0 6rem;
+  }
+
+  .one-column,
+  .two-column,
+  p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    text-align: left;
+    padding: 0 6rem;
+  }
+
+  .led-size,
+  .led-color,
+  .led-white-color {
+    display: flex;
+    justify-content: center;
+  }
+
+  .led-bulbs {
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .background-wrapper {
+    background-color: lighten($logo-teal, 15%);
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+
+  .pros-cons {
+    padding-top: 8rem;
+  }
+
   .pros,
   .cons {
     h3 {
+      font-size: 2rem;
       text-align: left;
     }
+
     ul {
       list-style-type: none;
+      list-style-position: outside;
       font-size: 1.8rem;
       text-align: left;
     }
+
     li:before {
       content: '\1F4A1';
       margin-right: 5px;
+    }
+  }
+  .two-column {
+    width: 100%;
+    margin-bottom: 8rem;
+  }
+  .two-column:last-of-type {
+    margin-bottom: 0;
+  }
+
+  // SMALL BREAKPOINTS
+  .two-column {
+    @include respond-to('small') {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-bottom: 8rem;
+
+      &.row-reverse {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+  .two-column:last-of-type {
+    @include respond-to('small') {
+      margin-bottom: 0;
+    }
+  }
+
+  .two-column,
+  .led-intro {
+    @include respond-to('small') {
+      width: 680px;
+    }
+  }
+
+  .col {
+    @include respond-to('small') {
+      width: 330px;
+    }
+  }
+
+  // MEDIUM BREAKPOINTS
+  .two-column,
+  .led-intro {
+    @include respond-to('medium') {
+      width: 868px;
+    }
+  }
+
+  .col {
+    @include respond-to('medium') {
+      width: 424px;
+    }
+  }
+
+  .screenshot {
+    @include respond-to('medium') {
+      max-width: 1016px;
+      margin: 0 auto;
+    }
+  }
+
+  // LARGE BREAKPOINTS
+  .two-column {
+    @include respond-to('large') {
+      width: 1016px;
+    }
+  }
+
+  .col {
+    @include respond-to('large') {
+      width: 498px;
     }
   }
 }
