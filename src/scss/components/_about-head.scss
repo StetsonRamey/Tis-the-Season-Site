@@ -3,6 +3,16 @@
   margin: 0 auto;
   max-width: 576px;
   padding: 0 4rem;
+
+  //SMALL BREAKPOINTS
+  @include respond-to('small') {
+    max-width: 767px;
+    padding: 0;
+  }
+  @include respond-to('large') {
+    max-width: 992px;
+    padding: 0;
+  }
 }
 
 // THIS SECTION IS JUST FOR THE TOP WRAPPER

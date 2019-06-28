@@ -1,0 +1,56 @@
+.team-content,
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 0;
+  h2 {
+    font-size: 3rem;
+    font-weight: 200;
+    color: #444;
+  }
+}
+
+.team-member {
+  img {
+    border: 2px solid $logo-teal;
+    padding: 5px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  h3,
+  h4,
+  p {
+    color: #444;
+    margin: 0 0 2rem 0;
+  }
+  h3 {
+    padding-top: 2rem;
+    font-size: 3rem;
+    font-weight: 200;
+  }
+  h4 {
+    font-size: 2.5rem;
+    font-weight: 200;
+  }
+  p {
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 2.5rem;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+}
+
+//MEDIA QUERIES
+.team-content {
+  .two-column {
+    @include respond-to('medium') {
+      display: flex;
+      flex-direction: row;
+    }
+    .content {
+      padding: 0 2rem;
+    }
+  }
+}

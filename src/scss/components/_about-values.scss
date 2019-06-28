@@ -21,7 +21,8 @@
     padding: 6rem 0;
   }
   .value-container,
-  .values-header {
+  .values-header,
+  .value {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,6 +32,7 @@
 
 .value-container {
   h5 {
+    text-align: center;
     font-size: 2rem;
     color: #444;
     margin-bottom: 2rem;
@@ -41,5 +43,17 @@
     text-align: center;
     line-height: 2.5rem;
     margin-bottom: 4rem;
+  }
+
+  //MEDIA QUERIES
+  .two-column {
+    @include respond-to('small') {
+      display: flex;
+      flex-direction: row;
+      .content {
+        max-width: 496px;
+        padding: 0 2rem;
+      }
+    }
   }
 }
