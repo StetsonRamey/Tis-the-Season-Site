@@ -46,7 +46,7 @@
   font-weight: 300;
   text-transform: uppercase;
   border: 1px solid $secondary-color;
-  font-size: 1.5rem;
+  font-size: 1rem;
   border-radius: 4px;
   height: 4.5rem;
   line-height: 4.5rem;
@@ -55,6 +55,9 @@
   &:hover {
     border-color: $logo-teal;
     color: $logo-teal;
+  }
+  @include respond-to('small') {
+    font-size: 1.5rem;
   }
 }
 

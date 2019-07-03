@@ -17,40 +17,36 @@
   .inc-intro p {
     font-size: 1.8rem;
     line-height: 1.6;
-    text-align: center;
+    padding-bottom: 4rem;
   }
   .screenshot {
     padding-bottom: 8rem;
   }
   .one-column,
-  .two-column,
-  .led-intro {
-    padding: 80px 0;
-  }
-
-  .one-column,
-  .two-column,
-  h2 {
-    font-size: 3rem;
-    text-align: left;
-    padding: 0 6rem;
-  }
-
-  .one-column,
-  .two-column,
-  h3 {
-    font-size: 2rem;
-    text-align: left;
-    padding: 0 6rem;
-  }
-
-  .one-column,
-  .two-column,
-  p {
-    font-size: 1.8rem;
-    line-height: 1.6;
-    text-align: left;
-    padding: 0 6rem;
+  .two-column {
+    h2,
+    h3,
+    p {
+      padding: 0 2rem;
+    }
+    h2,
+    h3 {
+      text-align: left;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.8rem;
+      line-height: 1.6;
+      text-align: justify;
+    }
+    img {
+      padding: 0 2rem;
+    }
   }
   .inc-color,
   .inc-size {
@@ -75,19 +71,41 @@
   }
 
   .pros-cons {
-    padding-top: 8rem;
+    width: 100%;
+    h2,
+    p {
+      padding: 0 2rem;
+    }
+    h2 {
+      text-align: center;
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.5rem;
+      line-height: 1.6;
+      text-align: justify;
+    }
+    padding-top: 4rem;
   }
   .pros,
   .cons {
     h3 {
+      font-size: 2rem;
       text-align: left;
     }
+
     ul {
       list-style-type: none;
-      list-style-position: outside;
-      font-size: 1.8rem;
+      margin-left: 0;
+      padding-left: 3em;
+      text-indent: -2.5em;
       text-align: left;
     }
+    li {
+      padding-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
     li:before {
       content: '\1F4A1';
       margin-right: 5px;
@@ -95,7 +113,7 @@
   }
   .two-column {
     width: 100%;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
   }
   .two-column:last-of-type {
     margin-bottom: 0;
@@ -120,9 +138,14 @@
       margin-bottom: 0;
     }
   }
+  .pros-cons {
+    display: flex;
+    justify-content: center;
+  }
 
   .two-column,
-  .inc-intro {
+  .inc-intro,
+  .pros-cons-wrapper {
     @include respond-to('small') {
       width: 680px;
     }
@@ -136,7 +159,8 @@
 
   // MEDIUM BREAKPOINTS
   .two-column,
-  .inc-intro {
+  .inc-intro,
+  .pros-cons-wrapper {
     @include respond-to('medium') {
       width: 868px;
     }
@@ -156,7 +180,8 @@
   }
 
   // LARGE BREAKPOINTS
-  .two-column {
+  .two-column,
+  .pros-cons-wrapper {
     @include respond-to('large') {
       width: 1016px;
     }

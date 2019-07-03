@@ -3,12 +3,17 @@
 }
 
 .Type {
+  p {
+    padding: 0 1rem;
+  }
   ul {
     list-style-type: none;
     font-size: 1.5rem;
-    width: 70%;
-    margin: auto;
+    margin-left: 0;
     margin-bottom: 2.5rem;
+    padding-left: 3em;
+    text-indent: -1.4em;
+    text-align: left;
   }
   li {
     margin-bottom: 1.5rem;
