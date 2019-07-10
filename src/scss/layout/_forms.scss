@@ -1,0 +1,24 @@
+// RESETS TO GET FORMS LOOKNIG DECENT
+input {
+  appearance: none;
+  background-color: white;
+  border-color: lightgray;
+  border-width: 2px;
+  border-radius: 2px;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  font-size: 1.5rem;
+  line-height: 1rem;
+
+  &::placeholder {
+    color: pink;
+    opacity: 1;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 1px 1px 3px 1px rgba(51, 51, 51, 0.46);
+    border-color: blue;
+  }
+}

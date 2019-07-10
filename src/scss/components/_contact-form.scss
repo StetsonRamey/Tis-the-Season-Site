@@ -1,0 +1,14 @@
+.contact-info,
+.contact-address {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+
+  label {
+    display: block;
+  }
+  input {
+    display: block;
+    width: 100%;
+  }
+}

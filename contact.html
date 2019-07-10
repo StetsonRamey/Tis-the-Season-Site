@@ -105,6 +105,90 @@
         <div class="App-content">
           <h1>WORKING ON IT 👊</h1>
         </div>
+
+        <form action="">
+          <h1>Contact Form</h1>
+          <p>
+            required <strong><abbr title="required">*</abbr></strong>
+          </p>
+          <section class="contact-info">
+            <div>
+              <label for="name">
+                <span>Full Name: </span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+              <input type="text" id="name" name="name" />
+            </div>
+            <div>
+              <label for="email">
+                <span>Email: </span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div>
+              <label for="telephone">
+                <span>Phone #: </span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+              <input type="tel" id="tel" name="tel" />
+            </div>
+          </section>
+          <section class="contact-address">
+            <!-- <p>
+              <label for="streetNumber">
+                <span>Street Number: </span>
+              </label>
+              <input
+                type="text"
+                id="street_number"
+                name="streetNumber"
+                disabled="true"
+              />
+            </p>
+            <p>
+              <label for="streetName">
+                <span>Street Name: </span>
+              </label>
+              <input type="text" id="route" name="streetName" disabled="true" />
+            </p> -->
+            <div>
+              <label for="autocomplete">
+                <span>Address Search: </span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+              <input
+                type="text"
+                id="autocomplete"
+                placeholder="Address Please"
+                name="addressSearch"
+                onFocus="geolocate()"
+              />
+            </div>
+            <div>
+              <label for="city">
+                <span>City: </span>
+              </label>
+              <input type="text" id="locality" name="city" />
+            </div>
+            <div>
+              <label for="State">
+                <span>State: </span>
+              </label>
+              <input
+                type="text"
+                id="administrative_area_level_1"
+                name="state"
+              />
+            </div>
+            <div>
+              <label for="Zip">
+                <span>Zip Code: </span>
+              </label>
+              <input type="text" id="postal_code" name="zip" />
+            </div>
+          </section>
+        </form>
       </main>
 
       <!-- FOOTER -->
@@ -146,6 +230,14 @@
         </div>
       </footer>
     </div>
+    <!-- LITTLE SCRIPT FOR THE MOBILE MENU -->
     <script src="dist/js/menu.js"></script>
+    <!-- SCRIPT FOR GOOGLE MAPS AUTOFILL -->
+    <script src="dist/js/googlePlaces.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtwWskZSb5_b3HOIxCAnaG4I8jS4paqaM&libraries=places&callback=initAutocomplete"
+      async
+      defer
+    ></script>
   </body>
 </html>
