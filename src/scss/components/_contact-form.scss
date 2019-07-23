@@ -3,6 +3,8 @@
 }
 .contact-header {
   text-align: center;
+  font-size: 1.6rem;
+  text-transform: uppercase;
   border-bottom: 1px solid #e2e8f0;
 }
 .contact-divider {
@@ -18,7 +20,7 @@
   span {
     padding-top: 0.25rem;
     padding-left: 0.75rem;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 }
 .contact-info,
@@ -35,7 +37,7 @@
     width: 100%;
   }
   .contact-info-feet {
-    width: 125px;
+    width: 200px;
   }
 }
 .contact-submit {

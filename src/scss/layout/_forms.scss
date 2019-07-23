@@ -1,6 +1,7 @@
 // RESETS TO GET FORMS LOOKNIG DECENT
 form {
   padding: 0.5rem;
+  font-size: 1.6rem;
 
   .contact-input {
     margin-bottom: 1.5rem;
@@ -47,10 +48,10 @@ select::-ms-expand {
 .contact-select:after {
   content: url("data:image/svg+xml,%3Csvg width='10' height='5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0l5 5 5-5H0z' fill='%23010101'/%3E%3C/svg%3E");
   font: 17px 'Consolas', monospace;
-  left: 105px;
+  left: 175px;
   /*Adjust for position however you want*/
 
-  top: 28px;
+  top: 35px;
   padding: 0 0 2px;
   /*left line */
 
@@ -66,12 +67,12 @@ select::-ms-expand {
 
   display: block;
   width: 100%;
-  max-width: 125px;
+  max-width: 200px;
   height: 34px;
   float: right;
   margin: 5px 0px;
   padding: 0px 11px;
-  font-size: 1rem;
+  font-size: 1.6rem;
   line-height: 1.75;
   background-color: #edf2f7;
   background-image: none;
