@@ -1,3 +1,22 @@
+.contact-requiredField {
+  font-style: italic;
+}
+.contact-header {
+  text-align: center;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.contact-section-title {
+  padding-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  span {
+    padding-top: 0.25rem;
+    padding-left: 0.75rem;
+    font-size: 1.2rem;
+  }
+}
 .contact-info,
 .contact-address {
   display: flex;
