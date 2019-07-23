@@ -7,6 +7,8 @@ form {
   }
   label {
     padding-bottom: 0.75rem;
+    overflow: auto;
+    width: 100%;
   }
 }
 input {
@@ -31,12 +33,12 @@ fieldset {
   padding: 0;
 }
 .contact-select {
+  display: flex;
+  flex-direction: column;
+
   position: relative;
   /*Don't really need this just for demo styling*/
-
-  float: left;
-  min-width: 200px;
-  // margin: 50px 33%;
+  // float: left;
 }
 select::-ms-expand {
   display: none;
@@ -45,11 +47,10 @@ select::-ms-expand {
 .contact-select:after {
   content: url("data:image/svg+xml,%3Csvg width='10' height='5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0l5 5 5-5H0z' fill='%23010101'/%3E%3C/svg%3E");
   font: 17px 'Consolas', monospace;
-  color: #333;
-  right: 10px;
+  left: 105px;
   /*Adjust for position however you want*/
 
-  top: 30px;
+  top: 28px;
   padding: 0 0 2px;
   /*left line */
 
@@ -65,17 +66,16 @@ select::-ms-expand {
 
   display: block;
   width: 100%;
-  max-width: 320px;
+  max-width: 125px;
   height: 34px;
   float: right;
   margin: 5px 0px;
   padding: 0px 11px;
   font-size: 1rem;
   line-height: 1.75;
-  color: #333;
-  background-color: #ffffff;
+  background-color: #edf2f7;
   background-image: none;
-  border: 1px solid #cccccc;
+  border: none;
   -ms-word-break: normal;
   word-break: normal;
 }

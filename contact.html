@@ -166,6 +166,7 @@
               />
             </div>
           </section>
+          <div class="contact-divider"></div>
           <div class="contact-section-title">
             <!-- prettier-ignore -->
             <svg width="19" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9.5" cy="10.5" r="9" stroke="#77D3CB"/><path d="M8.543 13.477h3.686V15H6.674v-1.477l.937-.996a118.102 118.102 0 0 0 2.028-2.185c.293-.336.504-.633.633-.89.128-.263.193-.52.193-.774 0-.39-.12-.692-.358-.903-.234-.214-.568-.322-1.002-.322-.308 0-.656.063-1.043.188a6.453 6.453 0 0 0-1.2.533V6.563a8.17 8.17 0 0 1 1.224-.346 5.78 5.78 0 0 1 1.154-.123c.926 0 1.653.217 2.18.65.531.43.797 1.018.797 1.764 0 .344-.059.666-.176.967-.113.3-.31.634-.592 1.002-.207.265-.775.863-1.705 1.793-.504.503-.904.906-1.201 1.207z" fill="#74CEC6"/></svg>
@@ -181,7 +182,7 @@
               <input
                 type="text"
                 id="autocomplete"
-                placeholder="Address Please"
+                placeholder="1 North Pole Lane"
                 name="addressSearch"
                 onFocus="geolocate()"
               />
@@ -209,6 +210,7 @@
               <input type="text" id="postal_code" name="zip" />
             </div>
           </section>
+          <div class="contact-divider"></div>
           <div class="contact-section-title">
             <!-- prettier-ignore -->
             <svg width="19" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9.5" cy="10.5" r="9" stroke="#77D3CB"/><path d="M9.217 11.086H8.29V9.562h.926c.43 0 .762-.083.996-.251a.838.838 0 0 0 .357-.721c0-.324-.119-.576-.357-.756-.234-.184-.567-.275-.996-.275-.328 0-.68.04-1.055.123a7.881 7.881 0 0 0-1.166.357V6.47a9.136 9.136 0 0 1 1.19-.276c.39-.066.765-.1 1.125-.1.921 0 1.64.202 2.156.604.515.403.773.957.773 1.664 0 .52-.148.946-.445 1.278-.297.328-.72.543-1.272.644.625.11 1.102.36 1.43.75.328.387.492.897.492 1.53 0 .847-.271 1.494-.814 1.939-.543.445-1.332.668-2.367.668-.442 0-.877-.037-1.307-.111a7.31 7.31 0 0 1-1.225-.323v-1.605c.368.184.764.324 1.19.422.426.093.873.14 1.342.14.468 0 .84-.107 1.113-.322.273-.219.41-.512.41-.879 0-.449-.137-.795-.41-1.037-.274-.246-.66-.37-1.16-.37z" fill="#74CEC6"/></svg>
@@ -252,7 +254,7 @@
               <label for="feet">
                 <span>Linear Feet</span>
               </label>
-              <input type="text" name="feet" />
+              <input class="contact-info-feet" type="text" name="feet" />
             </div>
             <fieldset>
               <div class="contact-select">
@@ -260,13 +262,13 @@
                   >Had Lights Professionally Installed Before?</label
                 >
                 <select class="form-select">
-                  <option value="Yes">Yes</option>
-                  <option value="No">No</option>
+                  <option>Yes</option>
+                  <option>No</option>
                 </select>
               </div>
             </fieldset>
           </section>
-          <div>
+          <div class="contact-submit">
             <input type="submit" value="Submit" />
           </div>
         </form>

@@ -5,7 +5,11 @@
   text-align: center;
   border-bottom: 1px solid #e2e8f0;
 }
-
+.contact-divider {
+  border-bottom: 1px solid #e2e8f0;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
 .contact-section-title {
   padding-left: 0.5rem;
   display: flex;
@@ -29,5 +33,23 @@
   input {
     display: block;
     width: 100%;
+  }
+  .contact-info-feet {
+    width: 125px;
+  }
+}
+.contact-submit {
+  padding: 0 20%;
+  input {
+    width: 100%;
+    max-width: 290px;
+    height: 100%;
+    font-size: 18px;
+    color: #1a202c;
+    background-color: $logo-teal;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    padding: 20px 0;
+    margin-top: 2.5rem;
   }
 }
