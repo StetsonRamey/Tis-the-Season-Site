@@ -102,176 +102,221 @@
       </header>
       <!-- MAIN APP -->
       <main id="appMain" class="App-main">
-        <div class="contact-header">
-          <h1>Contact Us</h1>
-        </div>
-        <form action="">
-          <p>
-            <strong><abbr title="required">*</abbr></strong>
-            <span class="contact-requiredField">required</span>
-          </p>
-          <div class="contact-section-title">
-            <!-- prettier-ignore -->
-            <svg width="19" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9.5" cy="10.5" r="9" stroke="#74CEC6"/><path d="M7.102 13.477h1.933V7.799l-1.799.445V6.686l1.81-.434h1.67v7.225h1.934V15H7.102v-1.523z" fill="#74CEC6"/></svg>
-            <span>Your Basic Information</span>
-          </div>
-          <!-- BASIC INFORMATION SECTION -->
-          <section class="contact-info">
-            <div class="contact-input">
-              <label for="firstName">
-                <span>First Name: </span>
+        <div class="contact-grid">
+          <div class="contact-form-column">
+            <div class="contact-header">
+              <h1>Contact Us</h1>
+            </div>
+            <form action="">
+              <p>
                 <strong><abbr title="required">*</abbr></strong>
-              </label>
-              <input
-                type="text"
-                id="fisrtName"
-                name="fisrtName"
-                placeholder="Santa"
-              />
-            </div>
-            <div class="contact-input" `>
-              <label for="lastName">
-                <span>Last Name: </span>
-                <strong><abbr title="required">*</abbr></strong>
-              </label>
-              <input
-                type="text"
-                id="lastName"
-                name="lastName"
-                placeholder="Clause"
-              />
-            </div>
-            <div class="contact-input">
-              <label for="email">
-                <span>Email: </span>
-                <strong><abbr title="required">*</abbr></strong>
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="kriskringle@merrychristmas.com"
-              />
-            </div>
-            <div class="contact-input">
-              <label for="telephone">
-                <span>Phone #: </span>
-                <strong><abbr title="required">*</abbr></strong>
-              </label>
-              <input
-                type="tel"
-                id="tel"
-                name="tel"
-                placeholder="(816) 123-4567"
-              />
-            </div>
-          </section>
-          <div class="contact-divider"></div>
-          <div class="contact-section-title">
-            <!-- prettier-ignore -->
-            <svg width="19" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9.5" cy="10.5" r="9" stroke="#77D3CB"/><path d="M8.543 13.477h3.686V15H6.674v-1.477l.937-.996a118.102 118.102 0 0 0 2.028-2.185c.293-.336.504-.633.633-.89.128-.263.193-.52.193-.774 0-.39-.12-.692-.358-.903-.234-.214-.568-.322-1.002-.322-.308 0-.656.063-1.043.188a6.453 6.453 0 0 0-1.2.533V6.563a8.17 8.17 0 0 1 1.224-.346 5.78 5.78 0 0 1 1.154-.123c.926 0 1.653.217 2.18.65.531.43.797 1.018.797 1.764 0 .344-.059.666-.176.967-.113.3-.31.634-.592 1.002-.207.265-.775.863-1.705 1.793-.504.503-.904.906-1.201 1.207z" fill="#74CEC6"/></svg>
-            <span>Your Address</span>
-          </div>
-          <!-- ADDRESS SECTION -->
-          <section class="contact-address">
-            <div class="contact-input">
-              <label for="autocomplete">
-                <span>Address Search: </span>
-                <strong><abbr title="required">*</abbr></strong>
-              </label>
-              <input
-                type="text"
-                id="autocomplete"
-                placeholder="1 North Pole Lane"
-                name="addressSearch"
-                onFocus="geolocate()"
-              />
-            </div>
-            <div class="contact-input">
-              <label for="city">
-                <span>City: </span>
-              </label>
-              <input type="text" id="locality" name="city" />
-            </div>
-            <div class="contact-input">
-              <label for="State">
-                <span>State: </span>
-              </label>
-              <input
-                type="text"
-                id="administrative_area_level_1"
-                name="state"
-              />
-            </div>
-            <div class="contact-input">
-              <label for="Zip">
-                <span>Zip Code: </span>
-              </label>
-              <input type="text" id="postal_code" name="zip" />
-            </div>
-          </section>
-          <div class="contact-divider"></div>
-          <div class="contact-section-title">
-            <!-- prettier-ignore -->
-            <svg width="19" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9.5" cy="10.5" r="9" stroke="#77D3CB"/><path d="M9.217 11.086H8.29V9.562h.926c.43 0 .762-.083.996-.251a.838.838 0 0 0 .357-.721c0-.324-.119-.576-.357-.756-.234-.184-.567-.275-.996-.275-.328 0-.68.04-1.055.123a7.881 7.881 0 0 0-1.166.357V6.47a9.136 9.136 0 0 1 1.19-.276c.39-.066.765-.1 1.125-.1.921 0 1.64.202 2.156.604.515.403.773.957.773 1.664 0 .52-.148.946-.445 1.278-.297.328-.72.543-1.272.644.625.11 1.102.36 1.43.75.328.387.492.897.492 1.53 0 .847-.271 1.494-.814 1.939-.543.445-1.332.668-2.367.668-.442 0-.877-.037-1.307-.111a7.31 7.31 0 0 1-1.225-.323v-1.605c.368.184.764.324 1.19.422.426.093.873.14 1.342.14.468 0 .84-.107 1.113-.322.273-.219.41-.512.41-.879 0-.449-.137-.795-.41-1.037-.274-.246-.66-.37-1.16-.37z" fill="#74CEC6"/></svg>
-            <span>Lighting Info</span>
-          </div>
-          <!-- LIGHTING SECTION -->
-          <section class="contact-address">
-            <fieldset>
-              <div class="contact-select">
-                <label for="lightType">Light Type</label>
-                <select class="form-select">
-                  <option value="LED">LED</option>
-                  <option value="Incandesenct">Incandescent</option>
-                  <option value="Not Sure">Not Sure</option>
-                </select>
+                <span class="contact-requiredField">required</span>
+              </p>
+              <div class="contact-section-title">
+                <!-- prettier-ignore -->
+                <svg width="19" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9.5" cy="10.5" r="9" stroke="#74CEC6"/><path d="M7.102 13.477h1.933V7.799l-1.799.445V6.686l1.81-.434h1.67v7.225h1.934V15H7.102v-1.523z" fill="#74CEC6"/></svg>
+                <span>Your Basic Information</span>
               </div>
-            </fieldset>
-            <fieldset>
-              <div class="contact-select">
-                <label for="color">Color</label>
-                <select class="form-select">
-                  <option>LED Pure White</option>
-                  <option>LED Warm White</option>
-                  <option>LED Cool White</option>
-                  <option>LED Multi</option>
-                  <option>LED Red</option>
-                  <option>LED Green</option>
-                  <option>LED Blue</option>
-                  <option>LED Combo</option>
-                  <option>INC Clear</option>
-                  <option>INC Multi</option>
-                  <option>INC Red</option>
-                  <option>INC Green</option>
-                  <option>INC Blue</option>
-                  <option>INC Combo</option>
-                </select>
+              <!-- BASIC INFORMATION SECTION -->
+              <section class="contact-info">
+                <div class="contact-input">
+                  <label for="firstName">
+                    <span>First Name: </span>
+                    <strong><abbr title="required">*</abbr></strong>
+                  </label>
+                  <input
+                    type="text"
+                    id="fisrtName"
+                    name="fisrtName"
+                    placeholder="Santa"
+                  />
+                </div>
+                <div class="contact-input" `>
+                  <label for="lastName">
+                    <span>Last Name: </span>
+                    <strong><abbr title="required">*</abbr></strong>
+                  </label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="Clause"
+                  />
+                </div>
+                <div class="contact-input">
+                  <label for="email">
+                    <span>Email: </span>
+                    <strong><abbr title="required">*</abbr></strong>
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="kriskringle@merrychristmas.com"
+                  />
+                </div>
+                <div class="contact-input">
+                  <label for="telephone">
+                    <span>Phone #: </span>
+                    <strong><abbr title="required">*</abbr></strong>
+                  </label>
+                  <input
+                    type="tel"
+                    id="tel"
+                    name="tel"
+                    placeholder="(816) 123-4567"
+                    class="phone-number"
+                  />
+                </div>
+              </section>
+              <div class="contact-divider"></div>
+              <div class="contact-section-title">
+                <!-- prettier-ignore -->
+                <svg width="19" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9.5" cy="10.5" r="9" stroke="#77D3CB"/><path d="M8.543 13.477h3.686V15H6.674v-1.477l.937-.996a118.102 118.102 0 0 0 2.028-2.185c.293-.336.504-.633.633-.89.128-.263.193-.52.193-.774 0-.39-.12-.692-.358-.903-.234-.214-.568-.322-1.002-.322-.308 0-.656.063-1.043.188a6.453 6.453 0 0 0-1.2.533V6.563a8.17 8.17 0 0 1 1.224-.346 5.78 5.78 0 0 1 1.154-.123c.926 0 1.653.217 2.18.65.531.43.797 1.018.797 1.764 0 .344-.059.666-.176.967-.113.3-.31.634-.592 1.002-.207.265-.775.863-1.705 1.793-.504.503-.904.906-1.201 1.207z" fill="#74CEC6"/></svg>
+                <span>Your Address</span>
               </div>
-            </fieldset>
+              <!-- ADDRESS SECTION -->
+              <section class="contact-address">
+                <div class="contact-input">
+                  <label for="autocomplete">
+                    <span>Address Search: </span>
+                    <strong><abbr title="required">*</abbr></strong>
+                  </label>
+                  <input
+                    type="text"
+                    id="autocomplete"
+                    placeholder="1 North Pole Lane"
+                    name="addressSearch"
+                    onFocus="geolocate()"
+                  />
+                </div>
+                <div class="contact-input">
+                  <label for="city">
+                    <span>City: </span>
+                  </label>
+                  <input type="text" id="locality" name="city" />
+                </div>
+                <div class="contact-input">
+                  <label for="State">
+                    <span>State: </span>
+                  </label>
+                  <input
+                    type="text"
+                    id="administrative_area_level_1"
+                    name="state"
+                  />
+                </div>
+                <div class="contact-input">
+                  <label for="Zip">
+                    <span>Zip Code: </span>
+                  </label>
+                  <input type="text" id="postal_code" name="zip" />
+                </div>
+              </section>
+              <div class="contact-divider"></div>
+              <div class="contact-section-title">
+                <!-- prettier-ignore -->
+                <svg class="lighting-info" width="19" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9.5" cy="10.5" r="9" stroke="#77D3CB"/><path d="M9.217 11.086H8.29V9.562h.926c.43 0 .762-.083.996-.251a.838.838 0 0 0 .357-.721c0-.324-.119-.576-.357-.756-.234-.184-.567-.275-.996-.275-.328 0-.68.04-1.055.123a7.881 7.881 0 0 0-1.166.357V6.47a9.136 9.136 0 0 1 1.19-.276c.39-.066.765-.1 1.125-.1.921 0 1.64.202 2.156.604.515.403.773.957.773 1.664 0 .52-.148.946-.445 1.278-.297.328-.72.543-1.272.644.625.11 1.102.36 1.43.75.328.387.492.897.492 1.53 0 .847-.271 1.494-.814 1.939-.543.445-1.332.668-2.367.668-.442 0-.877-.037-1.307-.111a7.31 7.31 0 0 1-1.225-.323v-1.605c.368.184.764.324 1.19.422.426.093.873.14 1.342.14.468 0 .84-.107 1.113-.322.273-.219.41-.512.41-.879 0-.449-.137-.795-.41-1.037-.274-.246-.66-.37-1.16-.37z" fill="#74CEC6"/></svg>
+                <span>
+                  Lighting Info
+                  <br />
+                  <p>helpful info if you have it, but optional</p>
+                </span>
+              </div>
+              <!-- LIGHTING SECTION -->
+              <section class="contact-address">
+                <fieldset>
+                  <div class="contact-select">
+                    <label for="lightType">Light Type</label>
+                    <select class="form-select">
+                      <option value="LED">LED</option>
+                      <option value="Incandesenct">Incandescent</option>
+                      <option value="Not Sure">--NOT SURE--</option>
+                    </select>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <div class="contact-select">
+                    <label for="color">Color</label>
+                    <select class="form-select">
+                      <option>LED Pure White</option>
+                      <option>LED Warm White</option>
+                      <option>LED Cool White</option>
+                      <option>LED Multi</option>
+                      <option>LED Red</option>
+                      <option>LED Green</option>
+                      <option>LED Blue</option>
+                      <option>LED Combo</option>
+                      <option>INC Clear</option>
+                      <option>INC Multi</option>
+                      <option>INC Red</option>
+                      <option>INC Green</option>
+                      <option>INC Blue</option>
+                      <option>INC Combo</option>
+                      <option>--NOT SURE--</option>
+                    </select>
+                  </div>
+                </fieldset>
 
-            <div class="contact-input">
-              <label for="feet">
-                <span>Linear Feet</span>
-              </label>
-              <input class="contact-info-feet" type="text" name="feet" />
-            </div>
-            <fieldset>
-              <div class="contact-select">
-                <label for="lightsBefore"
-                  >Had Lights Professionally Installed Before?</label
-                >
-                <select class="form-select">
-                  <option>Yes</option>
-                  <option>No</option>
-                </select>
+                <div class="contact-input">
+                  <label for="feet">
+                    <span>Linear Feet</span>
+                  </label>
+                  <input
+                    class="contact-info-feet"
+                    type="text"
+                    name="feet"
+                    placeholder="100"
+                  />
+                </div>
+                <fieldset>
+                  <div class="contact-select">
+                    <label for="lightsBefore"
+                      >Had Lights Professionally Installed Before?</label
+                    >
+                    <select class="form-select">
+                      <option>Yes</option>
+                      <option>No</option>
+                    </select>
+                  </div>
+                </fieldset>
+              </section>
+              <div class="contact-submit">
+                <input type="submit" value="Submit" />
               </div>
-            </fieldset>
-          </section>
-          <div class="contact-submit">
-            <input type="submit" value="Submit" />
+            </form>
           </div>
-        </form>
+          <div class="contact-reviews-column">
+            <div class="contact-review-row-right">
+              <p>
+                <span>Tis the Season</span> is amazing. They communicate so well
+                and are just great peeps to deal with.
+              </p>
+              <p class="name">Stetson R. - Lee's Summit</p>
+            </div>
+            <div class="contact-review-row-left">
+              <p>
+                <span>Tis the Season</span> is amazing. They communicate so well
+                and are just great peeps to deal with.
+              </p>
+              <p class="name">Stetson R. - Lee's Summit</p>
+            </div>
+            <div class="contact-review-row-right">
+              <p>
+                <span>Tis the Season</span> is amazing. They communicate so well
+                and are just great peeps to deal with.
+              </p>
+              <p class="name">Stetson R. - Lee's Summit</p>
+            </div>
+            <div class="contact-review-row-left">
+              <p>
+                <span>Tis the Season</span> is amazing. They communicate so well
+                and are just great peeps to deal with.
+              </p>
+              <p class="name">Stetson R. - Lee's Summit</p>
+            </div>
+          </div>
+        </div>
       </main>
 
       <!-- FOOTER -->
@@ -322,5 +367,8 @@
       async
       defer
     ></script>
+    <!-- PHONE NUMBER FORMATTER -->
+    <script src="./dist/js/cleave.min.js"></script>
+    <script src="./dist/js/formatPhone.js"></script>
   </body>
 </html>

@@ -1,4 +1,7 @@
 // RESETS TO GET FORMS LOOKNIG DECENT
+.contact-form-column {
+  background-color: #fff;
+}
 form {
   padding: 0.5rem;
   font-size: 1.6rem;
@@ -7,7 +10,7 @@ form {
     margin-bottom: 1.5rem;
   }
   label {
-    padding-bottom: 0.75rem;
+    padding-bottom: 1rem;
     overflow: auto;
     width: 100%;
   }
@@ -18,7 +21,7 @@ input {
   border: none;
   height: 30px;
   border-radius: 2px;
-  padding: 0 0.5rem;
+  padding: 2.5rem 1rem;
 
   &::placeholder {
     color: #718096;
@@ -31,6 +34,7 @@ input {
 }
 fieldset {
   border: none;
+  margin-bottom: 1.5rem;
   padding: 0;
 }
 .contact-select {
@@ -51,7 +55,7 @@ select::-ms-expand {
   left: 175px;
   /*Adjust for position however you want*/
 
-  top: 35px;
+  top: 47px;
   padding: 0 0 2px;
   /*left line */
 
@@ -68,10 +72,10 @@ select::-ms-expand {
   display: block;
   width: 100%;
   max-width: 200px;
-  height: 34px;
+  height: 50px;
   float: right;
   margin: 5px 0px;
-  padding: 0px 11px;
+  padding: 0.5rem 1rem;
   font-size: 1.6rem;
   line-height: 1.75;
   background-color: #edf2f7;
@@ -79,4 +83,8 @@ select::-ms-expand {
   border: none;
   -ms-word-break: normal;
   word-break: normal;
+}
+
+.contact-select option {
+  padding: 1rem 0;
 }
