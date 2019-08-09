@@ -10,10 +10,6 @@
       max-width: 767px;
       padding: 0;
     }
-    @include respond-to('large') {
-      max-width: 992px;
-      padding: 0;
-    }
   }
 }
 
@@ -51,9 +47,10 @@
   @include backgroundColor($secondary-color, 30%);
   padding: 3rem 0;
   p {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 200;
     color: #444;
     text-align: center;
-    line-height: 2.5rem;
+    line-height: 3rem;
   }
 }
