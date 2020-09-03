@@ -2,33 +2,20 @@
 <html lang="en">
   <!-- HEAD TAGS -->
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
     <!-- Pull in fontawesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" rel="stylesheet"/>
     <!-- Main compiled style sheet -->
-    <link rel="stylesheet" href="dist/css/main.css" />
+    <link href="dist/css/app.css" rel="stylesheet"/>
     <!-- Tailwind Sheet -->
-    <!-- <link rel="stylesheet" href="dist/css/tailwind.css" /> -->
-    <!-- Load Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+        <!-- <link rel="stylesheet" href="dist/css/tailwind.css" /> -->
+        <!-- Load Bootstrap CSS -->
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet"/>
     <!-- SEO specific stuff -->
     <title>2019 New Customers Info</title>
-    <meta
-      name="description"
-      content="Important Information for New Customers"
-    />
+    <meta content="Important Information for New Customers" name="description"/>
   </head>
   <!-- NAV BAR -->
   <header id="appHeader">
@@ -45,23 +32,23 @@
         <nav class="SiteHeader-nonMobileNav">
           <ul class="regular-nav">
             <li class="reg-nav-item">
-              <a href="./" class="SiteHeader--navItem nav-link">Home</a>
+              <a class="SiteHeader--navItem nav-link" href="./">Home</a>
             </li>
             <li class="reg-nav-item active">
               <a href="./holiday-lighting.html">LED or Incandescent</a>
             </li>
-            <li class="reg-nav-item"><a href="./about.html">About Us</a></li>
-            <li class="reg-nav-item"><a href="./contact.html">Contact</a></li>
+            <li class="reg-nav-item">
+              <a href="./about.html">About Us</a>
+            </li>
+            <li class="reg-nav-item">
+              <a href="./contact.html">Contact</a>
+            </li>
           </ul>
         </nav>
         <!-- NAV LOGO -->
         <div class="SiteHeader-logo SiteHeader--left">
-          <a href="https://tistheseasonkc.com" class="Logo Logo--responsive">
-            <img
-              src="./src/images/tts-logo.png"
-              alt="Tis the Season Logo"
-              class="nav-logo"
-            />
+          <a class="Logo Logo--responsive" href="https://tistheseasonkc.com">
+            <img alt="Tis the Season Logo" class="nav-logo" src="./src/images/tts-logo.png"/>
           </a>
         </div>
         <!-- MOBILE MENU SELECTION -->
@@ -71,30 +58,23 @@
           </div>
           <ul class="menu-nav">
             <li class="menu-item">
-              <a href="./" class="SiteHeader--navItem nav-link">Home</a>
+              <a class="SiteHeader--navItem nav-link" href="./">Home</a>
             </li>
             <li class="menu-item active">
-              <a
-                href="./holiday-lighting.html"
-                class="SiteHeader--navItem nav-link"
-                >LED or Incandescent</a
-              >
+              <a class="SiteHeader--navItem nav-link" href="./holiday-lighting.html">LED or Incandescent</a>
             </li>
             <li class="menu-item">
-              <a href="./about.html" class="SiteHeader--navItem nav-link"
-                >About Us</a
-              >
+              <a class="SiteHeader--navItem nav-link" href="./about.html">About Us</a>
             </li>
             <li class="menu-item">
-              <a href="./contact.html" class="SiteHeader--navItem nav-link"
-                >Contact</a
-              >
+              <a class="SiteHeader--navItem nav-link" href="./contact.html">Contact</a>
             </li>
           </ul>
         </nav>
         <!-- GET ESTIMATE BUTTON -->
         <div class="SiteHeader-contact SightHeader--right">
-          <a href="./contact.html" class="Button">Get estimate </a>
+          <a class="Button" href="./contact.html">Get estimate
+          </a>
         </div>
       </div>
     </div>
@@ -102,89 +82,90 @@
   <section class="quick-contact">
     <!-- prettier-ignore -->
     <div class="quick-contact-group">
-        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M20 18.35V19a1 1 0 0 1-1 1h-2A17 17 0 0 1 0 3V1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4c0 .56-.31 1.31-.7 1.7L3.16 8.84c1.52 3.6 4.4 6.48 8 8l2.12-2.12c.4-.4 1.15-.71 1.7-.71H19a1 1 0 0 1 .99 1v3.35z"/></svg>
-        <a href="tel:+1-816-281-7032">(816) 281-7032</a>
-      </div>
+      <svg class="icon" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M20 18.35V19a1 1 0 0 1-1 1h-2A17 17 0 0 1 0 3V1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4c0 .56-.31 1.31-.7 1.7L3.16 8.84c1.52 3.6 4.4 6.48 8 8l2.12-2.12c.4-.4 1.15-.71 1.7-.71H19a1 1 0 0 1 .99 1v3.35z"/></svg>
+      <a href="tel:+1-816-281-7032">(816) 281-7032</a>
+    </div>
     <!-- prettier-ignore -->
     <div class="quick-contact-group middle">
-        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17 11v3l-3-3H8a2 2 0 0 1-2-2V2c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-1zm-3 2v2a2 2 0 0 1-2 2H6l-3 3v-3H2a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h2v3a4 4 0 0 0 4 4h6z"/></svg>
-        <a href="sms:8559090717">8559090717</a>
-      </div>
+      <svg class="icon" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17 11v3l-3-3H8a2 2 0 0 1-2-2V2c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-1zm-3 2v2a2 2 0 0 1-2 2H6l-3 3v-3H2a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h2v3a4 4 0 0 0 4 4h6z"/></svg>
+      <a href="sms:8559090717">8559090717</a>
+    </div>
     <!-- prettier-ignore -->
     <div class="quick-contact-group">
-        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z"/></svg>
-        <a href="mailto:hello@tistheseasonkc.com">hello@tistheseasonkc.com</a>
-      </div>
+      <svg class="icon" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z"/></svg>
+      <a href="mailto:hello@tistheseasonkc.com">hello@tistheseasonkc.com</a>
+    </div>
   </section>
   <body>
-    <h1 class="text-center text-uppercase mb-4">
+    <h1 class="mb-4 text-center text-uppercase">
       Important Information for New Customers
     </h1>
-    <h3
-      class="container h2 text-center font-italic font-weight-light mb-2 px-5"
-    >
+    <h3 class="container px-5 mb-2 text-center h2 font-italic font-weight-light">
       We're very excited to work with you this year and hope we work together
-      for many years to come. Here is some info so you know what to expect from
-      us.
+            for many years to come. Here is some info so you know what to expect from
+            us.
     </h3>
 
-    <div class="mt-5 pt-5 container bg-light text-dark">
+    <div class="container pt-5 mt-5 bg-light text-dark">
       <h1>What we need from you on the day we install</h1>
       <h3 class="font-italic font-weight-light">
         Please leave extension cord and timer (optional) on front porch
       </h3>
-      <ul class="list-group pt-3">
+      <ul class="pt-3 list-group">
         <li class="list-group-item">
           <p class="h4 font-weight-normal">
             If you do not have soffit plugs, a 25' extension cord to power up
-            your lights
+                        your lights
           </p>
         </li>
         <li class="list-group-item">
           <p class="h4 font-weight-normal">
             If you do have soffit plugs, please turn soffit plug switch on so we can
-            power your lights and check all the bulbs.
+                        power your lights and check all the bulbs.
           </p>
         </li>
         <li class="list-group-item">
           <p class="h4 font-weight-normal">
             A timer if you'd like us to install one inline. Home Depot, Lowes,
-            or this one from
-            <a
-              href="https://www.amazon.com/DEWENWILS-Photoelectric-Mechanical-Waterproof-Electrical/dp/B07GZH9R43/ref=sr_1_7?keywords=photocell+timer&qid=1572186343&sr=8-7"
-              >Amazon</a
-            >
+                        or this one from
+            <a href="https://www.amazon.com/DEWENWILS-Photoelectric-Mechanical-Waterproof-Electrical/dp/B07GZH9R43/ref=sr_1_7?keywords=photocell+timer&qid=1572186343&sr=8-7">Amazon</a>
             are typical.
           </p>
         </li>
       </ul>
     </div>
 
-    <div class="mt-5 py-5 container bg-dark">
+    <div class="container py-5 mt-5 bg-dark">
       <h1 class="text-white">Payment</h1>
       <h3 class="text-white font-italic font-weight-light">
         We will not schedule you in our route and install your lights unless
-        your invoice is paid or you've communicated with us that you're leaving
-        payment or paying in person.
+                your invoice is paid or you've communicated with us that you're leaving
+                payment or paying in person.
       </h3>
       <h3 class="text-white font-italic font-weight-light">
         If paying electronically, payment is due the evening before your
-        scheduled install
+                scheduled install
       </h3>
-      <ul class="list-group pt-3">
+      <ul class="pt-3 list-group">
         <li class="list-group-item">
           <p class="h4 font-weight-normal">
             You may pay electronically through the invoice we email you.  We accept:
             <ol>
-              <li><p class="h5 font-weight-normal text-success">
-                Preferred: ACH (electronic check).  Free for us and just like a check
-              </p></li>
-              <li><p class="h5 font-weight-normal">
-                Credit Card: We pay a 3% processing fee.  Costs us money, but convenient for you.
-              </p></li>
-              <li><p class="h5 font-weight-normal">
-                Cash / Physical Check in person
-              </p></li>
+              <li>
+                <p class="h5 font-weight-normal text-success">
+                  Preferred: ACH (electronic check).  Free for us and just like a check
+                </p>
+              </li>
+              <li>
+                <p class="h5 font-weight-normal">
+                  Credit Card: We pay a 3% processing fee.  Costs us money, but convenient for you.
+                </p>
+              </li>
+              <li>
+                <p class="h5 font-weight-normal">
+                  Cash / Physical Check in person
+                </p>
+              </li>
             </ol>
           </p>
         </li>
@@ -196,17 +177,18 @@
       </ul>
     </div>
 
-    <div class="mt-5 pt-5 container bg-light text-dark">
+    <div class="container pt-5 mt-5 bg-light text-dark">
       <h1>How we'll communicate with you</h1>
-      <ul class="list-group pt-3">
+      <ul class="pt-3 list-group">
         <li class="list-group-item">
           <p class="h4 font-weight-normal">
-            You'll recieve your invoice via email.  It comes from <br> 
+            You'll recieve your invoice via email.  It comes from
+            <br>
             <span class="py-2 text-monospace">
               'Tis the Season for Lights - quickbooks@notification.intuit.com
             </span>
             <br>
-              Check your spam folder or call us if you don't see it.
+            Check your spam folder or call us if you don't see it.
           </p>
         </li>
         <li class="list-group-item">
@@ -217,8 +199,8 @@
         <li class="list-group-item">
           <p class="h4 font-weight-normal">
             We will never text you other than for new season signups and schedule updates, and you may opt out at any time.
-            If you opt out of text updates, you will not receive the most up to date information and will need to contact
-            us directly to get updates.
+                        If you opt out of text updates, you will not receive the most up to date information and will need to contact
+                        us directly to get updates.
           </p>
         </li>
       </ul>
@@ -228,10 +210,10 @@
     <footer class="SiteFooter">
       <div class="SiteFooter-Content">
         <div class="Footer Footer--logoRow">
-          <img src="./src/images/tts-logo-simple.png" alt="TTS Logo" />
+          <img alt="TTS Logo" src="./src/images/tts-logo-simple.png"/>
         </div>
         <div class="Footer Footer--contact">
-          <a href="./contact.html" class="Button">Contact us</a>
+          <a class="Button" href="./contact.html">Contact us</a>
           <ul class="Footer Footer--social">
             <li>
               <a href="#">
@@ -263,20 +245,8 @@
     <!-- LITTLE SCRIPT FOR THE MOBILE MENU LOADED FIRST SO NO MENU FLASH -->
     <script src="dist/js/menu.js"></script>
     <!-- Bootstrap Scripts -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+    <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -2,389 +2,376 @@
 <html lang="en">
   <!-- HEAD TAGS -->
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
     <!-- Pull in fontawesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" rel="stylesheet"/>
     <!-- Main compiled style sheet -->
-    <link rel="stylesheet" href="dist/css/main.css" />
-    
+    <link href="dist/css/app.css" rel="stylesheet"/>
+
     <!-- SEO specific stuff -->
     <title>Holiday Lighting - Lee's Summit | Tis the Season</title>
-    <meta
-      name="description"
-      content="What type of lighting do you want on your home, LED or Incandescent?  There are positives and negatives to both.  We'll walk you through them, and help you decide."
-    />
+    <meta content="What type of lighting do you want on your home, LED or Incandescent?  There are positives and negatives to both.  We'll walk you through them, and help you decide." name="description"/>
   </head>
   <!-- MAIN APP -->
   <body>
     <!-- class="wrapper">
       <!-- NAV BAR -->
-      <header id="appHeader">
-        <!-- MOBILE MENU BUTTON -->
-        <div class="menu-btn">
-          <div class="btn-line"></div>
-          <div class="btn-line"></div>
-          <div class="btn-line"></div>
-        </div>
-        <!-- NAV BAR -->
-        <div class="SiteHeader App-Header">
-          <div class="SiteHeader-content">
-            <!-- NON-MOBILE NAV -->
-            <nav class="SiteHeader-nonMobileNav">
-              <ul class="regular-nav">
-                <li class="reg-nav-item">
-                  <a href="./" class="SiteHeader--navItem nav-link">Home</a>
-                </li>
-                <li class="reg-nav-item active">
-                  <a href="./holiday-lighting.html">LED or Incandescent</a>
-                </li>
-                <li class="reg-nav-item"><a href="./about.html">About Us</a></li>
-                <li class="reg-nav-item"><a href="./contact.html">Contact</a></li>
-              </ul>
-            </nav>
-            <!-- NAV LOGO -->
-            <div class="SiteHeader-logo SiteHeader--left">
-              <a
-                href="https://tistheseasonkc.com"
-                class="Logo Logo--responsive"
-              >
-                <img
-                  src="./src/images/tts-logo.png"
-                  alt="Tis the Season Logo"
-                  class="nav-logo"
-                />
-              </a>
+    <header id="appHeader">
+      <!-- MOBILE MENU BUTTON -->
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+      <!-- NAV BAR -->
+      <div class="SiteHeader App-Header">
+        <div class="SiteHeader-content">
+          <!-- NON-MOBILE NAV -->
+          <nav class="SiteHeader-nonMobileNav">
+            <ul class="regular-nav">
+              <li class="reg-nav-item">
+                <a class="SiteHeader--navItem nav-link" href="./">Home</a>
+              </li>
+              <li class="reg-nav-item active">
+                <a href="./holiday-lighting.html">LED or Incandescent</a>
+              </li>
+              <li class="reg-nav-item">
+                <a href="./about.html">About Us</a>
+              </li>
+              <li class="reg-nav-item">
+                <a href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- NAV LOGO -->
+          <div class="SiteHeader-logo SiteHeader--left">
+            <a class="Logo Logo--responsive" href="https://tistheseasonkc.com">
+              <img alt="Tis the Season Logo" class="nav-logo" src="./src/images/tts-logo.png"/>
+            </a>
+          </div>
+          <!-- MOBILE MENU SELECTION -->
+          <nav class="SiteHeader-nav SiteHeader--center">
+            <div class="menu-branding">
+              <div class="menu-logo"></div>
             </div>
-            <!-- MOBILE MENU SELECTION -->
-            <nav class="SiteHeader-nav SiteHeader--center">
-              <div class="menu-branding">
-                <div class="menu-logo"></div>
-              </div>
-              <ul class="menu-nav">
-                <li class="menu-item">
-                  <a href="./" class="SiteHeader--navItem nav-link">Home</a>
-                </li>
-                <li class="menu-item active">
-                  <a href="./holiday-lighting.html" class="SiteHeader--navItem nav-link"
-                    >LED or Incandescent</a
-                  >
-                </li>
-                <li class="menu-item">
-                  <a href="./about.html" class="SiteHeader--navItem nav-link">About Us</a>
-                </li>
-                <li class="menu-item">
-                  <a href="./contact.html" class="SiteHeader--navItem nav-link">Contact</a>
-                </li>
-              </ul>
-            </nav>
-            <!-- GET ESTIMATE BUTTON -->
-            <div class="SiteHeader-contact SightHeader--right">
-              <a href="./contact.html" class="Button">Get estimate </a>
-            </div>
+            <ul class="menu-nav">
+              <li class="menu-item">
+                <a class="SiteHeader--navItem nav-link" href="./">Home</a>
+              </li>
+              <li class="menu-item active">
+                <a class="SiteHeader--navItem nav-link" href="./holiday-lighting.html">LED or Incandescent</a>
+              </li>
+              <li class="menu-item">
+                <a class="SiteHeader--navItem nav-link" href="./about.html">About Us</a>
+              </li>
+              <li class="menu-item">
+                <a class="SiteHeader--navItem nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- GET ESTIMATE BUTTON -->
+          <div class="SiteHeader-contact SightHeader--right">
+            <a class="Button" href="./contact.html">Get estimate
+            </a>
           </div>
         </div>
-      </header>
-      <section class="quick-contact">
-        <!-- prettier-ignore -->
-        <div class="quick-contact-group">
-          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M20 18.35V19a1 1 0 0 1-1 1h-2A17 17 0 0 1 0 3V1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4c0 .56-.31 1.31-.7 1.7L3.16 8.84c1.52 3.6 4.4 6.48 8 8l2.12-2.12c.4-.4 1.15-.71 1.7-.71H19a1 1 0 0 1 .99 1v3.35z"/></svg>
-          <a href="tel:+1-816-281-7032">(816) 281-7032</a>
-        </div>
-        <!-- prettier-ignore -->
-        <div class="quick-contact-group middle">
-          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17 11v3l-3-3H8a2 2 0 0 1-2-2V2c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-1zm-3 2v2a2 2 0 0 1-2 2H6l-3 3v-3H2a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h2v3a4 4 0 0 0 4 4h6z"/></svg>
-          <a href="sms:8559090717">8559090717</a>
-        </div>
-        <!-- prettier-ignore -->
-        <div class="quick-contact-group">
-          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z"/></svg>
-          <a href="mailto:hello@tistheseasonkc.com">hello@tistheseasonkc.com</a>
-        </div>
-      </section>
-      <!-- MAIN APP -->
-      
-      <!-- class="App-content">
+      </div>
+    </header>
+    <section class="quick-contact">
+      <!-- prettier-ignore -->
+      <div class="quick-contact-group">
+        <svg class="icon" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M20 18.35V19a1 1 0 0 1-1 1h-2A17 17 0 0 1 0 3V1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4c0 .56-.31 1.31-.7 1.7L3.16 8.84c1.52 3.6 4.4 6.48 8 8l2.12-2.12c.4-.4 1.15-.71 1.7-.71H19a1 1 0 0 1 .99 1v3.35z"/></svg>
+        <a href="tel:+1-816-281-7032">(816) 281-7032</a>
+      </div>
+      <!-- prettier-ignore -->
+      <div class="quick-contact-group middle">
+        <svg class="icon" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17 11v3l-3-3H8a2 2 0 0 1-2-2V2c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-1zm-3 2v2a2 2 0 0 1-2 2H6l-3 3v-3H2a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h2v3a4 4 0 0 0 4 4h6z"/></svg>
+        <a href="sms:8559090717">8559090717</a>
+      </div>
+      <!-- prettier-ignore -->
+      <div class="quick-contact-group">
+        <svg class="icon" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z"/></svg>
+        <a href="mailto:hello@tistheseasonkc.com">hello@tistheseasonkc.com</a>
+      </div>
+    </section>
+    <!-- MAIN APP -->
+
+          <!-- class="App-content">
         <!-- HERO SECTION -->
-        <section class="lighting-hero">
-          
-            <div class="eyebrow">LED or Incandescent Lighting?</div>
-            <h1 class="title">
-              You've got options <br /> 
-              for the look you <br /> want to achieve
-            </h1>
-            <div class="estimate-button">
-              <a href="./contact.html" class="Button">Get an Estimate</a>
-            </div>
-          
-        </section>
-        
-        <!-- LED SECTION -->
-        <section class="led" id="led-section">
-          <section class="led-intro">
-            <h2 class="lighting-h2">LED Lighting</h2>
-            <p>
-              LEDs are gaining popularity and we install more and more of
-              them every year. They're brighter than the incandescent bulbs,
-              give you a few more options for colors, and are a more modern
-              lighting option.
-            </p>
-          </section>
-          <!-- SCREENSHOT IMAGE -->
-          <section class="screenshot">
-            <picture class="led-shot">
-              <img src="https://res.cloudinary.com/stetsonr/image/upload/w_1002,c_scale,q_auto,f_auto,fl_lossy/TTS%20Site%20Assets/led-bulbs_edckif.png" alt="LED House Multi Color" />
-            </picture>
-          </section>
+    <section class="lighting-hero">
 
-          <div class="background-wrapper">
-            <div class="led-bulbs">
-              <!-- BULB SIZE -->
-              <section class="two-column">
-                <div class="content col">
-                  <h2 class="lighting-h2">Bulb Size</h2>
-                  <p>
-                    We install LEDs bulbs in 2 sizes.
-                  </p>
-                </div>
-                <div class="col">
-                  <picture class="led-size">
-                    <img src="https://res.cloudinary.com/stetsonr/image/upload/w_458,c_scale,q_auto,f_auto,fl_lossy/TTS%20Site%20Assets/C9-vs-C7-300x162_gzb5q2.jpg" alt="C7 or C9 Bulb Size" />
-                  </picture>
-                </div>
-              </section>
-              <!-- BULB COLOR -->
-              <section class="two-column row-reverse">
-                <div class="content col">
-                  <h2 class="lighting-h2">Bulb Colors</h2>
-                  <p>
-                    You have a variety of colors to choose from, and keep in mind
-                    you can mix and match to make all sorts of fun color patterns.
-                  </p>
-                </div>
-                <div class="col">
-                  <picture class="led-color">
-                    <img src="https://res.cloudinary.com/stetsonr/image/upload/w_458,c_scale,q_auto,f_auto,fl_lossy/TTS%20Site%20Assets/led-light-colors_n37exp.png" alt="LED Bulb Colors" />
-                  </picture>
-                </div>
-              </section>
-              <!-- WHITE LEDS-->
-              <section class="two-column">
-                <div class="content col">
-                  <h2 class="lighting-h2">White LED Colors</h2>
-                  <p>
-                    For white lights in the LEDs, there are three options. Warm
-                    white is the most popular, followed closely by Pure White.
-                  </p>
-                </div>
-                <div class="col">
-                  <picture class="led-white-color">
-                    <img
-                      src="https://res.cloudinary.com/stetsonr/image/upload/w_458,c_scale,q_auto,f_auto,fl_lossy/TTS%20Site%20Assets/Comparing-White-LED-Christmas-Lights_tjq2rl.jpg"
-                      alt="LED White Colors"
-                    />
-                </div>
-              </section>
+      <div class="eyebrow">LED or Incandescent Lighting?</div>
+      <h1 class="title">
+        You've got options
+        <br/>
+        for the look you
+        <br/>
+        want to achieve
+      </h1>
+      <div class="estimate-button">
+        <a class="Button" href="./contact.html">Get an Estimate</a>
+      </div>
+
+    </section>
+
+    <!-- LED SECTION -->
+    <section class="led" id="led-section">
+      <section class="led-intro">
+        <h2 class="lighting-h2">LED Lighting</h2>
+        <p>
+          LEDs are gaining popularity and we install more and more of
+                        them every year. They're brighter than the incandescent bulbs,
+                        give you a few more options for colors, and are a more modern
+                        lighting option.
+        </p>
+      </section>
+      <!-- SCREENSHOT IMAGE -->
+      <section class="screenshot">
+        <picture class="led-shot">
+          <img alt="LED House Multi Color" src="https://res.cloudinary.com/stetsonr/image/upload/w_1002,c_scale,q_auto,f_auto,fl_lossy/TTS%20Site%20Assets/led-bulbs_edckif.png"/>
+        </picture>
+      </section>
+
+      <div class="background-wrapper">
+        <div class="led-bulbs">
+          <!-- BULB SIZE -->
+          <section class="two-column">
+            <div class="content col">
+              <h2 class="lighting-h2">Bulb Size</h2>
+              <p>
+                We install LEDs bulbs in 2 sizes.
+              </p>
             </div>
-          </div>
-          <!-- PROS / CONS -->
-          <section class="pros-cons">
-            <div class="pros-cons-wrapper">
-              <div class="content">
-                <h2 class="lighting-h2">Pros and Cons of LED Lights</h2>
-                <p>
-                  There are always positives and drawbacks to options. We've
-                  listed the ones we've heard for LEDs working with them over
-                  the years. Ultimately, the look you want will be a big part of
-                  your light type choice. If you're going for more modern,
-                  brighter lights, LEDs are the way to go.
-                </p>
+            <div class="col">
+              <picture class="led-size">
+                <img alt="C7 or C9 Bulb Size" src="https://res.cloudinary.com/stetsonr/image/upload/w_458,c_scale,q_auto,f_auto,fl_lossy/TTS%20Site%20Assets/C9-vs-C7-300x162_gzb5q2.jpg"/>
+              </picture>
+            </div>
+          </section>
+          <!-- BULB COLOR -->
+          <section class="two-column row-reverse">
+            <div class="content col">
+              <h2 class="lighting-h2">Bulb Colors</h2>
+              <p>
+                You have a variety of colors to choose from, and keep in mind
+                                    you can mix and match to make all sorts of fun color patterns.
+              </p>
+            </div>
+            <div class="col">
+              <picture class="led-color">
+                <img alt="LED Bulb Colors" src="https://res.cloudinary.com/stetsonr/image/upload/w_458,c_scale,q_auto,f_auto,fl_lossy/TTS%20Site%20Assets/led-light-colors_n37exp.png"/>
+              </picture>
+            </div>
+          </section>
+          <!-- WHITE LEDS-->
+          <section class="two-column">
+            <div class="content col">
+              <h2 class="lighting-h2">White LED Colors</h2>
+              <p>
+                For white lights in the LEDs, there are three options. Warm
+                                    white is the most popular, followed closely by Pure White.
+              </p>
+            </div>
+            <div class="col">
+              <picture class="led-white-color">
+                <img alt="LED White Colors" src="https://res.cloudinary.com/stetsonr/image/upload/w_458,c_scale,q_auto,f_auto,fl_lossy/TTS%20Site%20Assets/Comparing-White-LED-Christmas-Lights_tjq2rl.jpg"/>
               </div>
-              <div class="two-col">
-                <div class="pros">
-                  <h3>Pros of LEDs</h3>
-                  <ul>
-                    <li>
-                      Energy Efficient
-                    </li>
-                    <li>
-                      Brighter Lights
-                    </li>
-                    <li>
-                      Lower watt draw, so we can run more bulbs on one string
-                    </li>
-                  </ul>
-                </div>
-                <div class="cons">
-                  <h3>Cons of LEDs</h3>
-                  <ul>
-                    <li>
-                      Plastic bulb casing can fade over years of use
-                    </li>
-                    <li>
-                      Not as "warm" and natural a color as incandescent bulbs
-                    </li>
-                    <li>
-                      More expensive bulbs means higher overall lighting cost.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </section>
-        </section>
-      
-
-        <!-- INC SECTION -->
-        <section class="inc" id="inc-section">
-          <section class="inc-intro">
-            <h2 class="lighting-h2">INC Lighting</h2>
-            <p>
-              Incandescent (INC) bulbs are the classic, retro look. They
-              have a warm tone from the filament and the INC clears are
-              still the bulb we install the most of by far. They draw more
-              power than their LEDs competitors but are significantly
-              cheaper up front. If you're going for a classic Christmas
-              look, this is the way to go.
-            </p>
-          </section>
-          <!-- SCREENSHOT IMAGE -->
-          <section class="screenshot">
-            <picture class="inc-shot">
-              <img src="https://res.cloudinary.com/stetsonr/image/upload/w_1002,c_scale,q_auto,f_auto,fl_lossy/TTS%20Site%20Assets/inc-bulb_t4wsig.png" alt="Incandescent House Clear Bulbs" />
-            </picture>
-          </section>
-
-          <div class="background-wrapper">
-            <div class="inc-bulbs">
-              <!-- BULB SIZE -->
-              <section class="two-column">
-                <div class="content col">
-                  <h2 class="lighting-h2">Bulb Size</h2>
-                  <p>
-                    We can install INC bulbs in the same 2 sizes, C7 & C9.
-                  </p>
-                </div>
-                <div class="col">
-                  <picture class="inc-size">
-                    <img src="https://res.cloudinary.com/stetsonr/image/upload/w_458,c_scale,q_auto,f_auto,fl_lossy/TTS%20Site%20Assets/C9-vs-C7-300x162_gzb5q2.jpg" alt="Bulb Size" />
-                  </picture>
-                </div>
-              </section>
-              <!-- BULB COLOR -->
-              <section class="two-column row-reverse">
-                <div class="content col">
-                  <h2 class="lighting-h2">Bulb Colors</h2>
-                  <p>
-                    Keep in mind that you can mix and match colors as well. If you
-                    have questions, ask us about popular patterns.
-                  </p>
-                </div>
-                <div class="col">
-                  <picture class="inc-color">
-                    <img src="https://res.cloudinary.com/stetsonr/image/upload/w_458,c_scale,q_auto,f_auto,fl_lossy/TTS%20Site%20Assets/inc-colors_nqjgqr.png" alt="Incandescent Bulb Colors" />
-                  </picture>
-                </div>
             </section>
+          </div>
+        </div>
+        <!-- PROS / CONS -->
+        <section class="pros-cons">
+          <div class="pros-cons-wrapper">
+            <div class="content">
+              <h2 class="lighting-h2">Pros and Cons of LED Lights</h2>
+              <p>
+                There are always positives and drawbacks to options. We've
+                                  listed the ones we've heard for LEDs working with them over
+                                  the years. Ultimately, the look you want will be a big part of
+                                  your light type choice. If you're going for more modern,
+                                  brighter lights, LEDs are the way to go.
+              </p>
+            </div>
+            <div class="two-col">
+              <div class="pros">
+                <h3>Pros of LEDs</h3>
+                <ul>
+                  <li>
+                    Energy Efficient
+                  </li>
+                  <li>
+                    Brighter Lights
+                  </li>
+                  <li>
+                    Lower watt draw, so we can run more bulbs on one string
+                  </li>
+                </ul>
+              </div>
+              <div class="cons">
+                <h3>Cons of LEDs</h3>
+                <ul>
+                  <li>
+                    Plastic bulb casing can fade over years of use
+                  </li>
+                  <li>
+                    Not as "warm" and natural a color as incandescent bulbs
+                  </li>
+                  <li>
+                    More expensive bulbs means higher overall lighting cost.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <!-- PROS / CONS -->
-          <section class="pros-cons">
-            <div class="pros-cons-wrapper">
-              <div class="content">
-                <h2 class="lighting-h2">
-                  Pros and Cons of Incandescent Lights
-                </h2>
+        </section>
+      </section>
+
+
+      <!-- INC SECTION -->
+      <section class="inc" id="inc-section">
+        <section class="inc-intro">
+          <h2 class="lighting-h2">INC Lighting</h2>
+          <p>
+            Incandescent (INC) bulbs are the classic, retro look. They
+                          have a warm tone from the filament and the INC clears are
+                          still the bulb we install the most of by far. They draw more
+                          power than their LEDs competitors but are significantly
+                          cheaper up front. If you're going for a classic Christmas
+                          look, this is the way to go.
+          </p>
+        </section>
+        <!-- SCREENSHOT IMAGE -->
+        <section class="screenshot">
+          <picture class="inc-shot">
+            <img alt="Incandescent House Clear Bulbs" src="https://res.cloudinary.com/stetsonr/image/upload/w_1002,c_scale,q_auto,f_auto,fl_lossy/TTS%20Site%20Assets/inc-bulb_t4wsig.png"/>
+          </picture>
+        </section>
+
+        <div class="background-wrapper">
+          <div class="inc-bulbs">
+            <!-- BULB SIZE -->
+            <section class="two-column">
+              <div class="content col">
+                <h2 class="lighting-h2">Bulb Size</h2>
                 <p>
-                  INC bulbs are a regular filament, so they do draw more power
-                  than their LED counterparts. However, most people we work with
-                  choose them because the light they emit looks more natural.
+                  We can install INC bulbs in the same 2 sizes, C7 & C9.
                 </p>
               </div>
-              <div class="two-col">
-                <div class="pros">
-                  <h3>Pros of Incandescent</h3>
-                  <ul>
-                    <li>Natural, warm light</li>
-                    <li>Cheaper than LEDs</li>
-                    <li>Readily available supply</li>
-                  </ul>
-                </div>
-                <div class="cons">
-                  <h3>Cons of Incandescent</h3>
-                  <ul>
-                    <li>
-                      Draw more watts, so we are careful how we run the lights
-                      (this we handle for you)
-                    </li>
-                    <li>Not as bright as LEDs</li>
-                    <li>Use more power than the LEDs</li>
-                    <li>
-                      Fewer colors to choose from
-                    </li>
-                  </ul>
-                </div>
+              <div class="col">
+                <picture class="inc-size">
+                  <img alt="Bulb Size" src="https://res.cloudinary.com/stetsonr/image/upload/w_458,c_scale,q_auto,f_auto,fl_lossy/TTS%20Site%20Assets/C9-vs-C7-300x162_gzb5q2.jpg"/>
+                </picture>
+              </div>
+            </section>
+            <!-- BULB COLOR -->
+            <section class="two-column row-reverse">
+              <div class="content col">
+                <h2 class="lighting-h2">Bulb Colors</h2>
+                <p>
+                  Keep in mind that you can mix and match colors as well. If you
+                                      have questions, ask us about popular patterns.
+                </p>
+              </div>
+              <div class="col">
+                <picture class="inc-color">
+                  <img alt="Incandescent Bulb Colors" src="https://res.cloudinary.com/stetsonr/image/upload/w_458,c_scale,q_auto,f_auto,fl_lossy/TTS%20Site%20Assets/inc-colors_nqjgqr.png"/>
+                </picture>
+              </div>
+            </section>
+          </div>
+        </div>
+        <!-- PROS / CONS -->
+        <section class="pros-cons">
+          <div class="pros-cons-wrapper">
+            <div class="content">
+              <h2 class="lighting-h2">
+                Pros and Cons of Incandescent Lights
+              </h2>
+              <p>
+                INC bulbs are a regular filament, so they do draw more power
+                                  than their LED counterparts. However, most people we work with
+                                  choose them because the light they emit looks more natural.
+              </p>
+            </div>
+            <div class="two-col">
+              <div class="pros">
+                <h3>Pros of Incandescent</h3>
+                <ul>
+                  <li>Natural, warm light</li>
+                  <li>Cheaper than LEDs</li>
+                  <li>Readily available supply</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <h3>Cons of Incandescent</h3>
+                <ul>
+                  <li>
+                    Draw more watts, so we are careful how we run the lights
+                                          (this we handle for you)
+                  </li>
+                  <li>Not as bright as LEDs</li>
+                  <li>Use more power than the LEDs</li>
+                  <li>
+                    Fewer colors to choose from
+                  </li>
+                </ul>
               </div>
             </div>
-          </section>
+          </div>
         </section>
-    
+      </section>
+
 
       <!-- BOTTOM CALL TO ACTION-->
       <section class="estimate-component">
         <h1 class="get-estimate">
-            READY FOR AN ESTIMATE?
-          </h1>
-          <div class="estimate-button">
-            <a href="./contact.html" class="Button">Get an Estimate</a>
-          </div>
+          READY FOR AN ESTIMATE?
+        </h1>
+        <div class="estimate-button">
+          <a class="Button" href="./contact.html">Get an Estimate</a>
+        </div>
       </section>
 
-    <!-- FOOTER -->
-    <footer class="SiteFooter">
-      <div class="SiteFooter-Content">
-        <div class="Footer Footer--logoRow">
-          <img src="./src/images/tts-logo-simple.png" alt="TTS Logo" />
+      <!-- FOOTER -->
+      <footer class="SiteFooter">
+        <div class="SiteFooter-Content">
+          <div class="Footer Footer--logoRow">
+            <img alt="TTS Logo" src="./src/images/tts-logo-simple.png"/>
+          </div>
+          <div class="Footer Footer--contact">
+            <a class="Button" href="#">Contact us</a>
+            <ul class="Footer Footer--social">
+              <li>
+                <a href="#">
+                  <i class="fab fa-facebook fa-4x"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-instagram fa-4x"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="Footer Footer--serviceArea">
+            <h3>Service Areas</h3>
+            <ul>
+              <li>All of Lee's Summit</li>
+              <li>Winterset Valley</li>
+              <li>Raymore</li>
+            </ul>
+          </div>
+          <div class="Footer Footer--linksCol">
+            <h3>We also run a painting company!</h3>
+            <p>Check out</p>
+            <a href="https://greatplainspaintingkc.com/">Great Plains Painting</a>
+          </div>
         </div>
-        <div class="Footer Footer--contact">
-          <a href="#" class="Button">Contact us</a>
-          <ul class="Footer Footer--social">
-            <li>
-              <a href="#">
-                <i class="fab fa-facebook fa-4x"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fab fa-instagram fa-4x"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="Footer Footer--serviceArea">
-          <h3>Service Areas</h3>
-          <ul>
-            <li>All of Lee's Summit</li>
-            <li>Winterset Valley</li>
-            <li>Raymore</li>
-          </ul>
-        </div>
-        <div class="Footer Footer--linksCol">
-          <h3>We also run a painting company!</h3>
-          <p>Check out</p>
-          <a href="https://greatplainspaintingkc.com/"
-            >Great Plains Painting</a
-          >
-        </div>
-      </div>
-    </footer>
-    <!-- LITTLE SCRIPT FOR THE MOBILE MENU LOADED FIRST SO NO MENU FLASH -->
-    <script src="dist/js/menu.js"></script>
+      </footer>
+      <!-- LITTLE SCRIPT FOR THE MOBILE MENU LOADED FIRST SO NO MENU FLASH -->
+      <script src="dist/js/menu.js"></script>
+    </body>
   </body>
 </html>
