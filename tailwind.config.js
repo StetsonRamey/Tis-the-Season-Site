@@ -1,10 +1,20 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
+  purge: [],
   theme: {
-    colors: {
-      logoTeal: '#6ac3ba',
-      logoPurple: '#f067a0',
-      secondary: '#999',
-      footerBackground: '#3b3a36',
+    extend: {
+      colors: {
+        'logo-teal': '#6ac3ba',
+        'logo-pink': '#f067a0',
+        'secondary': '#999',
+      },
+      fontFamily: {
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+      },
     },
   },
+  variants: {},
+  // eslint-disable-next-line global-require
+  plugins: [require('@tailwindcss/ui')],
 }
