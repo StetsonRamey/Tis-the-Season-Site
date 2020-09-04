@@ -55,10 +55,16 @@ img {
 .wrapper {
   display: grid;
 }
+.Hero-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 //  HERO
 .Hero-container {
-  display: grid;
-  justify-content: center;
+  position: relative;
+  padding-bottom: calc(6 / 11 * 100%);
   width: 100%;
   overflow: hidden;
   @include respond-to('medium') {
