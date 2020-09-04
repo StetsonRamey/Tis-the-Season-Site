@@ -22,7 +22,7 @@
     "prebuild:prod": "npm run clean && npm run mkdirs && npm run imagemin && npm run icons",
     "build:prod": "npm run css:prod && npm run js:prod && npm run js:vendor",
     "preserve": "npm run build:dev",
-    "serve": "browser-sync start -s --files 'dist/css/*.css, dist/js/*.js, *.html'",
+    "serve": "browser-sync start -s --files 'dist/css/*.css, dist/js/*.js, *.html' --no-open",
     "watch:assets": "onchange 'src/images/**/*' -- npm run assets",
     "watch:css": "onchange 'src/**/*.scss' -- npm run css:dev",
     "watch:js": "onchange 'src/**/*.js' -- npm run build:js",
