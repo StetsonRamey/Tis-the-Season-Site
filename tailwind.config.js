@@ -1,7 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: [],
+  purge: ["2020-rehang.html"],
   theme: {
     extend: {
       colors: {
@@ -15,6 +15,5 @@ module.exports = {
     },
   },
   variants: {},
-  // eslint-disable-next-line global-require
-  plugins: [require('@tailwindcss/ui')],
+  plugins: [],
 }
