@@ -9,7 +9,7 @@
     "css:dev": "node-sass src/scss/main.scss --output-style compressed > dist/css/app.css",
     "tailwind:dev": "cross-env NODE_ENV=developement postcss src/css/tailwind.css -o dist/css/tailwind.css",
     "tailwind:prod": "cross-env NODE_ENV=production postcss src/css/tailwind.css -o dist/css/tailwind.css",
-    "css:prod": "node-sass src/scss/main.scss --output-style compressed | postcss -u autoprefixer -b '> 5%' > dist/css/app.css",
+    "css:prod": "node-sass src/scss/main.scss -q --output-style compressed | postcss -u autoprefixer -b '> 5%' > dist/css/app.css",
     "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
     "js:dev": "babel src/js/menu.js | uglifyjs > dist/js/app.js",
     "js:vendor": "cp -r src/js/vendor/* dist/js",
