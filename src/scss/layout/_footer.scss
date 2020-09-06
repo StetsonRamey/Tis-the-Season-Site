@@ -58,6 +58,16 @@
       color: $logo-purple;
     }
   }
+  .terms {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: $logo-teal;
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+    &:hover {
+      color: $logo-purple;
+    }
+  }
 }
 
 .Footer--serviceArea {
