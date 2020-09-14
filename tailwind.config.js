@@ -1,7 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: ["2020-rehang.html"],
+  purge: ["*.html"],
   theme: {
     extend: {
       colors: {
