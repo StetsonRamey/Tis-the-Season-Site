@@ -67,9 +67,6 @@ img {
   padding-bottom: calc(6 / 11 * 100%);
   width: 100%;
   overflow: hidden;
-  @include respond-to('medium') {
-    max-height: 784px;
-  }
 }
 // TITLE SECTION
 #content.Block {
