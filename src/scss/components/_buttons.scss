@@ -2,7 +2,7 @@
 .menu-btn {
   position: absolute;
   left: 2rem;
-  top: 3rem;
+  top: 13rem; // change this to 3rem when fix banner is off
   z-index: 3;
   cursor: pointer;
   @include easeOut;

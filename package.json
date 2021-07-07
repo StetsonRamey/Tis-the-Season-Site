@@ -6,7 +6,6 @@
     "reinstall": "rimraf node_modules && npm install",
     "start": "run-p serve watch",
     "dev": "run-s build:dev start",
-    "build": "run-s build:prod start",
     "css:dev": "node-sass src/scss/main.scss --output-style compressed > dist/css/app.css",
     "tailwind:dev": "cross-env NODE_ENV=developement postcss src/css/tailwind.css -o dist/css/tailwind.css",
     "tailwind:prod": "cross-env NODE_ENV=production postcss src/css/tailwind.css -o dist/css/tailwind.css",
