@@ -12,9 +12,9 @@
     "tailwind:prod": "cross-env NODE_ENV=production postcss src/css/tailwind.css -o dist/css/tailwind.css",
     "css:prod": "node-sass src/scss/main.scss -q --output-style compressed | postcss -u autoprefixer -b '> 5%' > dist/css/app.css",
     "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
-    "js:dev": "babel src/js/menu.js | uglifyjs > dist/js/app.js",
+    "js:dev": "babel src/js/*.js | uglifyjs > dist/js/app.js",
     "js:vendor": "cp -r src/js/vendor/* dist/js",
-    "js:prod": "babel src/js/menu.js | uglifyjs -m -c > dist/js/app.js",
+    "js:prod": "babel src/js/*.js | uglifyjs -m -c > dist/js/app.js",
     "clean": "rimraf dist",
     "mkdirs": "mkdir -p dist/js && mkdir -p dist/css && mkdir -p dist/images && mkdir -p dist/images/icons",
     "imagemin": "imagemin src/images --out-dir=dist/images -p",
@@ -27,7 +27,7 @@
     "serve": "browser-sync start -s --files 'dist/css/*.css, dist/js/*.js, *.html' --no-open",
     "watch:assets": "onchange 'src/images/**/*' -- npm run assets",
     "watch:css": "onchange 'src/**/*.scss' -- npm run css:dev",
-    "watch:js": "onchange 'src/**/*.js' -- npm run build:js",
+    "watch:js": "onchange 'src/**/*.js' -- npm run js:dev",
     "watch": "run-p watch:css watch:js watch:assets"
   },
   "author": "Stetson Ramey",
@@ -49,12 +49,13 @@
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.3",
     "rimraf": "^3.0.2",
-    "svgo": "^1.3.2",
-    "uglify-js": "^3.10.3"
+    "svgo": "^1.3.2"
   },
   "dependencies": {
     "cleave.js": "^1.5.3",
+    "glob": "^7.1.7",
     "postcss": "^8.3.6",
-    "tailwindcss": "^2.2.9"
+    "tailwindcss": "^2.2.9",
+    "terser": "^5.8.0"
   }
 }
