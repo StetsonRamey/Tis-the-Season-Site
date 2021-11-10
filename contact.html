@@ -119,19 +119,15 @@
         <!-- this is where we'll put the info about getting booked up fast -->
         <section class="bg-gray-300 rounded-sm p-10 sm:max-w-6xl mx-auto">
           <arictle class="min-w-full block text-4xl text-center">
-            <span class="text-6xl">📍</span> - Service Areas - <span class="text-6xl">📍</span>
-            <p class="text-2xl mt-10 text-left leading-relaxed">
-              As of 2021, we are only taking new customers in Lee's Summit (city) & Raymore (primarily Creekmore) areas.
-              If you're close to our service area, but not sure if you're within, please fill out our form anyway and
-              we'll look you up and let you know.
-            </p>
+            <span class="text-6xl">📍</span>We are fully booked for the 2021 Season<span class="text-6xl">📍</span>
+            <p class="text-2xl mt-10 text-left leading-relaxed">We've experienced high demand this year and our schedule is currently full.  We appreciate your interest in working with us and we're sorry we are unable to work with you this year.  Please keep us in mind for the 2022 season, and please reach out to us in October!</p>
           </arictle>
         </section>
         <div class="contact-grid mt-28">
           <div class="contact-form-column">
             <div class="contact-header">
-              <h1 class="m-8">Fill out the form</h1>
-              <h1 class="m-8">We'll call or email you with an estimate</h1>
+              <h1 class="m-8">Our form is disabled at this time</h1>
+              <!-- <h1 class="m-8">We'll call or email you with an estimate</h1> -->
             </div>
             <form data-netlify="true" method="POST" name="tts-new-lead" subject="TTS New Lead">
               <p>
@@ -156,7 +152,7 @@
                       <abbr title="required">*</abbr>
                     </strong>
                   </label>
-                  <input id="firstName" name="firstName" placeholder="Santa" type="text" />
+                  <input disabled id="firstName" name="firstName" placeholder="Santa" type="text" />
                 </div>
                 <div ` class="contact-input">
                   <label for="lastName">
@@ -165,7 +161,7 @@
                       <abbr title="required">*</abbr>
                     </strong>
                   </label>
-                  <input id="lastName" name="lastName" placeholder="Clause" type="text" />
+                  <input disabled id="lastName" name="lastName" placeholder="Clause" type="text" />
                 </div>
                 <div class="contact-input">
                   <label for="email">
@@ -174,7 +170,7 @@
                       <abbr title="required">*</abbr>
                     </strong>
                   </label>
-                  <input id="email" name="email" placeholder="kriskringle@merrychristmas.com" type="email" />
+                  <input disabled id="email" name="email" placeholder="kriskringle@merrychristmas.com" type="email" />
                 </div>
                 <div class="contact-input">
                   <label for="telephone">
@@ -183,7 +179,7 @@
                       <abbr title="required">*</abbr>
                     </strong>
                   </label>
-                  <input class="phone-number" id="tel" name="tel" placeholder="(816) 123-4567" type="tel" />
+                  <input disabled class="phone-number" id="tel" name="tel" placeholder="(816) 123-4567" type="tel" />
                 </div>
               </section>
               <div class="contact-divider"></div>
@@ -209,13 +205,14 @@
                     onfocus="geolocate()"
                     placeholder="1 North Pole Lane"
                     type="text"
+                    disabled
                   />
                 </div>
                 <div class="contact-input">
                   <label for="city">
                     <span>City: </span>
                   </label>
-                  <input id="locality" name="city" type="text" />
+                  <input disabled id="locality" name="city" type="text" />
                 </div>
                 <div class="contact-input">
                   <!-- <input id="administrative_area_level_1" name="state" type="text" /> -->
@@ -223,7 +220,7 @@
                     <label for="State">
                       <span>State: </span>
                     </label>
-                    <select class="form-select" id="administrative_area_level_1" name="state">
+                    <select disabled class="form-select" id="administrative_area_level_1" name="state">
                       <option value=""></option>
                       <option value="MO">MO</option>
                       <option value="KS">KS</option>
@@ -234,7 +231,7 @@
                   <label for="Zip">
                     <span>Zip Code: </span>
                   </label>
-                  <input id="postal_code" name="zip" type="text" />
+                  <input disabled id="postal_code" name="zip" type="text" />
                 </div>
               </section>
               <div class="contact-divider"></div>
@@ -254,7 +251,7 @@
                 <fieldset>
                   <div class="contact-select">
                     <label for="lightType">Light Type</label>
-                    <select class="form-select" name="Light Type">
+                    <select disabled class="form-select" name="Light Type">
                       <option value="Not Sure">Choose One</option>
                       <option value="Not Sure">--NOT SURE--</option>
                       <option value="LED">LED</option>
@@ -265,7 +262,7 @@
                 <fieldset>
                   <div class="contact-select">
                     <label for="color">Color</label>
-                    <select class="form-select" name="Light Color">
+                    <select disabled class="form-select" name="Light Color">
                       <option value="Not Sure">Choose One</option>
                       <option value="Not Sure">--NOT SURE--</option>
                       <option value="LED Pure White">LED Pure White</option>
@@ -304,11 +301,11 @@
                   <label for="message">
                     <span>Message</span>
                   </label>
-                  <textarea name="message"></textarea>
+                  <textarea disabled name="message"></textarea>
                 </div>
               </section>
               <div class="contact-submit">
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Sorry we're full" disabled />
               </div>
             </form>
           </div>
