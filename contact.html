@@ -107,26 +107,27 @@
           <a href="sms:8167207742">(844) 600-1675</a>
         </div>
         <!-- prettier-ignore -->
-        <div class="quick-contact-group">
+        <!-- <div class="quick-contact-group">
           <svg class="icon" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z"/>
           </svg>
           <a href="mailto:hello@tts.lighting">hello@tts.lighting</a>
-        </div>
+        </div> -->
       </section>
       <!-- MAIN APP -->
       <main class="App-main" id="appMain">
         <!-- this is where we'll put the info about getting booked up fast -->
-        <section class="bg-gray-300 rounded-sm p-10 sm:max-w-6xl mx-auto">
+        <!-- <section class="bg-gray-300 rounded-sm p-10 sm:max-w-6xl mx-auto">
           <arictle class="min-w-full block text-4xl text-center">
             <span class="text-6xl">📍</span>We are fully booked for the 2021 Season<span class="text-6xl">📍</span>
             <p class="text-2xl mt-10 text-left leading-relaxed">We've experienced high demand this year and our schedule is currently full.  We appreciate your interest in working with us and we're sorry we are unable to work with you this year.  Please keep us in mind for the 2022 season, and please reach out to us in October!</p>
           </arictle>
-        </section>
+        </section> -->
         <div class="contact-grid mt-28">
           <div class="contact-form-column">
             <div class="contact-header">
-              <h1 class="m-8">Our form is disabled at this time</h1>
+              <h2 class="m-8">We're only taking customers in <span class="text-logo-pink font-bold">Lee's Summit</span> and parts of <span class="text-logo-pink font-bold">Raymore</span> for the 2022 Holiday Season</h2>
+              <h2 class="m-8">If you're not sure you're within our service area, fill out the form and we'll let you know!</h2>
               <!-- <h1 class="m-8">We'll call or email you with an estimate</h1> -->
             </div>
             <form data-netlify="true" method="POST" name="tts-new-lead" subject="TTS New Lead">
@@ -152,7 +153,7 @@
                       <abbr title="required">*</abbr>
                     </strong>
                   </label>
-                  <input disabled id="firstName" name="firstName" placeholder="Santa" type="text" />
+                  <input id="firstName" name="firstName" placeholder="Santa" type="text" />
                 </div>
                 <div ` class="contact-input">
                   <label for="lastName">
@@ -161,7 +162,7 @@
                       <abbr title="required">*</abbr>
                     </strong>
                   </label>
-                  <input disabled id="lastName" name="lastName" placeholder="Clause" type="text" />
+                  <input id="lastName" name="lastName" placeholder="Clause" type="text" />
                 </div>
                 <div class="contact-input">
                   <label for="email">
@@ -170,7 +171,7 @@
                       <abbr title="required">*</abbr>
                     </strong>
                   </label>
-                  <input disabled id="email" name="email" placeholder="kriskringle@merrychristmas.com" type="email" />
+                  <input id="email" name="email" placeholder="kriskringle@merrychristmas.com" type="email" />
                 </div>
                 <div class="contact-input">
                   <label for="telephone">
@@ -179,7 +180,7 @@
                       <abbr title="required">*</abbr>
                     </strong>
                   </label>
-                  <input disabled class="phone-number" id="tel" name="tel" placeholder="(816) 123-4567" type="tel" />
+                  <input class="phone-number" id="tel" name="tel" placeholder="(816) 123-4567" type="tel" />
                 </div>
               </section>
               <div class="contact-divider"></div>
@@ -205,14 +206,14 @@
                     onfocus="geolocate()"
                     placeholder="1 North Pole Lane"
                     type="text"
-                    disabled
+
                   />
                 </div>
                 <div class="contact-input">
                   <label for="city">
                     <span>City: </span>
                   </label>
-                  <input disabled id="locality" name="city" type="text" />
+                  <input id="locality" name="city" type="text" />
                 </div>
                 <div class="contact-input">
                   <!-- <input id="administrative_area_level_1" name="state" type="text" /> -->
@@ -220,7 +221,7 @@
                     <label for="State">
                       <span>State: </span>
                     </label>
-                    <select disabled class="form-select" id="administrative_area_level_1" name="state">
+                    <select class="form-select" id="administrative_area_level_1" name="state">
                       <option value=""></option>
                       <option value="MO">MO</option>
                       <option value="KS">KS</option>
@@ -231,7 +232,7 @@
                   <label for="Zip">
                     <span>Zip Code: </span>
                   </label>
-                  <input disabled id="postal_code" name="zip" type="text" />
+                  <input id="postal_code" name="zip" type="text" />
                 </div>
               </section>
               <div class="contact-divider"></div>
@@ -251,7 +252,7 @@
                 <fieldset>
                   <div class="contact-select">
                     <label for="lightType">Light Type</label>
-                    <select disabled class="form-select" name="Light Type">
+                    <select class="form-select" name="Light Type">
                       <option value="Not Sure">Choose One</option>
                       <option value="Not Sure">--NOT SURE--</option>
                       <option value="LED">LED</option>
@@ -262,7 +263,7 @@
                 <fieldset>
                   <div class="contact-select">
                     <label for="color">Color</label>
-                    <select disabled class="form-select" name="Light Color">
+                    <select class="form-select" name="Light Color">
                       <option value="Not Sure">Choose One</option>
                       <option value="Not Sure">--NOT SURE--</option>
                       <option value="LED Pure White">LED Pure White</option>
@@ -274,10 +275,10 @@
                       <option value="LED Combo">LED Combo</option>
                       <option value="INC Clear">INC Clear</option>
                       <option value="INC Multi">INC Multi</option>
-                      <option value="INC Red">INC Red</option>
+                      <!-- <option value="INC Red">INC Red</option>
                       <option value="INC Green">INC Green</option>
                       <option value="INC Blue">INC Blue</option>
-                      <option value="INC Combo">INC Combo</option>
+                      <option value="INC Combo">INC Combo</option> -->
                     </select>
                   </div>
                 </fieldset>
@@ -301,11 +302,11 @@
                   <label for="message">
                     <span>Message</span>
                   </label>
-                  <textarea disabled name="message"></textarea>
+                  <textarea name="message"></textarea>
                 </div>
               </section>
               <div class="contact-submit">
-                <input type="submit" value="Sorry we're full" disabled />
+                <input type="submit" value="Get in touch!" />
               </div>
             </form>
           </div>
@@ -375,7 +376,7 @@
           <div class="Footer Footer--serviceArea">
             <h3>Service Areas</h3>
             <ul>
-              <li>All of Lee's Summit</li>
+              <li>Lee's Summit</li>
               <li>Winterset Valley</li>
               <li>Raymore</li>
             </ul>

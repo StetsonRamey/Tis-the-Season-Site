@@ -4,7 +4,6 @@
 .contact-header {
   text-align: center;
   font-size: 1.6rem;
-  text-transform: uppercase;
   border-bottom: 1px solid #e2e8f0;
 }
 .contact-divider {
@@ -69,13 +68,13 @@
     height: 100%;
     font-size: 18px;
     color: #1a202c;
-    background-color: $disable-submit;
+    background-color: $logo-teal;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     padding: 20px 0;
     // undo this comment when re-enabling the button
-    // &:hover {
-    //   background-color: darken($color: $logo-teal, $amount: 20);
-    // }
+    &:hover {
+      background-color: darken($color: $logo-teal, $amount: 20);
+    }
   }
 }
