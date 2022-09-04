@@ -126,11 +126,16 @@
         <div class="contact-grid mt-28">
           <div class="contact-form-column">
             <div class="contact-header">
-              <h2 class="m-8">We're only taking customers in <span class="text-logo-pink font-bold">Lee's Summit</span> and parts of <span class="text-logo-pink font-bold">Raymore</span> for the 2022 Holiday Season</h2>
-              <h2 class="m-8">If you're not sure you're within our service area, fill out the form and we'll let you know!</h2>
+              <h2 class="m-8">
+                We're only taking customers in <span class="text-logo-pink font-bold">Lee's Summit</span> and parts of
+                <span class="text-logo-pink font-bold">Raymore</span> for the 2022 Holiday Season
+              </h2>
+              <h2 class="m-8">
+                If you're not sure you're within our service area, fill out the form and we'll let you know!
+              </h2>
               <!-- <h1 class="m-8">We'll call or email you with an estimate</h1> -->
             </div>
-            <form data-netlify="true" method="POST" name="tts-new-lead" subject="TTS New Lead">
+            <form data-netlify="true" method="POST" name="tts-new-lead" subject="TTS New Lead" id="contact-form">
               <p>
                 <strong>
                   <abbr title="required">*</abbr>
@@ -206,7 +211,6 @@
                     onfocus="geolocate()"
                     placeholder="1 North Pole Lane"
                     type="text"
-
                   />
                 </div>
                 <div class="contact-input">
@@ -402,5 +406,13 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtwWskZSb5_b3HOIxCAnaG4I8jS4paqaM&libraries=places&callback=initAutocomplete"
     ></script>
     <script src="dist/js/googlePlaces.js"></script>
+    <script>
+      document.getElementById("contact-form").onkeypress = function (e) {
+        let key = e.charCode || e.keyCode || 0;
+        if (key === 13) {
+          e.preventDefault();
+        }
+      };
+    </script>
   </body>
 </html>
