@@ -75,9 +75,10 @@ img {
 
 // PROMO SECTION
 .Block--promo-grid {
+  max-width: 1000px;
   @include promoSpace;
   @include respond-to('small') {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     margin-top: 10rem;
   }
 }
