@@ -12,7 +12,7 @@
       .gif {
         height: 50vh;
         width: 70%;
-        background-image: url(https://media.giphy.com/media/XXvnnrJJnOVl6/giphy.gif);
+        background-image: url(https://media.giphy.com/media/XhSNIPqt0Ix3iv9J5Z/giphy-downsized.gif);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center left 70%;
@@ -115,18 +115,9 @@
 
     <section class="flex flex-col items-center text-gray-800 px-8 text-center">
       <div class="gif"></div>
-      <h2 class="text-8xl text-logo-teal my-16">Thank You!</h2>
-      <p class="text-4xl text-gray-500 max-w-6xl leading-normal mb-14">
-        We've received your form submission and will be in touch soon.
-      </p>
-      <p class="text-4xl text-gray-500 max-w-6xl leading-normal mb-14">
-        We'll be in touch within <span class="text-logo-pink font-bold">24 hours</span> with your personalized estimate.
-        Our installers will look at your home on google maps and estimate how many feet of lights it will take to light
-        up the front roofline.
-      </p>
-      <p class="text-4xl text-gray-500 max-w-6xl leading-normal">
-        This window will close in <span class="seconds">10</span> seconds.
-      </p>
+      <h2 class="text-8xl text-logo-teal my-16">Fix Request Received</h2>
+      <p class="text-4xl text-gray-500 max-w-6xl leading-normal mb-14">We will be out in the next few days <span class="italic">(weather permitting)</span>.</p>
+      <p class="text-4xl text-gray-500 max-w-6xl leading-normal">If we need further information, we'll reach out to you via text.</p>
     </section>
 
     <footer class="SiteFooter">
@@ -166,17 +157,5 @@
       </div>
     </footer>
     <script defer src="dist/js/app.js"></script>
-    <script type="text/javascript">
-      let timeLeft = 10;
-      let sec = document.querySelector(".seconds");
-      let closeTimer = setInterval(() => {
-        timeLeft--;
-        sec.textContent = timeLeft;
-        if (timeLeft <= 0) {
-          clearInterval(closeTimer);
-          window.close();
-        }
-      }, 1000);
-    </script>
   </body>
 </html>
