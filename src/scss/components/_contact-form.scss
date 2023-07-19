@@ -68,13 +68,13 @@
     height: 100%;
     font-size: 18px;
     color: #1a202c;
-    // background-color: $logo-teal;
+    background-color: $logo-teal;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     padding: 20px 0;
     // undo this comment when re-enabling the button
-    // &:hover {
-    //   background-color: darken($color: $logo-teal, $amount: 20);
-    // }
+    &:hover {
+      background-color: darken($color: $logo-teal, $amount: 20);
+    }
   }
 }
