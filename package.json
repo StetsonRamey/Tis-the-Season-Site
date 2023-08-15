@@ -1,7 +1,6 @@
 {
   "name": "tis-the-season-website",
   "version": "1.0.0",
-  "type": "module",
   "description": "Main site for Tis the Season",
   "scripts": {
     "reinstall": "rimraf node_modules && npm install",
