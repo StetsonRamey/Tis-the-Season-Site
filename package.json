@@ -24,7 +24,7 @@
     "optimizeAssets": "optimizt src/images -o dist/",
     "prebuild:dev": "npm run clean && npm run mkdirs && npm run assets",
     "build:dev": "npm run css:dev && npm run tailwind:dev && npm run gallery:dev && npm run js:dev && npm run js:vendor",
-    "prebuild:prod": "npm run clean && npm run mkdirs && npm run assets",
+    "prebuild:prod": "npm run mkdirs && npm run assets",
     "build:prod": "cross-env NODE_ENV=production npm run css:prod && npm run gallery:prod && npm run tailwind:prod && npm run js:prod && npm run js:vendor",
     "serve": "browser-sync start -s --files 'dist/css/*.css, dist/js/*.js, *.html' --no-open",
     "watch:assets": "onchange 'src/images/**/*' -- npm run assets",
