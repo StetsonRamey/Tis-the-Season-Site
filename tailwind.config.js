@@ -1,19 +1,18 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+/** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  purge: ["*.html"],
+  content: ["*.html"],
   theme: {
     extend: {
       colors: {
-        'logo-teal': '#6ac3ba',
-        'logo-pink': '#f067a0',
-        'secondary': '#999',
+        "logo-teal": "#6ac3ba",
+        "logo-pink": "#f067a0",
+        secondary: "#999",
       },
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
       },
     },
   },
-  variants: {},
-  plugins: [],
-}
+};
