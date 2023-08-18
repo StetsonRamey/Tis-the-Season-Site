@@ -179,13 +179,16 @@
                 email with a marked-up photo of your home and pricing.
               </p>
             </div>
-            <img class="rounded-md shadow-lg shadow-slate-400"
+            <img
+              class="rounded-md shadow-lg shadow-slate-400"
               src="https://res.cloudinary.com/stetsonr/image/upload/c_scale,f_auto,q_auto:good,w_2500/v1692224065/2023%20TTS%20Site%20Rebuild/LED-Red-Green_jpe5zq.jpg"
               alt="LED red and green holiday lighting on a 2 story house"
             />
           </div>
         </article>
-        <article class="mx-auto mb-44 max-w-2xl text-3xl text-gray-800 xl:max-w-5xl">
+        <article
+          class="mx-auto mb-44 max-w-2xl text-3xl text-gray-800 xl:max-w-5xl"
+        >
           <div class="mt-8">
             <div class="grid grid-cols-1 gap-6">
               <form
@@ -194,7 +197,15 @@
                 subject="QR Code Form"
                 method="POST"
                 action=""
+                data-netlify="true"
+                netlify-honeypot="bot-field"
               >
+                <div hidden aria-hidden="true">
+                  <label>
+                    Bot field
+                    <input name="bot-field" />
+                  </label>
+                </div>
                 <label class="block">
                   <span class="text-gray-700">First name</span>
                   <span class="text-base text-gray-500">(required)</span>
