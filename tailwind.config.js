@@ -5,6 +5,9 @@ module.exports = {
   content: ["*.html"],
   theme: {
     extend: {
+      listStyleImage: {
+        tree: "url('dist/images/icons/christmas_tree.png')",
+      },
       colors: {
         "logo-teal": "#6ac3ba",
         "logo-pink": "#f067a0",
@@ -15,4 +18,5 @@ module.exports = {
       },
     },
   },
+  plugins: [require("@tailwindcss/forms")],
 };
