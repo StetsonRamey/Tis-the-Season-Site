@@ -2,3 +2,6 @@ node_modules
 .env
 neural-engine-246119-b26ece4a119d.json
 dist
+
+# Local Netlify folder
+.netlify

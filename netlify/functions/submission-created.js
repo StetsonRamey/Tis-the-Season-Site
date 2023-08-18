@@ -1,6 +1,8 @@
-exports.handler = async (event) => {
-  console.log(event);
+import fetch from 'node-fetch';
+
+module.exports.handler = async (event) => {
   const formData = JSON.parse(event.body).payload.data;
+  console.log(formData)
 
   // write some code to send formData to pipedream
   const headers = new Headers();
@@ -11,11 +13,11 @@ exports.handler = async (event) => {
   const options = {
     method: "POST",
     headers,
-    mode: "cors",
     body: JSON.stringify(body),
   };
+  console.log(options)
 
-  fetch("https://43cade8a7edfb4282235dccb6bea09af.m.pipedream.net", options)
+  fetch("https://7385ae90469b0ea76d3107d8ce0332f0.m.pipedream.net", options)
     .then((response) => {
       console.log(response);
     })
@@ -30,4 +32,5 @@ exports.handler = async (event) => {
       Location: "https://tistheseasonkc.com/thank-you",
     },
   };
+  // https://tistheseasonkc.com/thank-you
 };
