@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 
-module.exports.handler = async (event) => {
+exports.handler = async (event) => {
   const formData = JSON.parse(event.body).payload.data;
   console.log(formData)
 
