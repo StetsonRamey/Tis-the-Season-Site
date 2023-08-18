@@ -15,9 +15,8 @@ module.exports.handler = async (event) => {
     headers,
     body: JSON.stringify(body),
   };
-  console.log(options)
 
-  fetch("https://7385ae90469b0ea76d3107d8ce0332f0.m.pipedream.net", options)
+  await fetch("https://7385ae90469b0ea76d3107d8ce0332f0.m.pipedream.net", options)
     .then((response) => {
       console.log(response);
     })
