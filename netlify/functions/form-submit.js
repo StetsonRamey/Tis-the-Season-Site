@@ -1,19 +1,24 @@
 import fetch from 'node-fetch';
 
 exports.handler = async (event) => {
-  const formData = JSON.parse(event.body).payload.data;
-  console.log(formData)
+  console.log(event.body)
+
+  const params = event.body
+
+  const searchParams = [...new URLSearchParams(params)].reduce(
+    (a, [k, v]) => ((a[k] = v), a), {}
+  )
+  console.log(searchParams)
 
   // write some code to send formData to pipedream
   const headers = new Headers();
   headers.append("Content-Type", "application/json");
 
-  const body = formData;
 
   const options = {
     method: "POST",
     headers,
-    body: JSON.stringify(body),
+    body: JSON.stringify(searchParams),
   };
 
   await fetch("https://7385ae90469b0ea76d3107d8ce0332f0.m.pipedream.net", options)
@@ -28,7 +33,7 @@ exports.handler = async (event) => {
   return {
     statusCode: 307,
     headers: {
-      Location: "https://tistheseasonkc.com/thank-you",
+      Location: "https://tistheseasonkc.com",
     },
   };
   // https://tistheseasonkc.com/thank-you
