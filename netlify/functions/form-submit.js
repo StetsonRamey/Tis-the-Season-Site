@@ -22,7 +22,7 @@ export const handler = async (event) => {
   try {
     console.log("in try catch block");
     const res = await fetch(
-      "https://a9fd563385327894592a01a1baa97f15.m.pipedream.net",
+      "https://7385ae90469b0ea76d3107d8ce0332f0.m.pipedream.net",
       options,
     );
     console.info("status", res);
