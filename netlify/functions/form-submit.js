@@ -1,19 +1,17 @@
-import fetch from 'node-fetch';
+export const handler = async (event) => {
+  console.log(event.body);
 
-exports.handler = async (event) => {
-  console.log(event.body)
-
-  const params = event.body
+  const params = event.body;
 
   const searchParams = [...new URLSearchParams(params)].reduce(
-    (a, [k, v]) => ((a[k] = v), a), {}
-  )
-  console.log(searchParams)
+    (a, [k, v]) => ((a[k] = v), a),
+    {},
+  );
+  console.log(searchParams);
 
   // write some code to send formData to pipedream
   const headers = new Headers();
   headers.append("Content-Type", "application/json");
-
 
   const options = {
     method: "POST",
@@ -21,20 +19,23 @@ exports.handler = async (event) => {
     body: JSON.stringify(searchParams),
   };
 
-  await fetch("https://7385ae90469b0ea76d3107d8ce0332f0.m.pipedream.net", options)
-    .then((response) => {
-      console.log(response);
-    })
-    .catch((err) => {
-      console.error("[error] " + err.message);
-    });
+  try {
+    console.log("in try catch block");
+    const res = await fetch(
+      "https://a9fd563385327894592a01a1baa97f15.m.pipedream.net",
+      options,
+    );
+    console.info("status", res);
 
-  // can I redirect with a get request here
-  return {
-    statusCode: 307,
-    headers: {
-      Location: "https://tistheseasonkc.com",
-    },
-  };
-  // https://tistheseasonkc.com/thank-you
+    // redirect the submitter to the thank you page
+    return {
+      statusCode: 200,
+      body: JSON.stringify(res),
+    };
+  } catch (e) {
+    console.error(e);
+    return {
+      statusCode: 500,
+    };
+  }
 };
