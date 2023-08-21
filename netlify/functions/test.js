@@ -52,8 +52,10 @@ export const handler = async (event) => {
     console.log(data);
 
     return {
-      statusCode: 200,
-      body: JSON.stringify(data),
+      statusCode: 302,
+      headers: {
+        Location: "https://tistheseasonkc.com/thank-you",
+      },
     };
   } catch (error) {
     console.log(error);
