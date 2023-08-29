@@ -1,26 +1,28 @@
 export const handler = async (event) => {
   const url = "https://7385ae90469b0ea76d3107d8ce0332f0.m.pipedream.net";
 
+  console.log(event)
+
   // what is the shape of the event form data we are hooking into?
-  const { payload } = JSON.parse(event.body);
+  // const { payload } = JSON.parse(event.body);
 
-  const data = payload.data
-  const form = payload["form_name"]
-  console.log(data);
-  console.log(form)
+  // const data = payload.data
+  // const form = payload["form_name"]
+  // console.log(data);
+  // console.log(form)
 
-  const body = {
-    data,
-    form,
-  };
+  // const body = {
+  //   data,
+  //   form,
+  // };
 
-  const options = {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(body),
-  };
+  // const options = {
+  //   method: "POST",
+  //   headers: { "Content-Type": "application/json" },
+  //   body: JSON.stringify(body),
+  // };
 
-  console.log({ options });
+  // console.log({ options });
 
   // return for testing
   return {
