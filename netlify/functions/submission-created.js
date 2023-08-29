@@ -3,22 +3,24 @@ export const handler = async (event) => {
 
   // what is the shape of the event form data we are hooking into?
   const { payload } = JSON.parse(event.body);
-  console.log(payload.data);
 
-  console.log(payload["form_data"])
+  const data = payload.data
+  const form = payload["form_name"]
+  console.log(data);
+  console.log(form)
 
-  // const body = {
-  //   data,
-  //   form,
-  // };
+  const body = {
+    data,
+    form,
+  };
 
-  // const options = {
-  //   method: "POST",
-  //   headers: { "Content-Type": "application/json" },
-  //   body: JSON.stringify(body),
-  // };
+  const options = {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  };
 
-  // console.log({ options });
+  console.log({ options });
 
   // return for testing
   return {
