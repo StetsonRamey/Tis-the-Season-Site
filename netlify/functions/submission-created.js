@@ -5,7 +5,7 @@ export const handler = async (event) => {
   const { data } = JSON.parse(event.body.payload);
   console.log(data);
 
-  const form = event.body.payload.form_name;
+  const form = event.body.payload["form_name"];
   console.log(form);
 
   const body = {
@@ -19,7 +19,7 @@ export const handler = async (event) => {
     body: JSON.stringify(body),
   };
 
-  console.log({options})
+  console.log({ options });
 
   // return for testing
   return {
