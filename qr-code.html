@@ -191,8 +191,6 @@
         >
           <div class="mt-8">
             <div class="grid grid-cols-1 gap-6 px-8">
-                <!-- method="GET"
-                action="/thank-you" -->
               <form
                 data-netlify="true"
                 id="qr-code-form"
@@ -215,6 +213,7 @@
                     type="text"
                     class="mt-1 block h-auto w-full rounded-md border-solid border-gray-300 py-4 text-2xl focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                     placeholder="Santa"
+                    autocomplete="given-name"
                   />
                 </label>
                 <label class="block">
@@ -226,6 +225,7 @@
                     type="text"
                     class="mt-1 block h-auto w-full rounded-md border-solid border-gray-300 py-4 text-2xl focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                     placeholder="Klause"
+                    autocomplete="family-name"
                   />
                 </label>
                 <label class="block">
@@ -235,6 +235,7 @@
                     required
                     name="email"
                     type="email"
+                    autocomplete="email"
                     class="mt-1 block h-auto w-full rounded-md border-solid border-gray-300 py-4 text-2xl focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                     placeholder="kriskringle@merrychristmas.com"
                   />
@@ -246,6 +247,7 @@
                     required
                     name="phone"
                     type="tel"
+                    autocomplete="tel"
                     class="phone-number mt-1 block h-auto w-full rounded-md border-solid border-gray-300 py-4 text-2xl focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                     placeholder="(816) 123-4567"
                   />
@@ -257,7 +259,7 @@
                   <input
                     required
                     id="autocomplete"
-                    autocomplete="street-address"
+                    autocomplete="address-line1"
                     name="addressSearch"
                     onfocus="geolocate()"
                     type="text"
@@ -272,6 +274,7 @@
                     required
                     id="locality"
                     name="city"
+                    autocomplete="address-level2"
                     type="text"
                     class="mt-1 block h-auto w-full rounded-md border-solid border-gray-300 py-4 text-2xl focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                     placeholder=""
@@ -284,6 +287,7 @@
                     required
                     id="administrative_area_level_1"
                     name="state"
+                    autocomplete="address-level1"
                     class="mt-1 block h-auto w-full rounded-md border-gray-300 py-4 text-2xl focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                   >
                     <option></option>
@@ -297,6 +301,7 @@
                   <input
                     required
                     id="postal_code"
+                    autocomplete="postal-code"
                     name="zip"
                     type="text"
                     class="mt-1 block h-auto w-full rounded-md border-solid border-gray-300 py-4 text-2xl focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
