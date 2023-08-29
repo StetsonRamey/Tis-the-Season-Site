@@ -8,18 +8,18 @@ export const handler = async (event) => {
   const form = event.body.payload["form_name"];
   console.log(form);
 
-  const body = {
-    data,
-    form,
-  };
+  // const body = {
+  //   data,
+  //   form,
+  // };
 
-  const options = {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(body),
-  };
+  // const options = {
+  //   method: "POST",
+  //   headers: { "Content-Type": "application/json" },
+  //   body: JSON.stringify(body),
+  // };
 
-  console.log({ options });
+  // console.log({ options });
 
   // return for testing
   return {
