@@ -1,38 +1,9 @@
-// export const handler = async (event) => {
-//   const url = "https://jsonplaceholder.typicode.com/posts";
-
-//   const body = {
-//     title: "foo",
-//     body: "bar",
-//     userId: 1,
-//   };
-
-//   const options = {
-//     method: "POST",
-//     headers: { "Content-Type": "application/json; charset=UTF-8" },
-//     body: JSON.stringify(body),
-//   };
-
-//   try {
-//     const res = await fetch(url, options);
-//     const data = await res.json();
-//     console.log(data);
-
-//     return {
-//       statusCode: 200,
-//       body: JSON.stringify(data),
-//     };
-//   } catch (error) {
-//     console.log(error);
-//     return {
-//       statusCode: 500,
-//       body: JSON.stringify({ error: "fetch failed" }),
-//     };
-//   }
-// };
-
 export const handler = async (event) => {
   const url = "https://7385ae90469b0ea76d3107d8ce0332f0.m.pipedream.net";
+
+  // what is the shape of the event form data we are hooking into?
+  const { payload } = JSON.parse(event.body)
+  console.log(payload)
 
   const body = {
     title: "foo",
@@ -46,22 +17,29 @@ export const handler = async (event) => {
     body: JSON.stringify(body),
   };
 
-  try {
-    const res = await fetch(url, options);
-    const data = await res.json();
-    console.log(data);
 
-    return {
-      statusCode: 302,
-      headers: {
-        Location: "https://tistheseasonkc.com/thank-you",
-      },
-    };
-  } catch (error) {
-    console.log(error);
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ error: "fetch failed" }),
-    };
+  // return for testing
+  return {
+    statusCode: 200,
+    body: "You're in testing mode"
   }
+
+  // try {
+  //   const res = await fetch(url, options);
+  //   const data = await res.json();
+  //   console.log(data);
+
+  //   return {
+  //     statusCode: 302,
+  //     headers: {
+  //       Location: "https://tistheseasonkc.com/thank-you",
+  //     },
+  //   };
+  // } catch (error) {
+  //   console.log(error);
+  //   return {
+  //     statusCode: 500,
+  //     body: JSON.stringify({ error: "fetch failed" }),
+  //   };
+  // }
 };

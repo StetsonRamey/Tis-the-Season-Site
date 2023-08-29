@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <!-- HEAD TAGS -->
 
@@ -135,8 +135,7 @@
         <section class="upper-block">
           <arictle class="upper-text">
             🎁 We are preparing for the 2023 Holiday Season!! 🎁
-            <p class="mt-10 text-3xl text-left">
-
+            <p class="mt-10 text-left text-3xl">
               Please fill out the form below for an estimate with current
               pricing. We will call you to discuss and can answer any questions
               you have!
@@ -148,10 +147,9 @@
             <div class="contact-header">
               <h2 class="m-8">
                 We're only taking customers in parts of
-                <span class="text-logo-pink">Lee's Summit</span> and
-                parts of
-                <span class="text-logo-pink">Raymore</span> for the
-                2023 Holiday Season
+                <span class="text-logo-pink">Lee's Summit</span> and parts of
+                <span class="text-logo-pink">Raymore</span> for the 2023 Holiday
+                Season
               </h2>
               <h2 class="m-8">
                 If you're not sure you're within our service area, fill out the
@@ -159,14 +157,22 @@
               </h2>
               <!-- <h1 class="m-8">We'll call or email you with an estimate</h1> -->
             </div>
+              <!-- set these for here now, I think we handle the redirect from the function -->
+              <!-- action="/thank-you"
+              method="GET" -->
             <form
               data-netlify="true"
-              action="/thank-you"
-              method="POST"
               name="tts-new-lead"
               subject="TTS New Lead"
               id="contact-form"
+              netlify-honeypot="bot-field"
             >
+                <div hidden aria-hidden="true">
+                  <label>
+                    Bot field
+                    <input name="bot-field" />
+                  </label>
+                </div>
               <p>
                 <strong>
                   <abbr title="required">*</abbr>
