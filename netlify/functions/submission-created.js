@@ -5,7 +5,7 @@ export const handler = async (event) => {
   const { data } = JSON.parse(event.body.payload);
   console.log(data);
 
-  const form = event.body.payload["form_name"];
+  const form = JSON.parse(event.body.payload["form_name"]);
   console.log(form);
 
   // const body = {
