@@ -21,7 +21,7 @@ export const handler = async (event) => {
   // return for testing
   return {
     statusCode: 200,
-    body: "You're in testing mode"
+    body: "You're in testing mode, we've got changes"
   }
 
   // try {
