@@ -25,12 +25,12 @@ export const handler = async (event) => {
   };
 
   // what is the shape of the event form data we are hooking into?
-  const { payload } = JSON.parse(fakeSubmisson);
+  const { payload } = fakeSubmisson;
 
-  const data = payload.data
-  const form = payload["form_name"]
+  const data = payload.data;
+  const form = payload["form_name"];
   console.log(data);
-  console.log(form)
+  console.log(form);
 
   const body = {
     data,
@@ -46,10 +46,21 @@ export const handler = async (event) => {
   console.log({ options });
 
   // return for testing
-  return {
-    statusCode: 200,
-    body: "You're in testing mode, we've got changes",
-  };
+  try {
+    const res = await fetch(url, options);
+    const data = await res.json();
+    console.log(data);
+    return {
+      statusCode: 200,
+      body: "You're in testing mode, we've got changes",
+    };
+  } catch (e) {
+    console.log(e);
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ error: "fetch failed" }),
+    };
+  }
 
   // try {
   //   const res = await fetch(url, options);
