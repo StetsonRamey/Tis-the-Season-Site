@@ -51,8 +51,10 @@ export const handler = async (event) => {
     const data = await res.json();
     console.log(data);
     return {
-      statusCode: 200,
-      body: "You're in testing mode, we've got changes",
+      statusCode: 302,
+      headers: {
+        Location: "https://tistheseasonkc.com/thank-you",
+      },
     };
   } catch (e) {
     console.log(e);
