@@ -4,7 +4,8 @@ functions = "netlify/functions/"
 [functions]
 node_bundler = "esbuild"
 
-[[redirects]]
-from = "/submit"
-to = "/thank-you"
-status = 302
+# can't redirect the form submission or the function hook won't fire
+# [[redirects]]
+# from = "/submit"
+# to = "/thank-you"
+# status = 302
