@@ -1,5 +1,10 @@
 [build]
- functions = "netlify/functions/"
+functions = "netlify/functions/"
 
- [functions]
-  node_bundler = "esbuild"
+[functions]
+node_bundler = "esbuild"
+
+[[redirects]]
+from = "/submit"
+to = "/thank-you"
+status = 302

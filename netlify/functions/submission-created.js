@@ -5,8 +5,8 @@ export const handler = async (event) => {
   // what is the shape of the event form data we are hooking into?
   const { payload } = JSON.parse(event.body);
 
-  const data = payload.data
-  const form = payload["form_name"]
+  const data = payload.data;
+  const form = payload["form_name"];
 
   // send over the data fields from the form and the form name for parsing
   const body = {
@@ -29,9 +29,7 @@ export const handler = async (event) => {
     return {
       // redirect the user to the thank you page
       statusCode: 302,
-      headers: {
-        Location: "https://tistheseasonkc.com/thank-you",
-      },
+      body: JSON.stringify({ message: "this worked!" }),
     };
   } catch (error) {
     console.log(error);

@@ -197,6 +197,7 @@
                 name="tts-qr-code-form"
                 subject="QR Code Form"
                 netlify-honeypot="bot-field"
+                action="/submit"
               >
                 <div hidden aria-hidden="true">
                   <label>
@@ -245,7 +246,7 @@
                   <span class="text-base text-gray-500">(required)</span>
                   <input
                     required
-                    name="phone"
+                    name="tel"
                     type="tel"
                     autocomplete="tel"
                     class="phone-number mt-1 block h-auto w-full rounded-md border-solid border-gray-300 py-4 text-2xl focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
@@ -314,7 +315,7 @@
                     <span class="text-gray-700">Color Ideas?</span>
                     <span class="text-base text-gray-500">(optional)</span>
                     <select
-                      name="color"
+                      name="Light Color"
                       class="mt-1 block h-auto w-full rounded-md border-gray-300 py-4 text-2xl focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                     >
                       <option value="Not Sure">Choose One</option>
@@ -333,7 +334,7 @@
                   <span class="text-gray-700">Additional details</span>
                   <span class="text-base text-gray-500">(optional)</span>
                   <textarea
-                    name="details"
+                    name="message"
                     class="mt-1 block h-56 w-full rounded-md border-gray-300 text-2xl focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                     rows="3"
                   ></textarea>
