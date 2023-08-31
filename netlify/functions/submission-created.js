@@ -26,11 +26,7 @@ export const handler = async (event) => {
     // this is the response message we get back from pipedream
     console.log(data);
 
-    return {
-      // redirect the user to the thank you page
-      statusCode: 302,
-      body: JSON.stringify({ message: "this worked!" }),
-    };
+    return { data };
   } catch (error) {
     console.log(error);
     return {
