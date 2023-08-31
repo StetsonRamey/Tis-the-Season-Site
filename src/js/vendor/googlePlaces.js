@@ -31,6 +31,8 @@ function initAutocomplete() {
 function fillInAddress() {
   // Get the place details from the autocomplete object.
   var place = autocomplete.getPlace()
+  console.log('debugging the fillInAddress function')
+  console.log({place})
 
   for (var component in componentForm) {
     document.getElementById(component).value = ''
@@ -46,6 +48,7 @@ function fillInAddress() {
 
     if (componentForm[addressType]) {
       var val = place.address_components[i][componentForm[addressType]]
+      console.log('val', val)
       document.getElementById(addressType).value = val
     }
   }
