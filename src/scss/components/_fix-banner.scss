@@ -44,7 +44,7 @@
 
     @include respond-to("medium") {
       flex-direction: row;
-      justify-content: space-between;
+      // justify-content: space-between;
       padding: 0rem 12rem;
 
       svg {
@@ -53,6 +53,7 @@
 
       p {
         padding: 0;
+        margin-inline-end: 2rem;
       }
 
       a {
