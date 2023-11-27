@@ -134,8 +134,8 @@
         <!-- this is where we'll put the info about getting booked up fast -->
         <section class="upper-block">
           <arictle class="upper-text">
-            🎁 Scheduling new customer installations for after Thanksgiving! 🎁
-            <p class="sub-text">Get a quote to have your lights installed before December</p>
+            🎁 We've filled our schedule for the 2023 season 🎁
+            <p class="sub-text">Please contact us again next year in September for a quote!</p>
           </arictle>
         </section>
         <div class="contact-grid mt-28">
@@ -160,6 +160,7 @@
               subject="TTS New Lead"
               id="contact-form"
               netlify-honeypot="bot-field"
+              aria-disabled="true"
             >
               <div hidden aria-hidden="true">
                 <label>
@@ -190,6 +191,7 @@
                     </strong>
                   </label>
                   <input
+                    disabled
                     id="firstName"
                     name="firstName"
                     placeholder="Santa"
@@ -205,6 +207,7 @@
                     </strong>
                   </label>
                   <input
+                    disabled
                     id="lastName"
                     name="lastName"
                     placeholder="Clause"
@@ -220,6 +223,7 @@
                     </strong>
                   </label>
                   <input
+                    disabled
                     id="email"
                     name="email"
                     placeholder="kriskringle@merrychristmas.com"
@@ -235,6 +239,7 @@
                     </strong>
                   </label>
                   <input
+                    disabled
                     class="phone-number"
                     id="tel"
                     name="tel"
@@ -262,6 +267,7 @@
                     </strong>
                   </label>
                   <input
+                    disabled
                     id="autocomplete"
                     name="addressSearch"
                     onfocus="geolocate()"
@@ -275,6 +281,7 @@
                     <span>City: </span>
                   </label>
                   <input
+                    disabled
                     id="locality"
                     name="city"
                     type="text"
@@ -288,6 +295,7 @@
                       <span>State: </span>
                     </label>
                     <select
+                      disabled
                       class="form-select"
                       id="administrative_area_level_1"
                       name="state"
@@ -304,6 +312,7 @@
                     <span>Zip Code: </span>
                   </label>
                   <input
+                    disabled
                     id="postal_code"
                     name="zip"
                     type="text"
@@ -371,11 +380,11 @@
                 <div class="contact-input">
                   <label for="message">
                   </label>
-                  <textarea name="message"></textarea>
+                  <textarea disabled name="message"></textarea>
                 </div>
               </section>
               <div class="contact-submit">
-                <input type="submit" value="Submit" />
+                <input type="submit" value="full for 2023" disabled />
               </div>
             </form>
           </div>
