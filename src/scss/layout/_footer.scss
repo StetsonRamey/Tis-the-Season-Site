@@ -9,7 +9,7 @@
   grid-template-columns: 1fr;
   grid-row-gap: 1rem;
   justify-items: center;
-  @include respond-to('small') {
+  @include respond-to("small") {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
 
@@ -74,8 +74,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  @include footerList;
   color: $secondary-color;
+  @include footerList;
   h3 {
     margin: 0;
     font-size: 2rem;

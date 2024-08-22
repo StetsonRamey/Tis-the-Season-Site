@@ -1,12 +1,12 @@
 // add image overlay for text to show
 .Promo--itemMen,
 .Promo--itemWomen {
+  background-color: #fff;
   @include darkenImage;
   &:hover {
     @include easeOut;
     .Promo-text {
       color: #000000;
     }
-    background-color: #fff;
   }
 }
