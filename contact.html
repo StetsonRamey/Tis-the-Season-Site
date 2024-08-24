@@ -278,6 +278,9 @@
                 <div class="contact-input">
                   <label for="city">
                     <span>City: </span>
+                    <strong>
+                      <abbr title="required">*</abbr>
+                    </strong>
                   </label>
                   <input
                     id="locality"
@@ -292,6 +295,9 @@
                   <div class="contact-select">
                     <label for="State">
                       <span>State: </span>
+                      <strong>
+                        <abbr title="required">*</abbr>
+                      </strong>
                     </label>
                     <select
                       class="form-select"
@@ -309,6 +315,9 @@
                 <div class="contact-input">
                   <label for="Zip">
                     <span>Zip Code: </span>
+                    <strong>
+                      <abbr title="required">*</abbr>
+                    </strong>
                   </label>
                   <input
                     id="postal_code"
@@ -360,7 +369,6 @@
                     </select>
                   </div>
                 </fieldset> -->
-
                 <!-- <div class="contact-input">
                   <label for="feet">
                     <span>Linear Feet</span>
@@ -488,6 +496,22 @@
           e.preventDefault();
         }
       };
+    </script>
+    <script>
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          const submitBtn = document.querySelector(
+            '.contact-submit input[type="submit"]',
+          );
+          submitBtn.disabled = true;
+          submitBtn.pointerEvents = "none";
+
+          // setup the loader and add it
+          const loader = document.createElement("div");
+          loader.classList.add("loader");
+          submitBtn.parentNode.appendChild(loader);
+        });
     </script>
   </body>
 </html>

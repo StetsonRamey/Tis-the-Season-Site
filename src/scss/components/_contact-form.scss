@@ -100,9 +100,12 @@
 }
 .contact-submit {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 0 20%;
   margin-top: 2.5rem;
+  margin-block-end: 2.5rem;
   input {
     width: 100%;
     max-width: 290px;
@@ -118,4 +121,8 @@
       background-color: darken($color: $logo-teal, $amount: 20);
     }
   }
+}
+.contact-submit input[disabled] {
+  pointer-events: none;
+  opacity: 0.6;
 }
