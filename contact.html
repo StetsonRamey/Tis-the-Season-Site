@@ -134,7 +134,7 @@
         <!-- this is where we'll put the info about getting booked up fast -->
         <section class="upper-block">
           <arictle class="upper-text">
-            🎁 We're open for the 2024 holiday season 🎁
+            🎁 We're open for the <span class="date">this</span> holiday season 🎁
             <p class="sub-text">Please fill out our contact form for a quote</p>
           </arictle>
         </section>
@@ -144,7 +144,7 @@
               <h2 class="m-8">
                 We're only taking customers in parts of
                 <span class="text-logo-pink">Lee's Summit</span> and parts of
-                <span class="text-logo-pink">Raymore</span> for the 2023 Holiday
+                <span class="text-logo-pink">Raymore</span> for the <span class="date">this</span> Holiday
                 Season
               </h2>
               <h2 class="m-8">
@@ -488,6 +488,29 @@
     ></script>
     <script src="dist/js/googlePlaces.js"></script>
     <script>
+      // Progressive enhancement: Update date spans with current year and handle seasonal display
+      document.addEventListener('DOMContentLoaded', function() {
+        const now = new Date();
+        const currentYear = now.getFullYear();
+        const month = now.getMonth(); // 0-11 (January = 0, December = 11)
+        const day = now.getDate();
+
+        // Update date spans with current year
+        const dateSpans = document.querySelectorAll('.date');
+        dateSpans.forEach(span => {
+          span.textContent = currentYear;
+        });
+
+        // Hide upper-text section from January 1 - September 15
+        const isOffSeason = (month === 12 && day >= 5) || (month === 8 && day <= 15); // Jan-Aug or Sept 1-15
+        if (isOffSeason) {
+          const upperTextElement = document.querySelector('.upper-text');
+          if (upperTextElement) {
+            upperTextElement.style.display = 'none';
+          }
+        }
+      });
+
       document.getElementById("contact-form").onkeypress = function (e) {
         let key = e.charCode || e.keyCode || 0;
         if (key === 13) {
