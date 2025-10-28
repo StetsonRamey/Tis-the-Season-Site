@@ -54,5 +54,5 @@ function generateSessionId() {
 }
 
 export const config = {
-  path: '/qr-code.html',
+  path: ['/qr-code', '/qr-code.html'],
 };

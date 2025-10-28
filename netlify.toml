@@ -5,6 +5,10 @@ functions = "netlify/functions/"
 node_bundler = "esbuild"
 
 [[edge_functions]]
+path = "/qr-code"
+function = "ab-test"
+
+[[edge_functions]]
 path = "/qr-code.html"
 function = "ab-test"
 
