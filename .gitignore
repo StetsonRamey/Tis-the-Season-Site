@@ -3,8 +3,8 @@ node_modules
 neural-engine-246119-b26ece4a119d.json
 dist
 
-# Local Netlify folder
-netlify
+# Local Netlify folder (but keep source code)
+.netlify
 netlify/.DS_Store
 
 **./.DS_Store

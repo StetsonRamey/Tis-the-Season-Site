@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <link href="dist/css/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="dist/css/tailwind.css" />
+    <title>Free Holiday Lighting Design - Tis the Season</title>
+    <meta
+      content="Get your free custom holiday lighting design. 150+ 5-star reviews. All-inclusive pricing. Fast service."
+      name="description"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon-tts.svg" />
+    <link rel="alternate icon" href="/favicon.ico" />
+    <style>
+      /* Increase base font sizes for better mobile readability */
+      html {
+        font-size: 18px;
+      }
+      @media (min-width: 768px) {
+        html {
+          font-size: 16px;
+        }
+      }
+
+      /* Increase form input contrast */
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      textarea,
+      select {
+        border: 2px solid #6b7280 !important;
+        background-color: #ffffff !important;
+        border-radius: 0.5rem !important;
+      }
+      input[type="text"]:focus,
+      input[type="email"]:focus,
+      input[type="tel"]:focus,
+      textarea:focus,
+      select:focus {
+        border: 2px solid #10b981 !important;
+        box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2) !important;
+        outline: none !important;
+      }
+
+      .sticky-cta {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        background: #10b981;
+        padding: 1rem;
+        box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
+        display: none;
+      }
+      .sticky-cta.visible {
+        display: block;
+      }
+      .hero-gradient {
+        background-color: #2d7a5f;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48' fill='none' stroke='rgba(255,255,255,0.1)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m17 14 3 3.3a1 1 0 0 1-.7 1.7H4.7a1 1 0 0 1-.7-1.7L7 14h-.3a1 1 0 0 1-.7-1.7L9 9h-.2A1 1 0 0 1 8 7.3L12 3l4 4.3a1 1 0 0 1-.8 1.7H15l3 3.3a1 1 0 0 1-.7 1.7H17Z'%3E%3C/path%3E%3Cpath d='M12 22v-3'%3E%3C/path%3E%3C/svg%3E");
+        background-size: 40px 40px;
+      }
+
+      input,
+      textarea,
+      select {
+        padding: 1rem;
+        color: #1f2937 !important;
+      }
+
+      .quick-contact-group a {
+        font-size: 1rem;
+      }
+
+    </style>
+  </head>
+
+  <body class="bg-white">
+    <!-- Minimal Header - Logo Only -->
+    <header class="bg-white py-6 shadow-sm">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-center">
+          <a href="https://tistheseasonkc.com">
+            <img
+              alt="Tis the Season Logo"
+              class="h-16 w-auto"
+              src="./src/images/tts-logo.png"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Quick Contact Bar -->
+    <section class="quick-contact">
+      <div class="quick-contact-group">
+        <svg
+          class="icon"
+          viewbox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20 18.35V19a1 1 0 0 1-1 1h-2A17 17 0 0 1 0 3V1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4c0 .56-.31 1.31-.7 1.7L3.16 8.84c1.52 3.6 4.4 6.48 8 8l2.12-2.12c.4-.4 1.15-.71 1.7-.71H19a1 1 0 0 1 .99 1v3.35z"
+          />
+        </svg>
+        <a href="tel:+1-816-281-7032">(816) 281-7032</a>
+      </div>
+      <div class="quick-contact-group middle">
+        <svg
+          class="icon"
+          viewbox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M17 11v3l-3-3H8a2 2 0 0 1-2-2V2c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-1zm-3 2v2a2 2 0 0 1-2 2H6l-3 3v-3H2a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h2v3a4 4 0 0 0 4 4h6z"
+          />
+        </svg>
+        <a href="sms:8446001675">(844) 600-1675</a>
+      </div>
+    </section>
+
+    <main>
+      <!-- Hero Section with Form Above the Fold -->
+      <article class="hero-gradient py-12 text-white md:py-20">
+        <div class="container mx-auto px-4 lg:px-10">
+          <div class="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
+            <!-- Left Column - Value Prop -->
+            <div class="mb-10 lg:mb-0">
+              <h1 class="mb-6 text-5xl font-bold leading-tight md:text-7xl">
+                Get Your FREE Custom Holiday Lighting Estimate
+              </h1>
+              <p class="mb-8 text-2xl md:text-3xl">
+                Professional installation + takedown. Hassle free warranty.
+                All-inclusive pricing. No surprises.
+              </p>
+
+              <!-- Key Benefits -->
+              <ul class="mb-8 space-y-4">
+                <li class="flex items-start text-xl md:text-2xl">
+                  <span class="mr-3 text-3xl">⭐</span>
+                  <span><strong>150+ 5-Star Google Reviews</strong> - from Lee's
+                    Summit Customers</span>
+                </li>
+                <li class="flex items-start text-xl md:text-2xl">
+                  <span class="mr-3 text-3xl">⚡</span>
+                  <span><strong>24-Hour Response</strong> - Get your estimate
+                    tomorrow</span>
+                </li>
+                <li class="flex items-start text-xl md:text-2xl">
+                  <span class="mr-3 text-3xl">💰</span>
+                  <span><strong>All-Inclusive Pricing</strong> - Installation,
+                    takedown, maintenance, and storage included</span>
+                </li>
+                <li class="flex items-start text-xl md:text-2xl">
+                  <span class="mr-3 text-3xl">🎄</span>
+                  <span><strong>Professional LED Lights</strong> - Brightest,
+                    longest-lasting displays</span>
+                </li>
+                <li class="flex items-start text-xl md:text-2xl">
+                  <span class="mr-3 text-3xl">🤝</span>
+                  <span><strong>10 Years In Business</strong> - Not a side
+                    hussle for us</span>
+                </li>
+              </ul>
+
+              <!-- Trust Badge -->
+              <div class="rounded-lg bg-white/10 p-6 backdrop-blur-sm">
+                <p class="text-lg italic">
+                  "Best holiday lighting company in KC. They transformed our
+                  home!" - Sarah M.
+                </p>
+              </div>
+            </div>
+
+            <!-- Right Column - Simple Form -->
+            <div class="rounded-xl bg-white p-8 shadow-2xl">
+              <h2 class="mb-6 text-center text-3xl font-bold text-gray-800">
+                Get Your Free Estimate
+              </h2>
+              <p class="mb-6 text-center text-gray-600">
+                Fill out this quick form and we'll email you a custom design
+                with pricing within 24 hours
+              </p>
+
+              <form
+                method="POST"
+                action="https://stetson-maincontactformhandler.web.val.run/mailer"
+                id="variant-a-form"
+                name="tts-variant-a-form"
+                subject="QR Code Form - Variant A"
+                class="space-y-5"
+              >
+                <!-- Hidden Fields -->
+                <input type="hidden" name="variant" value="A" />
+                <input type="hidden" name="source" value="qr-code" />
+                <div hidden aria-hidden="true">
+                  <label>
+                    Bot field
+                    <input name="bot-field" />
+                  </label>
+                </div>
+
+                <!-- First Name -->
+                <label class="block">
+                  <span class="text-lg font-semibold text-gray-700"
+                  >First Name</span>
+                  <input
+                    required
+                    name="firstName"
+                    type="text"
+                    class="mt-2 block w-full rounded-lg border-2 border-gray-700 px-4 py-6 text-xl focus:border-logo-teal focus:ring focus:ring-logo-teal/50"
+                    placeholder="Santa"
+                    autocomplete="given-name"
+                  />
+                </label>
+
+                <!-- Last Name -->
+                <label class="block">
+                  <span class="text-lg font-semibold text-gray-700"
+                  >Last Name</span>
+                  <input
+                    required
+                    name="lastName"
+                    type="text"
+                    class="mt-2 block w-full rounded-lg border-2 border-gray-300 px-4 py-6 text-xl focus:border-logo-teal focus:ring focus:ring-logo-teal/50"
+                    placeholder="Claus"
+                    autocomplete="family-name"
+                  />
+                </label>
+
+                <!-- Email -->
+                <label class="block">
+                  <span class="text-lg font-semibold text-gray-700">Email</span>
+                  <input
+                    required
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    class="mt-2 block w-full rounded-lg border-2 border-gray-700 px-4 py-6 text-xl focus:border-logo-teal focus:ring focus:ring-logo-teal/50"
+                    placeholder="santa@northpole.com"
+                  />
+                </label>
+
+                <!-- Phone -->
+                <label class="block">
+                  <span class="text-lg font-semibold text-gray-700">Phone</span>
+                  <input
+                    required
+                    name="tel"
+                    id="tel"
+                    type="tel"
+                    autocomplete="tel"
+                    class="mt-2 block w-full rounded-lg border-2 border-gray-700 px-4 py-6 text-xl focus:border-logo-teal focus:ring focus:ring-logo-teal/50 phone-number"
+                    placeholder="(816) 555-1234"
+                  />
+                </label>
+
+                <!-- Address -->
+                <label class="block">
+                  <span class="text-lg font-semibold text-gray-700"
+                  >Street Address</span>
+                  <input
+                    required
+                    id="autocomplete"
+                    type="text"
+                    autocomplete="off"
+                    class="mt-2 block w-full rounded-lg border-2 border-gray-700 px-4 py-6 text-xl focus:border-logo-teal focus:ring focus:ring-logo-teal/50"
+                    placeholder="123 Main St"
+                  />
+                </label>
+
+                <!-- Hidden fields that will be populated by Google Places -->
+                <input type="hidden" id="addressSearch" name="addressSearch" />
+                <input type="hidden" id="locality" name="city" />
+                <input type="hidden" id="administrative_area_level_1" name="state" />
+                <input type="hidden" id="postal_code" name="zip" />
+
+                <!-- Submit Button -->
+                <button
+                  type="submit"
+                  id="submit-button"
+                  class="w-full rounded-lg bg-logo-pink py-5 text-2xl font-bold text-white transition duration-200 hover:bg-logo-pink/80 disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  <span id="button-text">Get My FREE Estimate →</span>
+                  <span id="button-loading" class="hidden">
+                    <svg class="inline-block animate-spin h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                      <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Submitting...
+                  </span>
+                </button>
+
+                <p class="text-center text-sm text-gray-500">
+                  No obligation. We respect your privacy.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Social Proof Section -->
+      <article class="bg-gray-50 py-16">
+        <div class="container mx-auto px-4 lg:px-10">
+          <div class="w-full">
+            <h2
+              class="mb-8 text-4xl text-center font-bold text-gray-800 md:text-5xl"
+            >
+              Trusted by 800+ Lee's Summit and Raymore Customers
+            </h2>
+
+            <!-- PLACEHOLDER: Add a 3-column grid of customer photos with their homes lit up -->
+            <!-- Each should have a quote and name underneath -->
+            <div class="mb-12 grid gap-8 lg:grid-cols-3">
+              <div class="flex flex-col rounded-lg bg-white p-6 shadow-md">
+                <div
+                  class="mb-4 aspect-video rounded-lg bg-gray-200 overflow-hidden"
+                >
+                  <img
+                    src="https://res.cloudinary.com/stetsonr/image/upload/c_fill,f_auto,g_auto,h_400,q_auto:good,w_700/v1692224065/2023%20TTS%20Site%20Rebuild/LED-Red-Green_jpe5zq.jpg"
+                    alt="LED red and green holiday lighting on a 2 story house"
+                    class="h-full w-full object-cover"
+                    loading="lazy"
+                    width="700"
+                    height="400"
+                  >
+                </div>
+                <p class="mb-4 flex-grow italic text-gray-700">
+                  "Could not have been happier with our experience. They did a
+                  great job and were the lowest priced we could find."
+                </p>
+                <div class="flex items-center justify-between">
+                  <p class="font-semibold text-gray-900">
+                    - Matt R., Lee's Summit
+                  </p>
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 48 48"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="flex-shrink-0"
+                  >
+                    <path
+                      fill="#FFC107"
+                      d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8c-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C12.955 4 4 12.955 4 24s8.955 20 20 20s20-8.955 20-20c0-1.341-.138-2.65-.389-3.917"
+                    />
+                    <path
+                      fill="#FF3D00"
+                      d="m6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C16.318 4 9.656 8.337 6.306 14.691"
+                    />
+                    <path
+                      fill="#4CAF50"
+                      d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238A11.9 11.9 0 0 1 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44"
+                    />
+                    <path
+                      fill="#1976D2"
+                      d="M43.611 20.083H42V20H24v8h11.303a12.04 12.04 0 0 1-4.087 5.571l.003-.002l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="flex flex-col rounded-lg bg-white p-6 shadow-md">
+                <div
+                  class="mb-4 aspect-video rounded-lg bg-gray-200 overflow-hidden"
+                >
+                  <img
+                    src="https://res.cloudinary.com/stetsonr/image/upload/c_fill,f_auto,g_auto,h_400,q_auto:good,w_700/v1692224065/2023%20TTS%20Site%20Rebuild/INC-3red-3clear_ufnimd.jpg"
+                    alt="LED red and clear holiday lighting on a 2 story house"
+                    class="h-full w-full object-cover"
+                    loading="lazy"
+                    width="700"
+                    height="400"
+                  >
+                </div>
+                <p class="mb-4 flex-grow italic text-gray-700">
+                  "We’ve used 2 years on two different homes. When we moved, Tis
+                  the Season simply modified what we used with house #1 to fit
+                  our new home #2. This cut down in the cost of our relocating.
+                  Also the install process is slick! They have a team who safely
+                  installs on the highest peaks of our home."
+                </p>
+                <div class="flex items-center justify-between">
+                  <p class="font-semibold text-gray-900">
+                    - TJ J., Lee's Summit
+                  </p>
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 48 48"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="flex-shrink-0"
+                  >
+                    <path
+                      fill="#FFC107"
+                      d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8c-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C12.955 4 4 12.955 4 24s8.955 20 20 20s20-8.955 20-20c0-1.341-.138-2.65-.389-3.917"
+                    />
+                    <path
+                      fill="#FF3D00"
+                      d="m6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C16.318 4 9.656 8.337 6.306 14.691"
+                    />
+                    <path
+                      fill="#4CAF50"
+                      d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238A11.9 11.9 0 0 1 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44"
+                    />
+                    <path
+                      fill="#1976D2"
+                      d="M43.611 20.083H42V20H24v8h11.303a12.04 12.04 0 0 1-4.087 5.571l.003-.002l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="flex flex-col rounded-lg bg-white p-6 shadow-md">
+                <div
+                  class="mb-4 aspect-video rounded-lg bg-gray-200 overflow-hidden"
+                >
+                  <img
+                    src="https://res.cloudinary.com/stetsonr/image/upload/c_fill,f_auto,g_auto,h_400,q_auto:good,w_700/v1692224065/2023%20TTS%20Site%20Rebuild/LED-warm-red_peaks_s23gjd.jpg"
+                    alt="LED warm white and red holiday lighting on a 2 story house"
+                    class="h-full w-full object-cover"
+                    loading="lazy"
+                    width="700"
+                    height="400"
+                  >
+                </div>
+                <p class="mb-4 flex-grow italic text-gray-700">
+                  "The most professional service we’ve ever used! Initial
+                  estimate was itemized with a mock-up of what the lights would
+                  look like. Communication is excellent. They stay in touch
+                  throughout the process."
+                </p>
+                <div class="flex items-center justify-between">
+                  <p class="font-semibold text-gray-900">
+                    - Stephanie D., Raymore
+                  </p>
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 48 48"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="flex-shrink-0"
+                  >
+                    <path
+                      fill="#FFC107"
+                      d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8c-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C12.955 4 4 12.955 4 24s8.955 20 20 20s20-8.955 20-20c0-1.341-.138-2.65-.389-3.917"
+                    />
+                    <path
+                      fill="#FF3D00"
+                      d="m6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C16.318 4 9.656 8.337 6.306 14.691"
+                    />
+                    <path
+                      fill="#4CAF50"
+                      d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238A11.9 11.9 0 0 1 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44"
+                    />
+                    <path
+                      fill="#1976D2"
+                      d="M43.611 20.083H42V20H24v8h11.303a12.04 12.04 0 0 1-4.087 5.571l.003-.002l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Google Reviews CTA -->
+            <div class="text-center">
+              <a
+                class="inline-block rounded-lg bg-logo-teal px-8 py-6 text-2xl font-semibold text-white transition hover:bg-logo-teal/80"
+                href="https://www.google.com/search?q=tis+the+season+holiday+lighting+kansas+city&sourceid=chrome&ie=UTF-8#lrd=0x87c0f087ab93128f:0xf72262ed961dbd44,1,,,,"
+                target="_blank"
+              >
+                Read All 150+ Reviews →
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- How It Works -->
+      <article class="bg-white py-16">
+        <div class="container mx-auto px-4 lg:max-w-5xl lg:px-10">
+          <h2 class="mb-12 text-center text-5xl font-bold text-gray-800">
+            How It Works
+          </h2>
+
+          <div class="space-y-12">
+            <div class="flex items-start gap-6">
+              <div
+                class="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-logo-teal text-3xl font-bold text-white"
+              >
+                1
+              </div>
+              <div>
+                <h3 class="mb-2 text-2xl font-bold text-gray-800">
+                  Submit Your Info
+                </h3>
+                <p class="text-xl text-gray-600">
+                  Fill out the simple form above. Takes less than 60 seconds.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-6">
+              <div
+                class="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-logo-teal text-3xl font-bold text-white"
+              >
+                2
+              </div>
+              <div>
+                <h3 class="mb-2 text-2xl font-bold text-gray-800">
+                  We Design Your Display
+                </h3>
+                <p class="text-xl text-gray-600">
+                  Angela looks up your home on Google Maps and creates a custom
+                  lighting design with photos and pricing. If we can't find your
+                  home, we'll text you for a quick photo.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-6">
+              <div
+                class="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-logo-teal text-3xl font-bold text-white"
+              >
+                3
+              </div>
+              <div>
+                <h3 class="mb-2 text-2xl font-bold text-gray-800">
+                  Get Your Estimate in 24 Hours
+                </h3>
+                <p class="text-xl text-gray-600">
+                  You'll receive an email with your custom design, detailed
+                  pricing breakdown, and color options. No pressure, no
+                  surprises.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-6">
+              <div
+                class="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-logo-pink text-3xl font-bold text-white"
+              >
+                4
+              </div>
+              <div>
+                <h3 class="mb-2 text-2xl font-bold text-gray-800">
+                  We Handle Everything
+                </h3>
+                <p class="text-xl text-gray-600">
+                  Love it? We'll schedule your installation, handle setup,
+                  maintain your lights throughout the season, and take
+                  everything down in January. You just enjoy the magic.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Final CTA -->
+      <article class="hero-gradient py-16 text-white">
+        <div class="container mx-auto px-4 text-center lg:px-10">
+          <h2 class="mb-6 text-5xl font-bold">
+            Ready to Make Your Home Shine?
+          </h2>
+          <p class="mb-8 text-2xl">
+            Join 800+ happy customers. Get your free design in FAST.
+          </p>
+          <a
+            href="#variant-a-form"
+            class="inline-block rounded-lg bg-white px-12 py-5 text-2xl font-bold text-logo-teal transition hover:bg-gray-100"
+          >
+            Get Started Now →
+          </a>
+        </div>
+      </article>
+    </main>
+
+    <!-- Minimal Footer -->
+    <footer class="bg-gray-900 py-8 text-white">
+      <div class="container mx-auto px-4 text-center">
+        <div class="mb-4">
+          <img
+            alt="TTS Logo"
+            class="mx-auto h-12 w-auto"
+            src="./src/images/tts-logo-simple.png"
+          />
+        </div>
+        <p class="mb-4 text-sm">
+          Serving Lee's Summit, Raymore, and Winterset Valley
+        </p>
+        <div class="mb-4 flex justify-center gap-6">
+          <a href="tel:+1-816-281-7032" class="hover:text-logo-teal"
+          >(816) 281-7032</a>
+          <a href="/terms-and-conditions.html" class="hover:text-logo-teal"
+          >Terms</a>
+        </div>
+        <p class="text-xs text-gray-400">
+          © 2025 Tis the Season Holiday Lighting. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="sticky-cta" id="sticky-cta">
+      <a
+        href="#variant-a-form"
+        class="block rounded-lg bg-white py-3 text-center text-xl font-bold text-logo-teal"
+      >
+        Get Your Free Design →
+      </a>
+    </div>
+
+    <script defer src="dist/js/cleave.min.js"></script>
+    <script defer src="dist/js/formatPhone.js"></script>
+    <script defer src="dist/js/googlePlaces.js"></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtwWskZSb5_b3HOIxCAnaG4I8jS4paqaM&loading=async&libraries=places&callback=initAutocompleteShort"
+    ></script>
+
+    <!-- A/B Test Tracking -->
+    <script>
+      // Get variant and session ID from cookies
+      function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+      }
+
+      // Log visit to Airtable (non-blocking)
+      window.addEventListener('load', function() {
+        const variant = getCookie('tts_ab_variant');
+        const sessionId = getCookie('tts_session_id');
+
+        if (variant && sessionId) {
+          fetch('/.netlify/functions/log-visit', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              variant,
+              sessionId,
+              userAgent: navigator.userAgent,
+              referrer: document.referrer,
+            }),
+          }).catch(err => console.error('Failed to log visit:', err));
+        }
+      });
+    </script>
+
+    <script>
+      // Optimistic form submission
+      const form = document.getElementById("variant-a-form");
+      const submitButton = document.getElementById("submit-button");
+      const buttonText = document.getElementById("button-text");
+      const buttonLoading = document.getElementById("button-loading");
+
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        // Disable button and show loading state
+        submitButton.disabled = true;
+        buttonText.classList.add("hidden");
+        buttonLoading.classList.remove("hidden");
+
+        // Collect form data
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+
+        // Get variant and session for conversion tracking
+        const variant = getCookie('tts_ab_variant');
+        const sessionId = getCookie('tts_session_id');
+
+        // Store in localStorage as backup
+        try {
+          localStorage.setItem("tts-form-backup", JSON.stringify({
+            data,
+            timestamp: new Date().toISOString(),
+          }));
+        } catch (e) {
+          console.error("Failed to backup form data:", e);
+        }
+
+        // Submit form in background
+        fetch(form.action, {
+          method: "POST",
+          body: formData,
+        }).catch((error) => {
+          console.error("Form submission error:", error);
+          // Still navigate - form data is backed up in localStorage
+        });
+
+        // Log conversion to Airtable (non-blocking)
+        if (variant && sessionId) {
+          fetch('/.netlify/functions/log-conversion', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              variant,
+              sessionId,
+              formData: data,
+            }),
+          }).catch(err => console.error('Failed to log conversion:', err));
+        }
+
+        // Navigate to thank-you page after brief delay for perceived progress
+        setTimeout(() => {
+          window.location.href = "/thank-you.html";
+        }, 200);
+      });
+
+      // Prevent form submission on Enter key in text fields
+      form.onkeypress = function (e) {
+        let key = e.charCode || e.keyCode || 0;
+        if (key === 13 && e.target.tagName !== "TEXTAREA") {
+          e.preventDefault();
+        }
+      };
+
+      // Show sticky CTA on scroll (mobile only)
+      if (window.innerWidth < 768) {
+        const stickyCta = document.getElementById("sticky-cta");
+        let lastScroll = 0;
+
+        window.addEventListener("scroll", () => {
+          const currentScroll = window.pageYOffset;
+
+          if (currentScroll > 500 && currentScroll > lastScroll) {
+            stickyCta.classList.add("visible");
+          } else if (currentScroll < lastScroll - 10) {
+            stickyCta.classList.remove("visible");
+          }
+
+          lastScroll = currentScroll;
+        });
+      }
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(
+            this.getAttribute("href"),
+          );
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
