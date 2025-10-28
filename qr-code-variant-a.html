@@ -696,32 +696,41 @@
           console.error("Failed to backup form data:", e);
         }
 
-        // Submit form in background
-        fetch(form.action, {
-          method: "POST",
-          body: formData,
-        }).catch((error) => {
-          console.error("Form submission error:", error);
-          // Still navigate - form data is backed up in localStorage
-        });
+        // Submit both requests in parallel and wait for them
+        const requests = [];
+        
+        // Submit form to mailer
+        requests.push(
+          fetch(form.action, {
+            method: "POST",
+            body: formData,
+          }).catch((error) => {
+            console.error("Form submission error:", error);
+          })
+        );
 
-        // Log conversion to Airtable (non-blocking)
+        // Log conversion to Airtable
         if (variant && sessionId) {
-          fetch('/.netlify/functions/log-conversion', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              variant,
-              sessionId,
-              formData: data,
-            }),
-          }).catch(err => console.error('Failed to log conversion:', err));
+          requests.push(
+            fetch('/.netlify/functions/log-conversion', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                variant,
+                sessionId,
+                formData: data,
+              }),
+            }).catch(err => console.error('Failed to log conversion:', err))
+          );
         }
 
-        // Navigate to thank-you page after brief delay for perceived progress
-        setTimeout(() => {
+        // Wait for both requests, then navigate (with max 2 second timeout)
+        Promise.race([
+          Promise.all(requests),
+          new Promise(resolve => setTimeout(resolve, 2000))
+        ]).finally(() => {
           window.location.href = "/thank-you.html";
-        }, 200);
+        });
       });
 
       // Prevent form submission on Enter key in text fields
