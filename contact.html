@@ -34,6 +34,32 @@
 
       gtag('config', 'AW-17686347200');
     </script>
+    <!-- Event snippet for Submit lead form (1) conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof (url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+          'send_to': 'AW-17686347200/QNLwCO_Oz7UbEMD7wPFB',
+          'event_callback': callback
+        });
+        return false;
+      }
+    </script>
+
+    <!-- Event snippet for Submit lead form conversion -->
+    <script>
+      function trackConversion() {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-17686347200/QNLwCO_Oz7UbEMD7wPFB'
+        });
+      }
+    </script>
+
   </head>
   <!-- MAIN APP -->
 
@@ -527,5 +553,17 @@
         }
       };
     </script>
+    <script>
+      // Wait for DOM to load before attaching event listeners
+      document.addEventListener('DOMContentLoaded', function () {
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+          contactForm.addEventListener('submit', function (e) {
+            trackConversion();
+          });
+        }
+      });
+    </script>
+
   </body>
 </html>
