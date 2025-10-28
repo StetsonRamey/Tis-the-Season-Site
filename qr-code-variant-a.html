@@ -6,6 +6,8 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
     <link href="dist/css/app.css" rel="stylesheet" />
     <link rel="stylesheet" href="dist/css/tailwind.css" />
+    <!-- Preload critical scripts -->
+    <link rel="preload" href="dist/js/googlePlaces.js" as="script" />
     <title>Free Holiday Lighting Design - Tis the Season</title>
     <meta
       content="Get your free custom holiday lighting design. 150+ 5-star reviews. All-inclusive pricing. Fast service."
@@ -617,21 +619,38 @@
 
     <script defer src="dist/js/cleave.min.js"></script>
     <script defer src="dist/js/formatPhone.js"></script>
-    <script src="dist/js/googlePlaces.js"></script>
     <script>
-      // Ensure function is loaded before Google Maps tries to call it
+      // Load googlePlaces immediately (preloaded in head)
+      const googlePlacesScript = document.createElement('script');
+      googlePlacesScript.src = 'dist/js/googlePlaces.js';
+      document.head.appendChild(googlePlacesScript);
+
+      // Lazy load Google Maps only when user interacts with address field
+      let mapsLoaded = false;
       function loadGoogleMaps() {
-        if (typeof initAutocompleteShort === 'function') {
-          const script = document.createElement('script');
-          script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAtwWskZSb5_b3HOIxCAnaG4I8jS4paqaM&loading=async&libraries=places&callback=initAutocompleteShort';
-          script.async = true;
-          document.body.appendChild(script);
-        } else {
-          console.error('initAutocompleteShort not found, retrying...');
-          setTimeout(loadGoogleMaps, 100);
+        if (mapsLoaded) return;
+        mapsLoaded = true;
+        
+        function attemptLoad() {
+          if (typeof initAutocompleteShort === 'function') {
+            const script = document.createElement('script');
+            script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAtwWskZSb5_b3HOIxCAnaG4I8jS4paqaM&loading=async&libraries=places&callback=initAutocompleteShort';
+            script.async = true;
+            document.body.appendChild(script);
+          } else {
+            setTimeout(attemptLoad, 50);
+          }
         }
+        attemptLoad();
       }
-      loadGoogleMaps();
+
+      // Load Maps when user focuses on address field
+      document.addEventListener('DOMContentLoaded', () => {
+        const addressField = document.getElementById('autocomplete');
+        if (addressField) {
+          addressField.addEventListener('focus', loadGoogleMaps, { once: true });
+        }
+      });
     </script>
 
     <!-- A/B Test Tracking -->
