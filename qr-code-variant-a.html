@@ -701,6 +701,21 @@
       form.addEventListener("submit", async function (e) {
         e.preventDefault();
 
+        // Validate address was selected from autocomplete
+        const addressSearch = document.getElementById("addressSearch").value;
+        const autocompleteValue = document.getElementById("autocomplete").value;
+        
+        if (!addressSearch && autocompleteValue) {
+          // User typed but didn't select from dropdown - copy their input
+          document.getElementById("addressSearch").value = autocompleteValue;
+        }
+        
+        // Still no address? Block submission
+        if (!document.getElementById("addressSearch").value.trim()) {
+          alert("Please enter a valid street address and select it from the dropdown.");
+          return;
+        }
+
         // Disable button and show loading state
         submitButton.disabled = true;
         buttonText.classList.add("hidden");
