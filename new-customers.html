@@ -1,262 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- HEAD TAGS -->
-  <head>
-    <meta charset="UTF-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
-    <!-- Pull in fontawesome -->
-    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" rel="stylesheet"/>
-    <!-- Main compiled style sheet -->
-    <link href="dist/css/app.css" rel="stylesheet"/>
-    <!-- Tailwind Sheet -->
-                    <!-- <link rel="stylesheet" href="dist/css/tailwind.css" /> -->
-                    <!-- Load Bootstrap CSS -->
-    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet"/>
-    <!-- SEO specific stuff -->
-    <title>New Customers Info</title>
-    <meta content="Important Information for New Customers" name="description"/>
-    <link rel="icon" type="image/svg+xml" href="/favicon-tts.svg">
-    <link rel="alternate icon" href="/favicon.ico">
-  </head>
+<!-- HEAD TAGS -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+  <!-- Pull in fontawesome -->
+  <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" rel="stylesheet" />
+  <!-- Main compiled style sheet -->
+  <link href="dist/css/app.css" rel="stylesheet" />
+  <!-- Tailwind Sheet -->
+  <!-- <link rel="stylesheet" href="dist/css/tailwind.css" /> -->
+  <!-- Load Bootstrap CSS -->
+  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet" />
+  <!-- SEO specific stuff -->
+  <title>New Customers Info</title>
+  <meta content="Important Information for New Customers" name="description" />
+  <link rel="icon" type="image/svg+xml" href="/favicon-tts.svg">
+  <link rel="alternate icon" href="/favicon.ico">
+</head>
+<!-- NAV BAR -->
+<header id="appHeader">
+  <!-- MOBILE MENU BUTTON -->
+  <div class="menu-btn">
+    <div class="btn-line"></div>
+    <div class="btn-line"></div>
+    <div class="btn-line"></div>
+  </div>
   <!-- NAV BAR -->
-  <header id="appHeader">
-    <!-- MOBILE MENU BUTTON -->
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
-    <!-- NAV BAR -->
-    <div class="SiteHeader App-Header">
-      <div class="SiteHeader-content">
-        <!-- NON-MOBILE NAV -->
-        <nav class="SiteHeader-nonMobileNav">
-          <ul class="regular-nav">
-            <li class="reg-nav-item">
-              <a class="SiteHeader--navItem nav-link" href="./">Home</a>
-            </li>
-            <li class="reg-nav-item active">
-              <a href="./holiday-lighting.html">LED</a>
-            </li>
-            <li class="reg-nav-item">
-              <a href="./about.html">About Us</a>
-            </li>
-            <li class="reg-nav-item">
-              <a href="./contact.html">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- NAV LOGO -->
-        <div class="SiteHeader-logo SiteHeader--left">
-          <a class="Logo Logo--responsive" href="https://tistheseasonkc.com">
-            <img alt="Tis the Season Logo" class="nav-logo" src="./src/images/tts-logo.png"/>
-          </a>
+  <div class="SiteHeader App-Header">
+    <div class="SiteHeader-content">
+      <!-- NON-MOBILE NAV -->
+      <nav class="SiteHeader-nonMobileNav">
+        <ul class="regular-nav">
+          <li class="reg-nav-item">
+            <a class="SiteHeader--navItem nav-link" href="./">Home</a>
+          </li>
+          <li class="reg-nav-item active">
+            <a href="./holiday-lighting.html">LED</a>
+          </li>
+          <li class="reg-nav-item">
+            <a href="./about.html">About Us</a>
+          </li>
+          <li class="reg-nav-item">
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- NAV LOGO -->
+      <div class="SiteHeader-logo SiteHeader--left">
+        <a class="Logo Logo--responsive" href="https://tistheseasonkc.com">
+          <img alt="Tis the Season Logo" class="nav-logo" src="./src/images/tts-logo.png" />
+        </a>
+      </div>
+      <!-- MOBILE MENU SELECTION -->
+      <nav class="SiteHeader-nav SiteHeader--center">
+        <div class="menu-branding">
+          <div class="menu-logo"></div>
         </div>
-        <!-- MOBILE MENU SELECTION -->
-        <nav class="SiteHeader-nav SiteHeader--center">
-          <div class="menu-branding">
-            <div class="menu-logo"></div>
-          </div>
-          <ul class="menu-nav">
-            <li class="menu-item">
-              <a class="SiteHeader--navItem nav-link" href="./">Home</a>
-            </li>
-            <li class="menu-item active">
-              <a class="SiteHeader--navItem nav-link" href="./holiday-lighting.html">LED</a>
-            </li>
-            <li class="menu-item">
-              <a class="SiteHeader--navItem nav-link" href="./about.html">About Us</a>
-            </li>
-            <li class="menu-item">
-              <a class="SiteHeader--navItem nav-link" href="./contact.html">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- GET ESTIMATE BUTTON -->
-        <div class="SiteHeader-contact SightHeader--right">
-          <a class="Button" href="./contact.html">Get estimate
-          </a>
-        </div>
+        <ul class="menu-nav">
+          <li class="menu-item">
+            <a class="SiteHeader--navItem nav-link" href="./">Home</a>
+          </li>
+          <li class="menu-item active">
+            <a class="SiteHeader--navItem nav-link" href="./holiday-lighting.html">LED</a>
+          </li>
+          <li class="menu-item">
+            <a class="SiteHeader--navItem nav-link" href="./about.html">About Us</a>
+          </li>
+          <li class="menu-item">
+            <a class="SiteHeader--navItem nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- GET ESTIMATE BUTTON -->
+      <div class="SiteHeader-contact SightHeader--right">
+        <a class="Button" href="./contact.html">Get estimate
+        </a>
       </div>
     </div>
-  </header>
-  <section class="quick-contact">
-    <!-- prettier-ignore -->
-    <div class="quick-contact-group">
-      <svg class="icon" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M20 18.35V19a1 1 0 0 1-1 1h-2A17 17 0 0 1 0 3V1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4c0 .56-.31 1.31-.7 1.7L3.16 8.84c1.52 3.6 4.4 6.48 8 8l2.12-2.12c.4-.4 1.15-.71 1.7-.71H19a1 1 0 0 1 .99 1v3.35z"/></svg>
-      <a href="tel:+1-816-281-7032">(816) 281-7032</a>
-    </div>
-    <!-- prettier-ignore -->
-    <div class="quick-contact-group middle">
-      <svg class="icon" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17 11v3l-3-3H8a2 2 0 0 1-2-2V2c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-1zm-3 2v2a2 2 0 0 1-2 2H6l-3 3v-3H2a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h2v3a4 4 0 0 0 4 4h6z"/></svg>
-      <a href="sms:8446001675">(844) 600-1675</a>
-    </div>
-    <!-- prettier-ignore -->
-    <!-- <div class="quick-contact-group">
+  </div>
+</header>
+<section class="quick-contact">
+  <!-- prettier-ignore -->
+  <div class="quick-contact-group">
+    <svg class="icon" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M20 18.35V19a1 1 0 0 1-1 1h-2A17 17 0 0 1 0 3V1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4c0 .56-.31 1.31-.7 1.7L3.16 8.84c1.52 3.6 4.4 6.48 8 8l2.12-2.12c.4-.4 1.15-.71 1.7-.71H19a1 1 0 0 1 .99 1v3.35z" />
+    </svg>
+    <a href="tel:+1-816-281-7032">(816) 281-7032</a>
+  </div>
+  <!-- prettier-ignore -->
+  <div class="quick-contact-group middle">
+    <svg class="icon" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M17 11v3l-3-3H8a2 2 0 0 1-2-2V2c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-1zm-3 2v2a2 2 0 0 1-2 2H6l-3 3v-3H2a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h2v3a4 4 0 0 0 4 4h6z" />
+    </svg>
+    <a href="sms:8446001675">(844) 600-1675</a>
+  </div>
+  <!-- prettier-ignore -->
+  <!-- <div class="quick-contact-group">
       <svg class="icon" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z"/></svg>
       <a href="mailto:hello@tts.lighting">hello@tts.lighting</a>
     </div> -->
-  </section>
-  <body>
-    <h1 class="mb-4 text-center text-uppercase">
-      Important Information for New Customers
-    </h1>
-    <h3 class="container px-5 mb-2 text-center h2 font-italic font-weight-light">
-      We're very excited to work with you this year and hope we work together for many years to come. Here is some info so you know what to expect from us.
+</section>
+
+<body>
+  <h1 class="mb-4 text-center text-uppercase">
+    Important Information for New Customers
+  </h1>
+  <h3 class="container px-5 mb-2 text-center h2 font-italic font-weight-light">
+    We're very excited to work with you this year and hope we work together for many years to come. Here is some info so
+    you know what to expect from us.
+  </h3>
+
+  <div class="container pt-5 mt-5 bg-light text-dark">
+    <h1>What we need from you on the day we install</h1>
+    <h3 class="font-italic font-weight-light">
+      Please leave extension cord and timer (optional) on front porch
     </h3>
+    <ul class="pt-3 list-group">
+      <li class="list-group-item">
+        <p class="h4 font-weight-normal">
+          If you do not have soffit outlets, a 25' extension cord to power up your lights
+        </p>
+      </li>
+      <li class="list-group-item">
+        <p class="h4 font-weight-normal">
+          If you do have soffit outlets, please turn soffit outlet switch on so we can power your lights and check all
+          the bulbs.
+        </p>
+      </li>
+      <li class="list-group-item">
+        <p class="h4 font-weight-normal">
+          A timer if you'd like us to install one inline. Home Depot, Lowes, or this one from
+          <a
+            href="https://www.amazon.com/DEWENWILS-Photoelectric-Mechanical-Waterproof-Electrical/dp/B07GZH9R43/ref=sr_1_7?keywords=photocell+timer&qid=1572186343&sr=8-7">Amazon</a>
+          are typical.
+        </p>
+        <p class="h4 font-weight-normal text-danger">
+          NOTE: we will not install dial timers on soffit outlets. If you have soffit outlets and want a timer, it must
+          be a photocell timer.
+        </p>
+      </li>
+    </ul>
+  </div>
 
-    <div class="container pt-5 mt-5 bg-light text-dark">
-      <h1>What we need from you on the day we install</h1>
-      <h3 class="font-italic font-weight-light">
-        Please leave extension cord and timer (optional) on front porch
-      </h3>
-      <ul class="pt-3 list-group">
-        <li class="list-group-item">
-          <p class="h4 font-weight-normal">
-            If you do not have soffit outlets, a 25' extension cord to power up your lights
-          </p>
-        </li>
-        <li class="list-group-item">
-          <p class="h4 font-weight-normal">
-            If you do have soffit outlets, please turn soffit outlet switch on so we can power your lights and check all the bulbs.
-          </p>
-        </li>
-        <li class="list-group-item">
-          <p class="h4 font-weight-normal">
-            A timer if you'd like us to install one inline. Home Depot, Lowes, or this one from
-            <a href="https://www.amazon.com/DEWENWILS-Photoelectric-Mechanical-Waterproof-Electrical/dp/B07GZH9R43/ref=sr_1_7?keywords=photocell+timer&qid=1572186343&sr=8-7">Amazon</a>
-            are typical.
-          </p>
-          <p class="h4 font-weight-normal text-danger">
-            NOTE: we will not install dial timers on soffit outlets.  If you have soffit outlets and want a timer, it must be a photocell timer.
-          </p>
-        </li>
-      </ul>
-    </div>
+  <div class="container py-5 mt-5 bg-dark">
+    <h1 class="text-white">Payment</h1>
+    <h3 class="text-white font-italic font-weight-light">
+      We will not install your lights unless your invoice is paid or you've communicated with us that you're leaving
+      payment or paying in person.
+    </h3>
+    <h3 class="text-white font-italic font-weight-light">
+      If paying electronically, payment is due the evening before your scheduled install
+    </h3>
+    <ul class="pt-3 list-group">
+      <li class="list-group-item">
+        <p class="h3 mb-4 font-weight-normal">
+          We accept the following forms of payment:
+        <ol>
+          <li>
+            <p class="h4 font-weight-normal">
+              Online via any major debit / credit card through the payment link we text you
+            </p>
+          </li>
+          <li>
+            <p class="h4 font-weight-normal">
+              Cash / Check in person
+            </p>
+          </li>
+        </ol>
+        </p>
+      </li>
+      <li class="list-group-item">
+        <p class="h4 font-weight-normal text-danger">
+          Failure to pay or communicate about payment will delay your installation.
+        </p>
+      </li>
+    </ul>
+  </div>
 
-    <div class="container py-5 mt-5 bg-dark">
-      <h1 class="text-white">Payment</h1>
-      <h3 class="text-white font-italic font-weight-light">
-        We will not install your lights unless your invoice is paid or you've communicated with us that you're leaving payment or paying in person.
-      </h3>
-      <h3 class="text-white font-italic font-weight-light">
-        If paying electronically, payment is due the evening before your scheduled install
-      </h3>
-      <ul class="pt-3 list-group">
-        <li class="list-group-item">
-          <p class="h3 mb-4 font-weight-normal">
-            We accept the following forms of payment:
-            <ol>
-              <li>
-                <p class="h4 font-weight-normal">
-                  Online via any major debit / credit card through the payment link we text you
-                </p>
-              </li><li>
-                <p class="h4 font-weight-normal">
-                  Cash / Check in person
-                </p>
-              </li>
-            </ol>
-          </p>
-        </li>
-        <li class="list-group-item">
-          <p class="h4 font-weight-normal text-danger">
-            Failure to pay or communicate about payment will delay your installation.
-          </p>
-        </li>
-      </ul>
-    </div>
+  <div class="container pt-5 mt-5 bg-light text-dark">
+    <h1>How we'll communicate with you</h1>
+    <ul class="pt-3 list-group">
+      <li class="list-group-item">
+        <p class="h4 font-weight-normal">
+          You'll recieve your invoice link via text message
+        </p>
+      </li>
+      <li class="list-group-item">
+        <p class="h4 font-weight-normal">
+          We'll send a reminder text message the day before your scheduled install. If we are delayed by weather we'll
+          communicate the delay via text message.
+        </p>
+      </li>
+      <li class="list-group-item">
+        <p class="h4 font-weight-normal">
+          We will never text you other than for new season signups and schedule updates, and you may opt out at any
+          time. If you opt out of text updates, you will not receive the most up to date information and it will be your
+          responsibility to contact us directly to get updates.
+        </p>
+      </li>
+      <li class="list-group-item">
+        <p class="h4 font-weight-normal">
+          We'll send texts with our takedown schedule after Christmas.
+        </p>
+      </li>
 
-    <div class="container pt-5 mt-5 bg-light text-dark">
-      <h1>How we'll communicate with you</h1>
-      <ul class="pt-3 list-group">
-        <li class="list-group-item">
-          <p class="h4 font-weight-normal">
-            You'll recieve your invoice link via text message
-          </p>
-        </li>
-        <li class="list-group-item">
-          <p class="h4 font-weight-normal">
-            We'll send a reminder text message the day before your scheduled install.  If we are delayed by weather we'll communicate the delay via text message.
-          </p>
-        </li>
-        <li class="list-group-item">
-          <p class="h4 font-weight-normal">
-            We will never text you other than for new season signups and schedule updates, and you may opt out at any time.  If you opt out of text updates, you will not receive the most up to date information and it will be your responsibility to contact us directly to get updates.
-          </p>
-        </li>
-        <li class="list-group-item">
-          <p class="h4 font-weight-normal">
-            We'll send texts with our takedown schedule after Christmas.
-          </p>
-        </li>
+    </ul>
+  </div>
 
-      </ul>
-    </div>
+  <div class="container py-5 mt-5 bg-dark">
+    <h1 class="text-white">Fix Requests</h1>
+    <h3 class="text-white font-italic font-weight-light">
+      To request a fix, text "Fix" to <a href="sms:8446001675">844-600-1675</a> or visit <a
+        href="https://tistheseasonkc.com/create-fix-request">https://tistheseasonkc.com/create-fix-request</a> and
+      create a fix request.
+    </h3>
+    <ul class="pt-3 list-group">
+      <li class="list-group-item">
+        <h2 class="pb-3">🌲 Trees and ⛳ Flags</h2>
+        <p class="h3 mb-4 font-weight-normal">
+          Please trim tree branches back away from where we'll run lighting and remove any flags that are within reach
+          of your gutters. We do not warranty fixes from flags or trees knocking bulbs loose.
+        </p>
+        <p class="h4 font-weight-normal font-italic mt-2">
+          We will send an invoice for $50 for fixes relating to trees and/or flags
+        </p>
+      </li>
+    </ul>
+  </div>
 
-    <div class="container py-5 mt-5 bg-dark">
-          <h1 class="text-white">Fix Requests</h1>
-          <h3 class="text-white font-italic font-weight-light">
-            To request a fix, text "Fix" to <a href="sms:8446001675">844-600-1675</a> or visit <a href="https://tistheseasonkc.com/create-fix-request">https://tistheseasonkc.com/create-fix-request</a> and create a fix request.
-          </h3>
-          <ul class="pt-3 list-group">
-            <li class="list-group-item">
-              <h2 class="pb-3">🌲 Trees and ⛳ Flags</h2>
-              <p class="h3 mb-4 font-weight-normal">
-                  Please trim tree branches back away from where we'll run lighting and remove any flags that are within reach of your gutters.  We do not warranty fixes from flags or trees knocking bulbs loose.
-                <
-                  <li>
-                    <p class="h4 font-weight-normal">
-                      We will send an invoice for $50 for fixes relating to trees and/or flags
-                    </p>
-                  </li>                </ol>
-              </p>
-            </li>
-          </ul>
-        </div>
-
-    <!-- FOOTER -->
-    <footer class="SiteFooter">
-      <div class="SiteFooter-Content">
-        <div class="Footer Footer--logoRow">
-          <img alt="TTS Logo" src="./src/images/tts-logo-simple.png"/>
-        </div>
-        <div class="Footer Footer--contact">
-          <a class="Button" href="./contact.html">Contact us</a>
-          <ul class="Footer Footer--social">
-            <li>
-              <a href="#">
-                <i class="fab fa-facebook fa-4x"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fab fa-instagram fa-4x"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="Footer Footer--serviceArea">
-          <h3>Service Areas</h3>
-          <ul>
-            <li>Lee's Summit</li>
-            <li>Winterset Valley</li>
-            <li>Raymore</li>
-          </ul>
-        </div>
-        <div class="Footer Footer--linksCol">
-          <h3>We also run a painting company!</h3>
-          <p>Check out</p>
-          <a href="https://greatplainspaintingkc.com/">Great Plains Painting</a>
-        </div>
+  <!-- FOOTER -->
+  <footer class="SiteFooter">
+    <div class="SiteFooter-Content">
+      <div class="Footer Footer--logoRow">
+        <img alt="TTS Logo" src="./src/images/tts-logo-simple.png" />
       </div>
-    </footer>
-    <!-- LITTLE SCRIPT FOR THE MOBILE MENU LOADED FIRST SO NO MENU FLASH -->
-    <script defer src="dist/js/app.js"></script>
-    <!-- Bootstrap Scripts -->
-    <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  </body>
+      <div class="Footer Footer--contact">
+        <a class="Button" href="./contact.html">Contact us</a>
+        <ul class="Footer Footer--social">
+          <li>
+            <a href="#">
+              <i class="fab fa-facebook fa-4x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-instagram fa-4x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="Footer Footer--serviceArea">
+        <h3>Service Areas</h3>
+        <ul>
+          <li>Lee's Summit</li>
+          <li>Winterset Valley</li>
+          <li>Raymore</li>
+        </ul>
+      </div>
+      <div class="Footer Footer--linksCol">
+        <h3>We also run a painting company!</h3>
+        <p>Check out</p>
+        <a href="https://greatplainspaintingkc.com/">Great Plains Painting</a>
+      </div>
+    </div>
+  </footer>
+  <!-- LITTLE SCRIPT FOR THE MOBILE MENU LOADED FIRST SO NO MENU FLASH -->
+  <script defer src="dist/js/app.js"></script>
+  <!-- Bootstrap Scripts -->
+  <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
 </html>
